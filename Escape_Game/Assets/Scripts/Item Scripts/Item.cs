@@ -5,5 +5,4 @@ public class Item : ScriptableObject
 {
     new public string name = "New Item"; //overriding the old definition for name
     public Sprite icon = null;
-    public bool isDefaultItem = false;
 }
