@@ -9,7 +9,7 @@ public class Interactable : MonoBehaviour
     public void Pickup()
     {
         Debug.Log("Picking up : " + item.name);
-
+        Inventory.instance.Add(item);
         Destroy(gameObject);
     }
 }
