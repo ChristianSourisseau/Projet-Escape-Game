@@ -23,6 +23,7 @@ public class PreviousRoom : MonoBehaviour
 		
 		Canvas = GameObject.FindGameObjectWithTag("CanvasRoom");
 		RoomText = GameObject.FindGameObjectWithTag("RoomCounter").GetComponent<TextMeshProUGUI>();
+		room = RoomText.GetComponent<RoomCounter>().count -1;
     }
 	
 	
@@ -59,6 +60,7 @@ public class PreviousRoom : MonoBehaviour
 			}
 			else{
 				RoomText.text = "Room " + (RoomText.GetComponent<RoomCounter>().count -1).ToString();
+				RoomText.GetComponent<RoomCounter>().count = RoomText.GetComponent<RoomCounter>().count -1;
 			}
 			
 			SceneManager.LoadScene(room);

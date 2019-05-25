@@ -47,7 +47,8 @@ public class nextroom : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.E) && present)
 		{
 			SceneManager.LoadScene(room);
-			RoomText.text = "Room " + (RoomText.GetComponent<RoomCounter>().count +1).ToString();
+			RoomText.GetComponent<RoomCounter>().count = RoomText.GetComponent<RoomCounter>().count + 1;
+			RoomText.text = "Room " + (RoomText.GetComponent<RoomCounter>().count ).ToString();
 
 		}
 	}
