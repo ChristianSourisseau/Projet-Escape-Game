@@ -8,6 +8,8 @@ TagManager:
   - Rooms
   - RoomCounter
   - CanvasRoom
+  - DoorSpawn
+  - Chambers
   layers:
   - Default
   - TransparentFX
