@@ -153,6 +153,7 @@ MonoBehaviour:
     type: 3}
   walkSpeed: 5
   isAllowedToMove: 1
+  anim: {fileID: 0}
 --- !u!95 &6427557950774397695
 Animator:
   serializedVersion: 3

@@ -20,9 +20,12 @@ public class Move : MonoBehaviour
 
     public bool isAllowedToMove = true;
 
+    private Animator anim;
+
     void Start()
     {
         isAllowedToMove = true;
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -42,18 +45,38 @@ public class Move : MonoBehaviour
                 if (input.x < 0)
                 {
                     currentDir = Direction.West;
+                    anim.SetBool("moveWest", true);
+
+                    anim.SetBool("moveNorth", false);
+                    anim.SetBool("moveSouth", false);
+                    anim.SetBool("moveEast", false);
                 }
                 if (input.x > 0)
                 {
                     currentDir = Direction.East;
+                    anim.SetBool("moveEast", true);
+
+                    anim.SetBool("moveNorth", false);
+                    anim.SetBool("moveSouth", false);
+                    anim.SetBool("moveWest", false);
                 }
                 if (input.y < 0)
                 {
-                    currentDir = Direction.South;                
+                    currentDir = Direction.South;
+                    anim.SetBool("moveSouth", true);
+
+                    anim.SetBool("moveNorth", false);
+                    anim.SetBool("moveWest", false);
+                    anim.SetBool("moveEast", false);
                 }
                 if (input.y > 0)
                 {
                     currentDir = Direction.North;
+                    anim.SetBool("moveNorth", true);
+
+                    anim.SetBool("moveSouth", false);
+                    anim.SetBool("moveWest", false);
+                    anim.SetBool("moveEast", false);
                 }
 
                 switch (currentDir)
@@ -71,11 +94,24 @@ public class Move : MonoBehaviour
                         gameObject.GetComponent<SpriteRenderer>().sprite = westSprite;
                         break;
                 }
-
+                anim.SetBool("isMoving", true);
                 StartCoroutine(Moves(transform, ""));
+
+            }
+            else
+            {
+                if (Mathf.Abs(Input.GetAxis("Horizontal")) <= 0 || Mathf.Abs(Input.GetAxis("Verstical")) <= 0)
+                {
+                   anim.SetBool("isMoving", false);
+                }
+
+                anim.SetBool("moveNorth", false);
+                anim.SetBool("moveSouth", false);
+                anim.SetBool("moveWest", false);
+                anim.SetBool("moveEast", false);
             }
 
-        }
+        }        
 
     }
 
