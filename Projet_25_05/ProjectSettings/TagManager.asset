@@ -10,6 +10,7 @@ TagManager:
   - CanvasRoom
   - DoorSpawn
   - Chambers
+  - Decos
   layers:
   - Default
   - TransparentFX

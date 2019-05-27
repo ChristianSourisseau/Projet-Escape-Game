@@ -6,15 +6,15 @@ public class DoorSpawner : MonoBehaviour
 {
 	private ChamberTemplates templates;
 	private int rand;
-	public bool spawned = false;
+	public bool chamberspawned = false;
 	
-	public float waitTime = 8f;
+	public float waitTime = 4f;
 
 	
 	void Start(){
 		Destroy(gameObject, waitTime);
 		templates = GameObject.FindGameObjectWithTag("Chambers").GetComponent<ChamberTemplates>();
-		Invoke("Spawn", 4f);
+		Invoke("Spawn", 2f);
 	}
 
 
@@ -23,14 +23,14 @@ public class DoorSpawner : MonoBehaviour
 
 	void Spawn(){
 		
-		if(spawned == false){
+		if(chamberspawned == false){
 			
 			rand = Random.Range(0, templates.doors.Length);
 			Instantiate(templates.doors[rand], transform.position, Quaternion.identity);
 
 
 		}
-		spawned = true;
+		chamberspawned = true;
 
 	}
   }
