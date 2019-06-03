@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class Timer : MonoBehaviour
        
         timeLeft -= Time.deltaTime;
         text.text = Mathf.Floor(timeLeft / 60).ToString("00") + ":" + Mathf.FloorToInt(timeLeft % 60).ToString("00");
+        if(text.text == "00:00")
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 
 

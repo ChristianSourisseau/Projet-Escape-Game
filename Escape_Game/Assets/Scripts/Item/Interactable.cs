@@ -5,11 +5,19 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     public Item item;
+    public Obstacle obstacle;
+
+    public void Start()
+    {
+        
+    }
 
     public void Pickup()
     {
         Debug.Log("Picking up : " + item.name);
-        Inventory.instance.Add(item);
-        Destroy(gameObject);
+        if (Inventory.instance.Add(item))
+        {
+            Destroy(gameObject);
+        }
     }
 }

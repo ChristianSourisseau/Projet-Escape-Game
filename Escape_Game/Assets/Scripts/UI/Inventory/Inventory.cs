@@ -20,7 +20,8 @@ public class Inventory : MonoBehaviour
     }
     #endregion
 
-
+    //when Inventory is changed, call this method to do something
+    //example : update UI
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
 
@@ -36,15 +37,24 @@ public class Inventory : MonoBehaviour
             return false;
         }
         items.Add(item);
+        //Update UI to add item icon to inventory
         if (onItemChangedCallback != null)
             onItemChangedCallback.Invoke();
         return true;
     }
-    public void remove(Item item)
+    public void itemUsed(Item item)
     {
-        //TODO
-        //if(onItemChangedCallback != null)
-        //onItemChangedCallback.Invoke();
+        //TODO, doesn't just remove, checks for interaction 
+        remove(item);
+        
+    }
+
+    private void remove(Item item)
+    {
+        items.Remove(item);
+        //Update UI to remove item icon from inventory
+        if(onItemChangedCallback != null)
+            onItemChangedCallback.Invoke();
     }
 
 }

@@ -3,7 +3,14 @@ using UnityEngine.UI;
 public class InventorySlot : MonoBehaviour
 {
     public Image icon;
+    public Button interactButton;
+
     Item item;
+
+    public void Start()
+    {
+        interactButton.onClick.AddListener(onUsedItem);
+    }
 
     public void AddItem (Item newItem)
     {
@@ -11,6 +18,7 @@ public class InventorySlot : MonoBehaviour
 
         icon.sprite = item.icon;
         icon.enabled = true;
+        interactButton.interactable = true;
     }
 
     public void ClearSlot ()
@@ -18,5 +26,13 @@ public class InventorySlot : MonoBehaviour
         item = null;
         icon.sprite = null;
         icon.enabled = false;
+       // interactButton.interactable = false;
     }
+
+    public void onUsedItem()
+    {
+        Debug.Log("Button has been pressed");
+        Inventory.instance.itemUsed(item);
+    }
+
 }

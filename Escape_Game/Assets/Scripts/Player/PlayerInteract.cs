@@ -11,8 +11,6 @@ public class PlayerInteract : MonoBehaviour {
     private void Update()
     {
         if (Input.GetButtonDown("Interact") && curIntObj ){
-            //DOES SOMETHING WITH OBJECT
-            //FOR NOW JUST PICK UP
                 if (curIntObjScript != null)
                     curIntObjScript.Pickup(); 
         }

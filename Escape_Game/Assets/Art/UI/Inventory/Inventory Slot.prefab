@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 3930226552403381758}
+  interactButton: {fileID: 3930226552297246289}
 --- !u!1 &3930226552297246295
 GameObject:
   m_ObjectHideFlags: 0
