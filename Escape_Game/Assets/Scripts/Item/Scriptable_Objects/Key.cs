@@ -4,10 +4,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "new Key", menuName = "Objects/Items/Key")]
 public class Key : Item
 {
-    public Lock keyhole;
+    public Lock door;
 
-    public bool isRightLock(Lock keyhole)
+    public override bool correctInteraction(Obstacle l)
     {
-        return keyhole.Equals(this);
+        Debug.Log("CorrectInterraction of KEY was called");
+        return l.GetInstanceID() == door.GetInstanceID();
     }
 }

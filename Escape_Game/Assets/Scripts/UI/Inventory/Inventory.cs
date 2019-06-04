@@ -44,12 +44,14 @@ public class Inventory : MonoBehaviour
     }
     public void itemUsed(Item item)
     {
-        //TODO, doesn't just remove, checks for interaction 
-        remove(item);
-        
+        Interactable intObj = gameObject.GetComponent<PlayerInteract>().getInteractObj();
+        if (intObj != null)
+        {
+            intObj.useItemOnObject(item);
+        }        
     }
 
-    private void remove(Item item)
+    public void remove(Item item)
     {
         items.Remove(item);
         //Update UI to remove item icon from inventory

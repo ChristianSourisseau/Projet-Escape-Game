@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour {
     
-    public GameObject curIntObj = null;
-    public Interactable curIntObjScript = null;
+    private GameObject curIntObj = null;
+    private Interactable curIntObjScript = null;
+
+    public Interactable getInteractObj()
+    {
+        return curIntObjScript;
+    }
 
     // THE PLAYER CAN INTERACT ONLY IF IT HAS THE TAG "Interactable"
     private void Update()
     {
         if (Input.GetButtonDown("Interact") && curIntObj ){
                 if (curIntObjScript != null)
-                    curIntObjScript.Pickup(); 
+                 {
+                    // Makes sure we only pickup an item and not an obstacle.
+                    if (curIntObjScript.item != null)
+                    {
+                         curIntObjScript.Pickup();
+                    }
+            }
         }
     }
     //If collision with Interactable object sets current Interactable Object 
@@ -22,7 +33,6 @@ public class PlayerInteract : MonoBehaviour {
             curIntObj = collision.gameObject;
             curIntObjScript = curIntObj.GetComponent<Interactable>();
     }
-
 
     //exiting collision zone sets current Interractable Object to null
     private void OnTriggerExit2D(Collider2D collision)

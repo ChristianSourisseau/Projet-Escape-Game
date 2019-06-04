@@ -1,16 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Interactable : MonoBehaviour
 {
     public Item item;
     public Obstacle obstacle;
 
-    public void Start()
-    {
-        
-    }
 
     public void Pickup()
     {
@@ -19,5 +16,14 @@ public class Interactable : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void useItemOnObject(Item item)
+    {
+       if (item.correctInteraction(obstacle))
+        {
+            Inventory.instance.remove(item);
+        }
+       SceneManager.LoadScene("scenarioFin001");
     }
 }

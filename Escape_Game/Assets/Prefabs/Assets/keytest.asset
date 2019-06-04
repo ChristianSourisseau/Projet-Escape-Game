@@ -15,4 +15,4 @@ MonoBehaviour:
   description: prison key
   name: prison key
   icon: {fileID: -3355020450909385563, guid: f8228b6d0f4a6a94593088f7bf1fcce3, type: 3}
-  keyhole: {fileID: 11400000, guid: 2ce0b6a4dcd8e93419d022773b095c97, type: 2}
+  door: {fileID: 11400000, guid: 2ce0b6a4dcd8e93419d022773b095c97, type: 2}

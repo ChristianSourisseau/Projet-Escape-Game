@@ -9,7 +9,7 @@ public class InventorySlot : MonoBehaviour
 
     public void Start()
     {
-        interactButton.onClick.AddListener(onUsedItem);
+        interactButton.interactable = false;
     }
 
     public void AddItem (Item newItem)
@@ -26,7 +26,7 @@ public class InventorySlot : MonoBehaviour
         item = null;
         icon.sprite = null;
         icon.enabled = false;
-       // interactButton.interactable = false;
+        interactButton.interactable = false;
     }
 
     public void onUsedItem()
