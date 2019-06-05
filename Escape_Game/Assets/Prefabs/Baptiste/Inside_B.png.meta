@@ -35,6 +35,9 @@ TextureImporter:
   - first:
       213: -6853701822994234914
     second: Inside_B_10
+  - first:
+      213: 3287673483508046292
+    second: Prison_Door
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -314,7 +317,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,7 +338,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -343,6 +346,27 @@ TextureImporter:
       bones: []
       spriteID: 5aab57b8303b5dc44a4b9b35ca800117
       internalID: -6853701822994234914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prison_Door
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bbccbca48fcee439fe30ac8611d162
+      internalID: 3287673483508046292
       vertices: []
       indices: 
       edges: []
