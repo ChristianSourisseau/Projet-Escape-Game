@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ActivateTextAtLine
+    - CameraPlayer
     - Interactable
     - Inventory
     - InventorySlot
@@ -12,7 +13,6 @@ ScriptsOnlyBuild:
     - MenuPause
     - Move
     - PlayerInteract
-    - TMPro.Examples.CameraController
     - TextboxManager
     - Timer
     - scenario001
@@ -22,12 +22,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
@@ -67,23 +61,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9350}
-    - Class: 114
       Script: {instanceID: 9352}
     - Class: 114
-      Script: {instanceID: 9358}
+      Script: {instanceID: 9354}
     - Class: 114
-      Script: {instanceID: 9364}
+      Script: {instanceID: 9360}
     - Class: 114
-      Script: {instanceID: 9372}
+      Script: {instanceID: 9366}
     - Class: 114
-      Script: {instanceID: 9394}
+      Script: {instanceID: 9374}
     - Class: 114
-      Script: {instanceID: 9408}
+      Script: {instanceID: 9396}
     - Class: 114
       Script: {instanceID: 9410}
     - Class: 114
-      Script: {instanceID: 10660}
+      Script: {instanceID: 9412}
+    - Class: 114
+      Script: {instanceID: 10656}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -120,33 +114,33 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9350}
-    - Class: 114
       Script: {instanceID: 9352}
     - Class: 114
-      Script: {instanceID: 9358}
+      Script: {instanceID: 9354}
     - Class: 114
-      Script: {instanceID: 9364}
+      Script: {instanceID: 9360}
     - Class: 114
-      Script: {instanceID: 9372}
+      Script: {instanceID: 9366}
     - Class: 114
-      Script: {instanceID: 9408}
+      Script: {instanceID: 9374}
     - Class: 114
       Script: {instanceID: 9410}
     - Class: 114
-      Script: {instanceID: 9420}
+      Script: {instanceID: 9412}
     - Class: 114
-      Script: {instanceID: 9772}
+      Script: {instanceID: 9422}
     - Class: 114
-      Script: {instanceID: 10136}
+      Script: {instanceID: 9774}
     - Class: 114
-      Script: {instanceID: 10146}
+      Script: {instanceID: 10132}
     - Class: 114
-      Script: {instanceID: 10560}
+      Script: {instanceID: 10142}
     - Class: 114
-      Script: {instanceID: 10640}
+      Script: {instanceID: 10556}
     - Class: 114
-      Script: {instanceID: 10660}
+      Script: {instanceID: 10636}
+    - Class: 114
+      Script: {instanceID: 10656}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -195,49 +189,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 624}
     - Class: 114
-      Script: {instanceID: 9280}
+      Script: {instanceID: 9220}
     - Class: 114
-      Script: {instanceID: 9350}
+      Script: {instanceID: 9282}
     - Class: 114
       Script: {instanceID: 9352}
     - Class: 114
-      Script: {instanceID: 9358}
+      Script: {instanceID: 9354}
     - Class: 114
-      Script: {instanceID: 9364}
+      Script: {instanceID: 9360}
     - Class: 114
-      Script: {instanceID: 9368}
+      Script: {instanceID: 9366}
     - Class: 114
-      Script: {instanceID: 9372}
+      Script: {instanceID: 9370}
     - Class: 114
-      Script: {instanceID: 9404}
+      Script: {instanceID: 9374}
     - Class: 114
-      Script: {instanceID: 9408}
+      Script: {instanceID: 9406}
     - Class: 114
       Script: {instanceID: 9410}
     - Class: 114
-      Script: {instanceID: 9852}
+      Script: {instanceID: 9412}
     - Class: 114
-      Script: {instanceID: 9868}
+      Script: {instanceID: 9704}
     - Class: 114
-      Script: {instanceID: 9888}
+      Script: {instanceID: 9854}
     - Class: 114
-      Script: {instanceID: 9916}
+      Script: {instanceID: 9870}
     - Class: 114
-      Script: {instanceID: 9984}
+      Script: {instanceID: 9890}
     - Class: 114
-      Script: {instanceID: 10002}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 10042}
+      Script: {instanceID: 10000}
     - Class: 114
-      Script: {instanceID: 10286}
+      Script: {instanceID: 10038}
     - Class: 114
-      Script: {instanceID: 10312}
+      Script: {instanceID: 10282}
     - Class: 114
-      Script: {instanceID: 10326}
+      Script: {instanceID: 10308}
     - Class: 114
-      Script: {instanceID: 10712}
+      Script: {instanceID: 10322}
     - Class: 114
-      Script: {instanceID: 14034}
+      Script: {instanceID: 10708}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -282,23 +276,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9350}
-    - Class: 114
       Script: {instanceID: 9352}
     - Class: 114
-      Script: {instanceID: 9358}
+      Script: {instanceID: 9354}
     - Class: 114
-      Script: {instanceID: 9364}
+      Script: {instanceID: 9360}
     - Class: 114
-      Script: {instanceID: 9372}
+      Script: {instanceID: 9366}
     - Class: 114
-      Script: {instanceID: 9394}
+      Script: {instanceID: 9374}
     - Class: 114
-      Script: {instanceID: 9408}
+      Script: {instanceID: 9396}
     - Class: 114
       Script: {instanceID: 9410}
     - Class: 114
-      Script: {instanceID: 10012}
+      Script: {instanceID: 9412}
+    - Class: 114
+      Script: {instanceID: 10010}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -331,21 +325,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9350}
-    - Class: 114
       Script: {instanceID: 9352}
     - Class: 114
-      Script: {instanceID: 9358}
+      Script: {instanceID: 9354}
     - Class: 114
-      Script: {instanceID: 9364}
+      Script: {instanceID: 9360}
     - Class: 114
-      Script: {instanceID: 9372}
+      Script: {instanceID: 9366}
     - Class: 114
-      Script: {instanceID: 9408}
+      Script: {instanceID: 9374}
     - Class: 114
       Script: {instanceID: 9410}
     - Class: 114
-      Script: {instanceID: 10012}
+      Script: {instanceID: 9412}
+    - Class: 114
+      Script: {instanceID: 10010}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -361,6 +355,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: c8c5e65e9fb858572516474d6e2102bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuPause
   - hash:
       serializedVersion: 2
       Hash: 984dcc0ba3707b7691fbdca8ff508d28
@@ -831,6 +831,12 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 248c554c4aec872a40798068588085a7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraPlayer
+  - hash:
+      serializedVersion: 2
       Hash: 4d16cfbaa8e821a2b370e80844a0e9bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1131,12 +1137,6 @@ ScriptsOnlyBuild:
     className: InventorySlot
   - hash:
       serializedVersion: 2
-      Hash: 3159eceb6c8b29530e3d4adea52a6f27
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TestGo
-  - hash:
-      serializedVersion: 2
       Hash: ee0cef6caaac8ae485bfa82f000f0f7b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1303,12 +1303,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: c8c5e65e9fb858572516474d6e2102bc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MenuPause
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
@@ -1316,4 +1310,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Credits.unity
   - Assets/Scenes/scenario.unity
   - Assets/Scenes/scenarioFin001.unity
-  playerPath: C:/Users/Pc Toshiba/projet-escape-game/Escape_Game/Prison Demo.exe
+  playerPath: C:/Users/Malnoe/Desktop/Projet version/Prison Demo.exe

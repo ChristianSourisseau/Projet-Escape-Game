@@ -47,6 +47,8 @@ public class Move : MonoBehaviour
                     currentDir = Direction.West;
                     anim.SetBool("moveWest", true);
 
+                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(-0.5f, 0f);
+
                     anim.SetBool("moveNorth", false);
                     anim.SetBool("moveSouth", false);
                     anim.SetBool("moveEast", false);
@@ -55,6 +57,8 @@ public class Move : MonoBehaviour
                 {
                     currentDir = Direction.East;
                     anim.SetBool("moveEast", true);
+
+                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0.5f, 0f);
 
                     anim.SetBool("moveNorth", false);
                     anim.SetBool("moveSouth", false);
@@ -65,6 +69,8 @@ public class Move : MonoBehaviour
                     currentDir = Direction.South;
                     anim.SetBool("moveSouth", true);
 
+                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0f, -0.5f);
+
                     anim.SetBool("moveNorth", false);
                     anim.SetBool("moveWest", false);
                     anim.SetBool("moveEast", false);
@@ -73,6 +79,8 @@ public class Move : MonoBehaviour
                 {
                     currentDir = Direction.North;
                     anim.SetBool("moveNorth", true);
+
+                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0f, 0.5f);
 
                     anim.SetBool("moveSouth", false);
                     anim.SetBool("moveWest", false);
@@ -151,11 +159,7 @@ public class Move : MonoBehaviour
         isMoving = false;
         yield return 0;
     
-    }
-    public void Go(string dir)
-    {
-        StartCoroutine(Moves(transform, dir));
-    }
+    }    
 }
 
 
