@@ -2,8 +2,11 @@ sceneSetups:
 - path: Assets/Scenes/Prison.unity
   isLoaded: 1
   isActive: 1
+<<<<<<< HEAD
   isSubScene: 0
 - path: Assets/Scenes/Menu.unity
   isLoaded: 0
   isActive: 0
+=======
+>>>>>>> 262d9eb8f05c9ea86b861a76377734dbdb957fd8
   isSubScene: 0
