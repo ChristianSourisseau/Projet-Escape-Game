@@ -7,6 +7,7 @@ public class Interactable : MonoBehaviour
 {
     public Item item;
     public Obstacle obstacle;
+    public Hint hint;
 
 
     public void Pickup()
@@ -25,5 +26,11 @@ public class Interactable : MonoBehaviour
             Inventory.instance.remove(item);
         }
        SceneManager.LoadScene("scenarioFin001");
+    }
+
+    public void ShowHint()
+    {
+        Debug.Log("SHOWING HINT NEEDS TO BE IMPLEMENTED");
+        //TODO
     }
 }

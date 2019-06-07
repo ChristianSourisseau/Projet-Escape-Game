@@ -5,7 +5,7 @@ using UnityEngine;
 
 abstract public class Obstacle : Objet
 {
-    public List<Item> under = null;
-    public List<Item> inside = null;
-    public List<Item> ontop = null;
+    public List<Objet> under = null;
+    public List<Objet> inside = null;
+    public List<Objet> ontop = null;
 }

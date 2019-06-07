@@ -23,6 +23,10 @@ public class PlayerInteract : MonoBehaviour {
                     {
                          curIntObjScript.Pickup();
                     }
+                    else if (curIntObjScript.hint != null)
+                    {
+                        curIntObjScript.ShowHint();
+                    }
             }
         }
     }
