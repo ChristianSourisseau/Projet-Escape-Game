@@ -3572,6 +3572,7 @@ TilemapCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &857453809
 GameObject:
   m_ObjectHideFlags: 0
@@ -4545,6 +4546,11 @@ PrefabInstance:
       propertyPath: theTextBox
       value: 
       objectReference: {fileID: 1251175577}
+    - target: {fileID: 2640669796210247585, guid: 7c964fbfee4ee0f4588f348d9db3d4b7,
+        type: 3}
+      propertyPath: theText
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8544950837062947978, guid: 7c964fbfee4ee0f4588f348d9db3d4b7,
         type: 3}
       propertyPath: m_Offset.x
