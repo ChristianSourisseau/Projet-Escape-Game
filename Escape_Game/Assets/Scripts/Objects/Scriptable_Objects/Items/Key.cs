@@ -11,4 +11,9 @@ public class Key : Item
         Debug.Log("CorrectInterraction of KEY was called");
         return l.GetInstanceID() == door.GetInstanceID();
     }
+
+    public override string GetDescription()
+    {
+        return base.GetDescription() + "\nCette clé ouvre probablement la porte de la cellule";
+    }
 }

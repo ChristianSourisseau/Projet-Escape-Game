@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5786372325378586283}
-  - component: {fileID: 5786372325378586284}
+  - component: {fileID: 4768384521144737996}
   m_Layer: 0
   m_Name: TextboxManager
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5786372325378586284
+--- !u!114 &4768384521144737996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 0}
   theText: {fileID: 0}
-  textFile: {fileID: 4900000, guid: f240bce9d16d57245b5b1ff80952231b, type: 3}
+  textFile: {fileID: 0}
   textLines: []
   currentLine: 0
   endAtLine: 0
