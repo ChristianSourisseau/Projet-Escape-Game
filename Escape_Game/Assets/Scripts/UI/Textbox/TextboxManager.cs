@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class TextboxManager : MonoBehaviour
 {
+  
     public GameObject textBox;
     public Text theText;
     public TextAsset textFile;
@@ -16,6 +17,7 @@ public class TextboxManager : MonoBehaviour
     public Move player;
 
     // Start is called before the first frame update
+
     void Start()
     {
         player = FindObjectOfType<Move>();
@@ -41,17 +43,20 @@ public class TextboxManager : MonoBehaviour
 
     void Update()
     {
-
+      
         if (!isActive)
         {
             return;
         }
 
         theText.text = textLines[currentLine];
-
+    
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            currentLine += 1;
+            
+           currentLine += 1;
+            
+            
         }
 
         if(currentLine > endAtLine)

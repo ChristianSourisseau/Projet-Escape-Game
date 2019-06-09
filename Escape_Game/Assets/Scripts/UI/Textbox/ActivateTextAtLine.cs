@@ -16,36 +16,6 @@ public class ActivateTextAtLine : MonoBehaviour
 
     public bool destroyWhenActivated;
 
-
-    #region CODE CHRISTIAN SOURISSEAU
-
-    public void Awake()
-    {
-        #region Associating text file with object in this script if there isn't already one
-        //if text is empty, we need to add it
-        if (theText == null)
-        {
-            Interactable intobj;
-            intobj = gameObject.GetComponent<Interactable>();
-            //text only needed for Interactable items.
-            if (intobj != null)
-            {
-                //getting text for object (item or obstacle)
-               if (intobj.item != null)
-                {
-                    theText = intobj.item.createText();
-                }
-                else
-                {
-                   theText = intobj.obstacle.createText();
-                }
-            }
-        }
-        #endregion
-    }
-
-    #endregion
-
     // Start is called before the first frame update
     void Start()
     {

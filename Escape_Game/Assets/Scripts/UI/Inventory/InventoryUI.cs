@@ -7,8 +7,10 @@ public class InventoryUI : MonoBehaviour
     public Transform itemsParent;
 
     Inventory inventory;
-
+    
     InventorySlot[] slots;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -35,5 +37,7 @@ public class InventoryUI : MonoBehaviour
             else
                 slots[i].ClearSlot();
         }
+
     }
+
 }

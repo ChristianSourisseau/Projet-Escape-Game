@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4428baa604244604bace3c5fcbaf64b0, type: 3}
   m_Name: keytest
   m_EditorClassIdentifier: 
-  description: Key that opens a prison door
+  description: prison key
   name: prison key
   icon: {fileID: -3355020450909385563, guid: f8228b6d0f4a6a94593088f7bf1fcce3, type: 3}
+  title: "Cl\xE9 de la cellule"
+  type: 0
   door: {fileID: 11400000, guid: 2ce0b6a4dcd8e93419d022773b095c97, type: 2}

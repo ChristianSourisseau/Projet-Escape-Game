@@ -1,6 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
-public class InventorySlot : MonoBehaviour
+using UnityEngine.EventSystems;
+public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public Image icon;
     public Button interactButton;
@@ -35,4 +38,19 @@ public class InventorySlot : MonoBehaviour
         Inventory.instance.itemUsed(item);
     }
 
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if(item != null)
+        {
+            Inventory.instance.ShowTooltip(transform.position,item);
+            Debug.Log("Show Tooltip");
+        }
+        
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        Inventory.instance.HideTooltip();
+        Debug.Log("Exit");
+    }
 }

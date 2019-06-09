@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+
 
 public class Inventory : MonoBehaviour
 {
@@ -25,6 +28,8 @@ public class Inventory : MonoBehaviour
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
 
+    [SerializeField]
+    private GameObject tooltip; 
 
     public List<Item> items = new List<Item>();
     public int space = 7;
@@ -57,6 +62,18 @@ public class Inventory : MonoBehaviour
         //Update UI to remove item icon from inventory
         if(onItemChangedCallback != null)
             onItemChangedCallback.Invoke();
+    }
+
+    public void ShowTooltip(Vector3 position, IDescribable description)
+    {
+        tooltip.SetActive(true);
+        tooltip.transform.position = position;
+        tooltip.GetComponentInChildren<Text>().text = description.GetDescription();
+    }
+
+    public void HideTooltip()
+    {
+        tooltip.SetActive(false);
     }
 
 }
