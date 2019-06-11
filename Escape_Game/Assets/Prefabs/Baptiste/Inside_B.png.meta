@@ -38,6 +38,15 @@ TextureImporter:
   - first:
       213: 3287673483508046292
     second: Prison_Door
+  - first:
+      213: -2905758150775775730
+    second: Armoire_0
+  - first:
+      213: -1259021002239648526
+    second: Armoire_0_0
+  - first:
+      213: -5542008510553642196
+    second: Armoire_0_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -359,7 +368,7 @@ TextureImporter:
         width: 48
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,6 +376,48 @@ TextureImporter:
       bones: []
       spriteID: d4bbccbca48fcee439fe30ac8611d162
       internalID: 3287673483508046292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armoire_0_0
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce6e3602141ff84c94e0972ed16995e
+      internalID: -1259021002239648526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armoire_0_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b04e6839dd5e04fa55201c754275fe
+      internalID: -5542008510553642196
       vertices: []
       indices: 
       edges: []
