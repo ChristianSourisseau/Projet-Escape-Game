@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Interactable : MonoBehaviour
@@ -30,7 +31,6 @@ public class Interactable : MonoBehaviour
 
     public void ShowHint()
     {
-        Debug.Log("SHOWING HINT NEEDS TO BE IMPLEMENTED");
-        //TODO
+        gameObject.GetComponent<HintImage>().ShowHint();
     }
 }
