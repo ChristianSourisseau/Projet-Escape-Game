@@ -333,7 +333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2530037871092754026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5, y: -6.49, z: 0}
+  m_LocalPosition: {x: 2, y: 2, z: 1}
   m_LocalScale: {x: 0.08892057, y: 0.09629846, z: 1}
   m_Children:
   - {fileID: 2530037870060521589}
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   obstacle: {fileID: 0}
-  hint: {fileID: 11400000, guid: 6c6d0bc062e84ec47ae73cd4bbfb69e9, type: 2}
+  hint: {fileID: 11400000, guid: 5611cd8394dceb444b5e869699cffc02, type: 2}
 --- !u!114 &2530037871092754025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,6 +369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   im: {fileID: 2530037870331010362}
   exit: {fileID: 2530037869262498134}
+  r: {fileID: 0}
 --- !u!212 &2530037871092754023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -405,7 +406,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: b160fc41c8c2b3e4d91b3e86028ea622, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

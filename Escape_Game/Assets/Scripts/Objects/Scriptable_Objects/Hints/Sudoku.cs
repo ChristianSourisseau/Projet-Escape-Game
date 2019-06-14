@@ -8,7 +8,7 @@ using UnityEngine;
 public class Sudoku : Hint
 
 {
-    public override bool verifCode(int one, int two, int three, int four, int m)
+    public override bool verifCode(int one, int two, int three, int four)
     {
         return (one == Prem && two == Deux && three == Trois && four == Quatr);
     }

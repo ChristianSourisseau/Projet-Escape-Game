@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25392dd38dceb87429845bff4daa088a, type: 3}
+  m_Name: B 8
+  m_EditorClassIdentifier: 
+  description: an object
+  name: Object
+  icon: {fileID: 21300000, guid: b160fc41c8c2b3e4d91b3e86028ea622, type: 3}
+  Prem: 0
+  Deux: 0
+  Trois: 0
+  Quatr: 0
+  sprite: {fileID: 21300000, guid: 298d7868820c1a943bda0937985325b4, type: 3}
+  starPos: 2
+  sunPos: 1
+  moonPos: 3

@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3b73413177eb54baf6b94314492a75, type: 3}
   m_Name: Dessin
   m_EditorClassIdentifier: 
-  description: Dessin
+  description: "Un coloriage simple, sans doute de la main d'un enfant : c'est une
+    maison, un arbre \xE0 6 pommes,3 bosquets,7 poissons dans une mare,5 \xE9toiles
+    dans le ciel,et rien d'autre de tr\xE8s important."
   name: Dessin
   icon: {fileID: 21300000, guid: b160fc41c8c2b3e4d91b3e86028ea622, type: 3}
-  picture: {fileID: 0}
+  Prem: 6
+  Deux: 3
+  Trois: 7
+  Quatr: 5
+  sprite: {fileID: 21300000, guid: 308d9d1de7a69454b82ab17e0bf4845f, type: 3}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f00b3c6d34e44642ac6307678f4c540, type: 3}
+  m_Name: Sudoku7584
+  m_EditorClassIdentifier: 
+  description: "Un simple sudoku. Quelqu'un a colori\xE9 dans l'emplacement de chiffres
+    manquant."
+  name: Sudoku
+  icon: {fileID: 21300000, guid: b160fc41c8c2b3e4d91b3e86028ea622, type: 3}
+  Prem: 7
+  Deux: 5
+  Trois: 8
+  Quatr: 4
+  sprite: {fileID: 21300000, guid: 39e6166a481fe8f478ea5aabe913939c, type: 3}
