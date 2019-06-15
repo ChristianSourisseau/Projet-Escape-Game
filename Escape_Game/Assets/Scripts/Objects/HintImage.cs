@@ -36,7 +36,7 @@ public class HintImage : MonoBehaviour
         //update sprite
         im.sprite = h.GetSprite();
 
-        playercontrol = GameObject.FindGameObjectWithTag("Player").GetComponent<Move>();
+       playercontrol = GameObject.FindGameObjectWithTag("Player").GetComponent<Move>();
 
         im.enabled = false;
         exit.SetActive(false);

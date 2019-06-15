@@ -24,6 +24,7 @@ public class Riddle : Hint
         return h;
     }
 
+   
     public override void initialise()
     {
         name = "DXXXX";

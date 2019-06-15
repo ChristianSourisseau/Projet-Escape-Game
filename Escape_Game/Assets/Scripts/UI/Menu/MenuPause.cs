@@ -8,9 +8,13 @@ using UnityEngine.SceneManagement;
 public class MenuPause : MonoBehaviour
 {
     public static bool GameIsPaused = false;
+    public static bool affichCodeEnter = false;
+    public static bool canvashinti = false;
+
 
     public GameObject pauseMenuUI;
-
+    public GameObject codeEnter;
+    public GameObject canvashint;
 
     void Start()
     {
@@ -19,7 +23,39 @@ public class MenuPause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown("z"))
+        {
+            if (canvashinti)
+            {
+                canvashint.SetActive(false);
+                canvashinti = false;
+            }
+            else
+            {
+                canvashint.SetActive(true);
+                canvashinti = true;
+            }
+        }
+
+
+
+        if (Input.GetKeyDown("a"))
+        {
+            if (affichCodeEnter)
+            {
+                codeEnter.SetActive(false);
+                affichCodeEnter = false;
+            }
+            else
+            {
+                codeEnter.SetActive(true);
+                affichCodeEnter = true;
+            }
+        }
+
+
+
+            if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameIsPaused)
             {

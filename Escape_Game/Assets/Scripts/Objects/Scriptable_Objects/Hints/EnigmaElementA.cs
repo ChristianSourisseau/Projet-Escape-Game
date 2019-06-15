@@ -12,6 +12,8 @@ public class EnigmaElementA : Hint
     [SerializeField]
     private int moon;
 
+
+
     public override bool verifCode(int one, int two, int three, int four)
     {
         return false;
