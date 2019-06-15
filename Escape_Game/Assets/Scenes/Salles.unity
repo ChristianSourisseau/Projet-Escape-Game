@@ -964,6 +964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bl:
   - {fileID: 8945195119194034399, guid: d561e65cd68a31947965b807a3f88744, type: 3}
+  - {fileID: 7087488601144463678, guid: 37b71003f6042884d8605a662ed43741, type: 3}
   bm:
   - {fileID: 2775825043354733951, guid: d3528cd04278e2049be6e19510577931, type: 3}
   br:
@@ -974,6 +975,7 @@ MonoBehaviour:
   - {fileID: 8276170378109249678, guid: 6430665e2e9e92f4e8e00932bded7e2f, type: 3}
   mr:
   - {fileID: 481022805683454416, guid: f75ef1f578126d049bc438f2dfaeecff, type: 3}
+  - {fileID: 7929659048834990217, guid: 0eba53ca0122d324981917c2cfa1a0fe, type: 3}
   tl:
   - {fileID: 4177128387941757810, guid: ad1c7fc9a0ba16840a689b7777c84510, type: 3}
   tm:
@@ -1075,6 +1077,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 127403689}
     m_Modifications:
+    - target: {fileID: 5405902453307085414, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
+        type: 3}
+      propertyPath: m_Name
+      value: textbox
+      objectReference: {fileID: 0}
     - target: {fileID: 5405902453307085413, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1180,11 +1187,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5405902453307085414, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
-        type: 3}
-      propertyPath: m_Name
-      value: textbox
-      objectReference: {fileID: 0}
     - target: {fileID: 398818060984697243, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1224,6 +1226,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 127403689}
     m_Modifications:
+    - target: {fileID: 4307501932876546153, guid: 10010a7080425924d95e58abf6a18f3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Inventory
+      objectReference: {fileID: 0}
     - target: {fileID: 4307501932876546150, guid: 10010a7080425924d95e58abf6a18f3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1328,11 +1335,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307501932876546153, guid: 10010a7080425924d95e58abf6a18f3e,
-        type: 3}
-      propertyPath: m_Name
-      value: Inventory
       objectReference: {fileID: 0}
     - target: {fileID: 4307501934246230307, guid: 10010a7080425924d95e58abf6a18f3e,
         type: 3}
@@ -1594,7 +1596,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shelf:
-  - {fileID: 6607712095064784578, guid: 6c7e683ba041b2344a82a4bad6665bc7, type: 3}
+  - {fileID: 5378362565169271818, guid: b3273f426f1ec024db1e5ee01fd8b5e7, type: 3}
+  - {fileID: 3519592210874820737, guid: 6ab58319630293e4bb370df65871c3ad, type: 3}
+  - {fileID: 1688705918223400950, guid: 407dfc8437ddd474fab278af0c7ebcc7, type: 3}
   door:
   - {fileID: 4180709561159820521, guid: 0bb79602942a318498a5dd4944fb21e0, type: 3}
   key:
@@ -1603,25 +1607,40 @@ MonoBehaviour:
   - {fileID: 5568520757074684713, guid: e6befe667191ff84bb4d3845f66fa905, type: 3}
   - {fileID: 2002400538508724037, guid: bbcdf558ec318074eb7f3a4571d33125, type: 3}
   - {fileID: 8008606244784657727, guid: d81e777255c2257458bb6d134c803c20, type: 3}
-  number:
-  - {fileID: 5121167331537921474, guid: 528b49cd7e29e8246b0f582a15b0e49d, type: 3}
-  - {fileID: 2118263878386143790, guid: 6876cc5811cd2dd4fa87c94449279798, type: 3}
-  - {fileID: 366803909183411921, guid: d0bb1b104c3d8334a8cc82fb1bbc8bd5, type: 3}
-  - {fileID: 239326194036674284, guid: 812c8bde52aa435449e7346a25663aeb, type: 3}
-  - {fileID: 3003439910011146049, guid: ea99a4c70b24ada47a7146f247e3884c, type: 3}
-  - {fileID: 2945555011572889274, guid: 0125d9018f397014e8a89a67cd771961, type: 3}
-  - {fileID: 2101991567818909794, guid: de7cfcaf9b5370e4f8b9f2bd05ca6469, type: 3}
-  - {fileID: 6033266458142529940, guid: e8f1bd0a4f2cf4749b39d668eab067e3, type: 3}
-  - {fileID: 5938471750510076209, guid: 48efb4e02233a9e41b64dff8293f9042, type: 3}
+  rednumbers:
   - {fileID: 5302513809113447799, guid: 1869fc8635f17e549b7723129e407473, type: 3}
+  - {fileID: 5938471750510076209, guid: 48efb4e02233a9e41b64dff8293f9042, type: 3}
+  - {fileID: 6033266458142529940, guid: e8f1bd0a4f2cf4749b39d668eab067e3, type: 3}
+  - {fileID: 2101991567818909794, guid: de7cfcaf9b5370e4f8b9f2bd05ca6469, type: 3}
+  - {fileID: 2945555011572889274, guid: 0125d9018f397014e8a89a67cd771961, type: 3}
+  - {fileID: 3003439910011146049, guid: ea99a4c70b24ada47a7146f247e3884c, type: 3}
+  - {fileID: 239326194036674284, guid: 812c8bde52aa435449e7346a25663aeb, type: 3}
+  - {fileID: 366803909183411921, guid: d0bb1b104c3d8334a8cc82fb1bbc8bd5, type: 3}
+  - {fileID: 2118263878386143790, guid: 6876cc5811cd2dd4fa87c94449279798, type: 3}
+  - {fileID: 5121167331537921474, guid: 528b49cd7e29e8246b0f582a15b0e49d, type: 3}
+  whitenumbers:
+  - {fileID: 288917708243414073, guid: fed578fd05fb29641b123edcd6d4764b, type: 3}
+  - {fileID: 2668325358507131799, guid: bfe1ae4293fbf874f9b4af42a99c08d9, type: 3}
+  - {fileID: 193365042195386888, guid: 5375165ff5af16b47bf7417fc87ae10b, type: 3}
+  - {fileID: 7474266281790337537, guid: 358c6cd03b2e1bc47b13909053db21ec, type: 3}
+  - {fileID: 8882321023211326340, guid: 87e2d152a0d0b4843b9d02ecdf41e5fa, type: 3}
+  - {fileID: 449985077705144431, guid: b7d58b37356031c4e85864978182d2ce, type: 3}
+  - {fileID: 5723727429673159699, guid: 94da4f2d31672a640a5705ee83064c25, type: 3}
+  - {fileID: 1807359367934889677, guid: 60e1e4fa20c5d1a4297563feb88f4b31, type: 3}
+  - {fileID: 1783138962972513084, guid: 1c7d6bf4b0f874d4ab83c8e483dcbf46, type: 3}
+  - {fileID: 825413466943829803, guid: 1fbc92c1c8d7a424380526050846d0e7, type: 3}
   sign:
   - {fileID: 9093145741380910354, guid: 1f166a3c377f0904ebe2ac1ee6ea5638, type: 3}
+  - {fileID: 1803164443694150231, guid: 72aa9966fd2dbe8418f4d2737d53d074, type: 3}
+  board:
+  - {fileID: 7495046875486919413, guid: d9e81b57d89e82f42be22264c27e5eb2, type: 3}
   statue:
   - {fileID: 8002402111072871404, guid: 3a61f6329aceff1428f55dca0fcf50cf, type: 3}
   - {fileID: 7852311349564800168, guid: b10b1194be941594f9ceafac85116262, type: 3}
   - {fileID: 2105990760488769274, guid: 987bd86a9be754149a3b75bdeecc0e7c, type: 3}
   shelfdoor: []
   keyplant: []
+  whitenumber: 0
 --- !u!1 &1816078387 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1639032862746540397, guid: 8d77adb3bcfb36544a7cb0095098c3a6,

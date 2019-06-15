@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4854656362398363249}
   - component: {fileID: 2459619029964118577}
+  - component: {fileID: -3322334804901127655}
   m_Layer: 0
   m_Name: red8
   m_TagString: Untagged
@@ -79,3 +80,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-3322334804901127655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118263878386143790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5df0e4df96062c54a8eaeb90999fbfdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}
+  obstacle: {fileID: 0}
+  hint: {fileID: 11400000, guid: 2c440d058b21a0d459d202b7853a45e8, type: 2}

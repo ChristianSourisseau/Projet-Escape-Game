@@ -27,6 +27,10 @@ public class PlayerInteract : MonoBehaviour {
                     {
                         curIntObjScript.ShowHint();
                     }
+					else if (curIntObjScript.obstacle != null)
+                    {
+                        curIntObjScript.interactObstacle();
+                    }
             }
         }
     }

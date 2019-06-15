@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd37b8f0f06aec48b71143106517bcc, type: 3}
+  m_Name: Tableau
+  m_EditorClassIdentifier: 
+  description: an object
+  name: Object
+  icon: {fileID: 0}
+  paintednumber: {fileID: 0}
+  doorToOpen: {fileID: 0}
+  numbers:
+  - {fileID: 288917708243414073, guid: fed578fd05fb29641b123edcd6d4764b, type: 3}
+  - {fileID: 2668325358507131799, guid: bfe1ae4293fbf874f9b4af42a99c08d9, type: 3}
+  - {fileID: 193365042195386888, guid: 5375165ff5af16b47bf7417fc87ae10b, type: 3}
+  - {fileID: 7474266281790337537, guid: 358c6cd03b2e1bc47b13909053db21ec, type: 3}
+  - {fileID: 8882321023211326340, guid: 87e2d152a0d0b4843b9d02ecdf41e5fa, type: 3}
+  - {fileID: 449985077705144431, guid: b7d58b37356031c4e85864978182d2ce, type: 3}
+  - {fileID: 5723727429673159699, guid: 94da4f2d31672a640a5705ee83064c25, type: 3}
+  - {fileID: 1807359367934889677, guid: 60e1e4fa20c5d1a4297563feb88f4b31, type: 3}
+  - {fileID: 1783138962972513084, guid: 1c7d6bf4b0f874d4ab83c8e483dcbf46, type: 3}
+  - {fileID: 825413466943829803, guid: 1fbc92c1c8d7a424380526050846d0e7, type: 3}
+  correctvalue: 0

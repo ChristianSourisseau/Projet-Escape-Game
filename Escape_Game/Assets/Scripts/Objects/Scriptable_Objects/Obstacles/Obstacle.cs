@@ -5,7 +5,7 @@ using UnityEngine;
 
 abstract public class Obstacle : Objet
 {
-    public List<Objet> under = null;
-    public List<Objet> inside = null;
-    public List<Objet> ontop = null;
+    public virtual void DoSomething() {
+    	//method to override
+    }
 }

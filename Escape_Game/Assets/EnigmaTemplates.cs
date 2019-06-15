@@ -11,10 +11,17 @@ public class EnigmaTemplates : MonoBehaviour
 	public GameObject[] key;
 	public GameObject[] plant;
 	
-	public GameObject[] number;
+	public GameObject[] rednumbers;
+	public GameObject[] whitenumbers;
+
+	
 	public GameObject[] sign;
+	public GameObject[] board;
+
 	
 	public GameObject[] statue;
+	
+
 
 
 
@@ -30,6 +37,10 @@ public class EnigmaTemplates : MonoBehaviour
 	private int randpos;
 	private int rand1;
 	private int rand2;
+	
+	public int whitenumber;
+	public int rednumber;
+
 	
 	
 
@@ -98,46 +109,58 @@ public class EnigmaTemplates : MonoBehaviour
 		
 		//SpawnShelfDoor
 		randpos = Random.Range(0, shelfdoor.Count);
-		rand1 = Random.Range(0, number.Length);
+		rednumber = Random.Range(0, rednumbers.Length);
+		Instantiate(rednumbers[rednumber],shelfdoor[randpos].transform.position, Quaternion.identity); //Spawn rednumber
+		shelfdoor.Remove(shelfdoor[randpos]);
+
 		
-		Instantiate(number[rand1],shelfdoor[randpos].transform.position, Quaternion.identity);
-		int randnumberpos = randpos;
-		while(randnumberpos == randpos){
-			randpos = Random.Range(0, shelfdoor.Count);
-		}
-		
+		randpos = Random.Range(0, shelfdoor.Count);
 		rand1 = Random.Range(0, door.Length);
-		Instantiate(door[rand1],shelfdoor[randpos].transform.position, Quaternion.identity);
+		Instantiate(door[rand1],shelfdoor[randpos].transform.position, Quaternion.identity); //Spawn door
+		shelfdoor.Remove(shelfdoor[randpos]);
+
 
 
 		for(int i = 0; i < shelfdoor.Count; i++){
-			if( i != randpos && i != randnumberpos){
-				
-				rand2 = Random.Range(0, shelf.Length);
-				
-				if(Random.Range(0, 2) == 1){
-					Instantiate(shelf[rand2],shelfdoor[i].transform.position, Quaternion.identity);
-				}
+		
+			rand1 = Random.Range(0, shelf.Length);
+			
+			if(Random.Range(0, 2) == 1){
+				Instantiate(shelf[rand1],shelfdoor[i].transform.position, Quaternion.identity); //Spawn shelf
 			}
+			
 
 		}
 		
 		
-		//SpawnKeyPlant()
+		//SpawnKeyPlant
 		randpos = Random.Range(0, keyplant.Count);
-		rand1 = Random.Range(0, sign.Length);
+		Instantiate(sign[0],keyplant[randpos].transform.position, Quaternion.identity); //Spawn sign +
+		keyplant.Remove(keyplant[randpos]);
 
-		Instantiate(sign[rand1],keyplant[randpos].transform.position, Quaternion.identity);
+		randpos = Random.Range(0, keyplant.Count);
+		Instantiate(sign[1],keyplant[randpos].transform.position, Quaternion.identity); //Spawn sign -
+		keyplant.Remove(keyplant[randpos]);
+		
+		randpos = Random.Range(0, keyplant.Count);
+		Instantiate(board[0],keyplant[randpos].transform.position, Quaternion.identity); //Spawn board
+		
+		whitenumber = Random.Range(0, whitenumbers.Length);
+		Instantiate(whitenumbers[whitenumber],keyplant[randpos].transform.position, Quaternion.identity); //Spawn whitenumber
+		keyplant.Remove(keyplant[randpos]);
+
+
+
+		
 
 		for(int i = 0; i < keyplant.Count; i++){
-			if( i != randpos){
-				
-				rand2 = Random.Range(0, statue.Length);
-				
-				if(Random.Range(0, 2) == 1){
-					Instantiate(statue[rand2],keyplant[i].transform.position, Quaternion.identity);
-				}
+		
+			randpos = Random.Range(0, statue.Length);
+			
+			if(Random.Range(0, 2) == 1){
+				Instantiate(statue[randpos],keyplant[i].transform.position, Quaternion.identity); //Spawn statue
 			}
+			
 
 		}
 		

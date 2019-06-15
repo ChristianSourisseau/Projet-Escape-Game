@@ -33,4 +33,9 @@ public class Interactable : MonoBehaviour
     {
         gameObject.GetComponent<HintImage>().ShowHint();
     }
+	
+	public void interactObstacle()
+    {
+        obstacle.DoSomething();
+    }
 }
