@@ -21,6 +21,8 @@ public class RoomSpawner : MonoBehaviour
 	public bool spawned = false;
 
 	public float waitTime = 4f;
+	
+	private int rand;
 
 	void Start(){
 		Destroy(gameObject, waitTime);
@@ -32,23 +34,32 @@ public class RoomSpawner : MonoBehaviour
 	void Spawn(){
 		if(spawned == false){
 			if(openingDirection == 1){
-				Instantiate(templates.bl[0], transform.position, Quaternion.identity);
+				rand = Random.Range(0, templates.bl.Length);
+				Instantiate(templates.bl[rand], transform.position, Quaternion.identity);
 			} else if(openingDirection == 2){
-				Instantiate(templates.bm[0], transform.position, Quaternion.identity);
+				rand = Random.Range(0, templates.bm.Length);
+				Instantiate(templates.bm[rand], transform.position, Quaternion.identity);
 			} else if(openingDirection == 3){
-				Instantiate(templates.br[0], transform.position, Quaternion.identity);
+				rand = Random.Range(0, templates.br.Length);
+				Instantiate(templates.br[rand], transform.position, Quaternion.identity);
 			} else if(openingDirection == 4){
-				Instantiate(templates.mr[0], transform.position, Quaternion.identity);
+				rand = Random.Range(0, templates.mr.Length);
+				Instantiate(templates.mr[rand], transform.position, Quaternion.identity);
 			} else if(openingDirection == 5){
-				Instantiate(templates.mm[0], transform.position, Quaternion.identity);
+				rand = Random.Range(0, templates.mm.Length);
+				Instantiate(templates.mm[rand], transform.position, Quaternion.identity);
 			} else if(openingDirection == 6){
-				Instantiate(templates.tl[0], transform.position, Quaternion.identity);
+				rand = Random.Range(0, templates.tl.Length);
+				Instantiate(templates.tl[rand], transform.position, Quaternion.identity);
 			} else if(openingDirection == 7){
-				Instantiate(templates.tm[0], transform.position, Quaternion.identity);
+				rand = Random.Range(0, templates.tm.Length);
+				Instantiate(templates.tm[rand], transform.position, Quaternion.identity);
 			} else if(openingDirection == 8){
-				Instantiate(templates.tr[0], transform.position, Quaternion.identity);
+				rand = Random.Range(0, templates.tr.Length);
+				Instantiate(templates.tr[rand], transform.position, Quaternion.identity);
 			} else if(openingDirection == 9){
-				Instantiate(templates.ml[0], transform.position, Quaternion.identity);
+				rand = Random.Range(0, templates.ml.Length);
+				Instantiate(templates.ml[rand], transform.position, Quaternion.identity);
 			} 			
 			spawned = true;
 		}

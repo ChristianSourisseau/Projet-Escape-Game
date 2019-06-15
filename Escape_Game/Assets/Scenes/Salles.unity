@@ -1075,11 +1075,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 127403689}
     m_Modifications:
-    - target: {fileID: 5405902453307085414, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
-        type: 3}
-      propertyPath: m_Name
-      value: textbox
-      objectReference: {fileID: 0}
     - target: {fileID: 5405902453307085413, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1185,6 +1180,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5405902453307085414, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
+        type: 3}
+      propertyPath: m_Name
+      value: textbox
+      objectReference: {fileID: 0}
     - target: {fileID: 398818060984697243, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1224,11 +1224,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 127403689}
     m_Modifications:
-    - target: {fileID: 4307501932876546153, guid: 10010a7080425924d95e58abf6a18f3e,
-        type: 3}
-      propertyPath: m_Name
-      value: Inventory
-      objectReference: {fileID: 0}
     - target: {fileID: 4307501932876546150, guid: 10010a7080425924d95e58abf6a18f3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1333,6 +1328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307501932876546153, guid: 10010a7080425924d95e58abf6a18f3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Inventory
       objectReference: {fileID: 0}
     - target: {fileID: 4307501934246230307, guid: 10010a7080425924d95e58abf6a18f3e,
         type: 3}
@@ -1604,7 +1604,6 @@ MonoBehaviour:
   - {fileID: 2002400538508724037, guid: bbcdf558ec318074eb7f3a4571d33125, type: 3}
   - {fileID: 8008606244784657727, guid: d81e777255c2257458bb6d134c803c20, type: 3}
   number:
-  - {fileID: 0}
   - {fileID: 5121167331537921474, guid: 528b49cd7e29e8246b0f582a15b0e49d, type: 3}
   - {fileID: 2118263878386143790, guid: 6876cc5811cd2dd4fa87c94449279798, type: 3}
   - {fileID: 366803909183411921, guid: d0bb1b104c3d8334a8cc82fb1bbc8bd5, type: 3}
