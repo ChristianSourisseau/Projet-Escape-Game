@@ -375,7 +375,7 @@ PrefabInstance:
     - target: {fileID: 168785479755941963, guid: 58514da36d9e8474b83f50abe35e313c,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 168785479755941952, guid: 58514da36d9e8474b83f50abe35e313c,
         type: 3}
@@ -1641,6 +1641,7 @@ MonoBehaviour:
   shelfdoor: []
   keyplant: []
   whitenumber: 0
+  rednumber: 0
 --- !u!1 &1816078387 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1639032862746540397, guid: 8d77adb3bcfb36544a7cb0095098c3a6,

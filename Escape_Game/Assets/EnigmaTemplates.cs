@@ -31,13 +31,16 @@ public class EnigmaTemplates : MonoBehaviour
 	public List<GameObject> keyplant;
 	
 	
-	private int randsce;
+	public int scena;
 	private int nrbsce;
 	
 	private int randpos;
 	private int rand1;
 	private int rand2;
 	
+	
+	public GameObject Owhitenumber;
+
 	public int whitenumber;
 	public int rednumber;
 
@@ -50,14 +53,14 @@ public class EnigmaTemplates : MonoBehaviour
 	void Start(){
 		
 		nrbsce = 2;
-		randsce = Random.Range(0, nrbsce);
-		Debug.Log(randsce);
+		scena = Random.Range(0, nrbsce);
+		Debug.Log(scena);
 		
-		if( randsce == 0){
+		if( scena == 0){
 			
 			Invoke("Scena1", 0.3f);
 		}
-		if( randsce == 1){
+		if( scena == 1){
 			
 			Invoke("Scena2", 0.3f);
 		}
@@ -146,7 +149,7 @@ public class EnigmaTemplates : MonoBehaviour
 		Instantiate(board[0],keyplant[randpos].transform.position, Quaternion.identity); //Spawn board
 		
 		whitenumber = Random.Range(0, whitenumbers.Length);
-		Instantiate(whitenumbers[whitenumber],keyplant[randpos].transform.position, Quaternion.identity); //Spawn whitenumber
+		Owhitenumber = Instantiate(whitenumbers[whitenumber],keyplant[randpos].transform.position, Quaternion.identity); //Spawn whitenumber
 		keyplant.Remove(keyplant[randpos]);
 
 
