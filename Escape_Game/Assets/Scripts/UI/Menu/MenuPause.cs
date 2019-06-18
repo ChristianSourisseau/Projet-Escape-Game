@@ -25,16 +25,20 @@ public class MenuPause : MonoBehaviour
     {
         if (Input.GetKeyDown("z"))
         {
-            if (canvashinti)
+            if (canvashint != null)
             {
-                canvashint.SetActive(false);
-                canvashinti = false;
+                if (canvashinti)
+                {
+                    canvashint.SetActive(false);
+                    canvashinti = false;
+                }
+                else
+                {
+                    canvashint.SetActive(true);
+                    canvashinti = true;
+                }
             }
-            else
-            {
-                canvashint.SetActive(true);
-                canvashinti = true;
-            }
+           
         }
 
 

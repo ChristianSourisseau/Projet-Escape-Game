@@ -5,10 +5,8 @@ using UnityEngine.UI;
 
 
 
-public class cadena : MonoBehaviour
+public class Cadena : MonoBehaviour
 {
-    public GameObject cadenas;
-
     public Image im1;
     public Image im2;
     public Image im3;
@@ -50,12 +48,16 @@ public class cadena : MonoBehaviour
     [SerializeField]
     protected Sprite sprite;
 
-    bool open;
+    bool isopen;
 
-    void start()
+    [SerializeField]
+    GameObject canvas;
+
+
+    void Start()
     {
-       
-        open = false;
+        Close();
+        isopen = false;
     }
 
 
@@ -65,8 +67,8 @@ public class cadena : MonoBehaviour
     {
         if (h.verifCode(Prem, Deux, Trois, Quatr))
         {
-            open = true;
-            close();
+            isopen = true;
+            Close();
         }
         else
         {
@@ -74,9 +76,14 @@ public class cadena : MonoBehaviour
         }
     }
 
-    public void close()
+    public void Close()
     {
-        cadenas.SetActive(false);
+        canvas.gameObject.SetActive(false);
+    }
+
+    public void Open()
+    {
+        canvas.gameObject.SetActive(true);
     }
 
     // fct pour cacher le cadena

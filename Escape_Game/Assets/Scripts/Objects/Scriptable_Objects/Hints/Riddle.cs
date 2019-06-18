@@ -21,6 +21,8 @@ public class Riddle : Hint
         Hint[] h = new Hint[2];
         h[0] = partA;
         h[1] = partB;
+        Debug.Log("tab[0]" + h[0].GetSprite().name);
+        Debug.Log("tab[1]" + h[1].GetSprite().name);
         return h;
     }
 

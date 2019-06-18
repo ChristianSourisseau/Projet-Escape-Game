@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dessin
       objectReference: {fileID: 0}
+    - target: {fileID: 6574754133208494317, guid: 6bdeb216492bad4478e3adbe9019bced,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6574754133208494306, guid: 6bdeb216492bad4478e3adbe9019bced,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -73,11 +78,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 413b69b7bb7f8ae4fbb69fd45f3e2c8f,
         type: 2}
-    - target: {fileID: 6574754133208494317, guid: 6bdeb216492bad4478e3adbe9019bced,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6574754132556963583, guid: 6bdeb216492bad4478e3adbe9019bced,
         type: 3}
       propertyPath: m_LocalPosition.z

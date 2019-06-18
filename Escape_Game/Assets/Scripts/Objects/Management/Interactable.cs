@@ -26,7 +26,7 @@ public class Interactable : MonoBehaviour
         {
             Inventory.instance.remove(item);
         }
-       SceneManager.LoadScene("scenarioFin001");
+        Debug.Log("DO SOMETHING WITH THE OBSTACLE THAT THE ITEM WAS USED ON");
     }
 
     public void ShowHint()
