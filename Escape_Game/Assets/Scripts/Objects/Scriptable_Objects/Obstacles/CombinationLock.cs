@@ -5,19 +5,23 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New combinationLock", menuName = "Objects/Obstacles/Cadena")]
 public class CombinationLock : Obstacle
 {
-    [SerializeField]
-    private GameObject cadena;
-
     public override void DoSomething()
     {
-        Cadena c = cadena.GetComponent<Cadena>();
-        if (c != null)
+        if (obj != null)
         {
-            c.Open();
+            Cadena cadena = obj.gameObject.GetComponent<Cadena>();
+            if (cadena != null)
+            {
+                cadena.Open();
+            }
+            else
+            {
+                Debug.Log("CombinationLock.cs : Cannot find Cadena.cs for Lock");
+            }
         }
         else
         {
-            Debug.Log("Cannot find instance of Cadena");
+            Debug.Log("CombinationLock.cs : Cannot find GameObject for Lock");
         }
     }
 }

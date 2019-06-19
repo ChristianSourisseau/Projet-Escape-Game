@@ -51,11 +51,16 @@ public class Cadena : MonoBehaviour
     bool isopen;
 
     [SerializeField]
-    GameObject canvas;
+    private GameObject canvas;
 
 
     void Start()
     {
+        Interactable I = gameObject.GetComponent<Interactable>();
+        if (I != null)
+        {
+            I.obstacle.Init(gameObject);
+        }
         Close();
         isopen = false;
     }
