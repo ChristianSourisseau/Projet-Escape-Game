@@ -43,12 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 305579982c45e9247984ebcad52f6ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBox: {fileID: 0}
-  theText: {fileID: 0}
-  textFile: {fileID: 0}
+  textBox: {fileID: 5405902453307085414, guid: fa65dd33e3a2ea140bc24d61adfd6c86, type: 3}
+  theText: {fileID: 2904243979404239882, guid: 92a944d899cdc7848b86d69c427295b1, type: 3}
+  description: 
   textLines: []
   currentLine: 0
   endAtLine: 0
   isActive: 1
-  stopPlayerMovement: 1
   player: {fileID: 0}

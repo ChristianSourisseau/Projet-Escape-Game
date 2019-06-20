@@ -1,5 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &3548241484922822691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6574754133208494304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52bdd507254c63945be450858772b152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theText: 
+  goTB: {fileID: 5786372325378586285, guid: e6f80b4b8293bd34885b2c53a5ec243d, type: 3}
+  requireButtonPress: 1
+  waitForPress: 0
+  destroyWhenActivated: 0
+--- !u!114 &8560352122459917504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6574754133208494304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3b6c3688e81114e93390cf7fb876db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  im: {fileID: 6574754132831570864}
+  exit: {fileID: 6574754133889646556}
+  r: {fileID: 0}
+  hi: {fileID: 0}
 --- !u!1001 &5902694677194961687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81,3 +114,27 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d843ac65520dc64eb532eb092336c2c, type: 3}
+--- !u!1 &6574754133208494304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 780439419108131831, guid: 8d843ac65520dc64eb532eb092336c2c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5902694677194961687}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6574754132831570864 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 780439419621374119, guid: 8d843ac65520dc64eb532eb092336c2c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5902694677194961687}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &6574754133889646556 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 780439418557074635, guid: 8d843ac65520dc64eb532eb092336c2c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5902694677194961687}
+  m_PrefabAsset: {fileID: 0}

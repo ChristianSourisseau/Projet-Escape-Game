@@ -8,89 +8,91 @@ public class TextboxManager : MonoBehaviour
   
     public GameObject textBox;
     public Text theText;
-    public TextAsset textFile;
+    public string onStartText = null;
     public string[] textLines;
     public int currentLine;
     public int endAtLine;
     public bool isActive;
-    public bool stopPlayerMovement;
-    public Move player;
+
+    public static Move player;
 
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        ActivateTextAtLine[] tab = FindObjectsOfType<ActivateTextAtLine>();
+        Interactable I = null;
+        foreach (ActivateTextAtLine a in tab)
+        {
+            I = a.gameObject.GetComponent<Interactable>();
+            if (I.hint != null)
+            {
+                a.theText = I.hint.description;
+            }
+            else if(I.obstacle != null) {
+                a.theText = I.obstacle.description;
+
+            }
+            else if (I.item != null) {
+                a.theText = I.item.name + "\n" + I.item.description;
+            }
+        }
+    }
 
     void Start()
     {
         player = FindObjectOfType<Move>();
 
-        if (textFile != null)
+        if (onStartText != null)
         {
-            textLines = (textFile.text.Split('\n'));
-        }
-
-        if(endAtLine == 0)
-        {
-            endAtLine = textLines.Length - 1;
-        }
-        if (isActive)
-        {
+            textLines = (onStartText.Split('\n'));
+            endAtLine = textLines.Length;
             EnableTextbox();
         }
-        else
-        {
-            DisableTextBox();
-        }
+        DisableTextBox();
     }
+
 
     void Update()
     {
-      
-        if (!isActive)
+        if (isActive)
         {
-            return;
-        }
-
-        theText.text = textLines[currentLine];
-    
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            
-           currentLine += 1;
-            
-            
-        }
-
-        if(currentLine > endAtLine)
-        {
-            DisableTextBox();
-            currentLine -= 1;
+            theText.text = textLines[currentLine];
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (currentLine == endAtLine)
+                {
+                    DisableTextBox();
+                    return;
+                }
+                    currentLine++;
+            }
         }
     }
 
+
     public void EnableTextbox()
     {
-        textBox.SetActive(true);
         isActive = true;
-
-        if (stopPlayerMovement)
+        textBox.SetActive(true);
+        if (player.isAllowedToMove)
         {
             player.isAllowedToMove = false;
         }
+        
     }
 
     public void DisableTextBox()
     {
-        textBox.SetActive(false);
         isActive = false;
-
+        textBox.SetActive(false);
+        currentLine = 0;
         player.isAllowedToMove = true;
     }
 
-    public void ReloadScript(TextAsset theText)
+    public void ReloadScript(string text)
     {
-        if(theText != null)
-        {
-            textLines = new string[1];
-            textLines = (theText.text.Split('\n'));
-        }
+        textLines = (text.Split('\n'));
+        endAtLine = textLines.Length -1;
     }
 }

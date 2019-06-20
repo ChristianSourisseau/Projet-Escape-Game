@@ -123,8 +123,19 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: HideHint
       objectReference: {fileID: 0}
+    - target: {fileID: 6574754132556963577, guid: 6bdeb216492bad4478e3adbe9019bced,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1900
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574754132556963577, guid: 6bdeb216492bad4478e3adbe9019bced,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6574754133208494307, guid: 6bdeb216492bad4478e3adbe9019bced, type: 3}
+    - {fileID: 8560352122459917504, guid: 6bdeb216492bad4478e3adbe9019bced, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6bdeb216492bad4478e3adbe9019bced, type: 3}
 --- !u!1 &4012939535417722670 stripped
 GameObject:
