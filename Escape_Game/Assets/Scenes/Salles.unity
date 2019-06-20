@@ -1082,6 +1082,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: textbox
       objectReference: {fileID: 0}
+    - target: {fileID: 5405902453307085414, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5405902453307085413, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1150,12 +1155,12 @@ PrefabInstance:
     - target: {fileID: 5405902453307085413, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -642
       objectReference: {fileID: 0}
     - target: {fileID: 5405902453307085413, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -130.22621
       objectReference: {fileID: 0}
     - target: {fileID: 5405902453307085413, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
@@ -1190,32 +1195,32 @@ PrefabInstance:
     - target: {fileID: 398818060984697243, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 398818060984697243, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 398818060984697243, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 49.5
       objectReference: {fileID: 0}
     - target: {fileID: 398818060984697243, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -28
       objectReference: {fileID: 0}
     - target: {fileID: 398818060984697243, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 398818060984697243, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa65dd33e3a2ea140bc24d61adfd6c86, type: 3}
@@ -1640,6 +1645,8 @@ MonoBehaviour:
   - {fileID: 2105990760488769274, guid: 987bd86a9be754149a3b75bdeecc0e7c, type: 3}
   shelfdoor: []
   keyplant: []
+  scena: 0
+  Owhitenumber: {fileID: 0}
   whitenumber: 0
   rednumber: 0
 --- !u!1 &1816078387 stripped

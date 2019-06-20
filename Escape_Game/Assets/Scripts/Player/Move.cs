@@ -142,15 +142,15 @@ public class Move : MonoBehaviour
     }
      
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        canMove = false;       
-    }
+    // private void OnTriggerStay2D(Collider2D collision)
+    // {
+        // canMove = false;       
+    // }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        canMove = true;
-    }
+    // private void OnTriggerExit2D(Collider2D collision)
+    // {
+        // canMove = true;
+    // }
     
     public IEnumerator Moves(Transform entity, string dir)
     {
