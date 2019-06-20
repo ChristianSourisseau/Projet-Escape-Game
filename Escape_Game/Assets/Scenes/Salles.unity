@@ -432,11 +432,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 168785479755941959, guid: 58514da36d9e8474b83f50abe35e313c,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6427557950774397695, guid: 58514da36d9e8474b83f50abe35e313c,
         type: 3}
       propertyPath: m_Controller
@@ -759,7 +754,7 @@ GameObject:
   - component: {fileID: 642699867}
   m_Layer: 0
   m_Name: Camera Jean
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1082,6 +1077,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: textbox
       objectReference: {fileID: 0}
+    - target: {fileID: 5405902453307085414, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5405902453307085413, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1216,6 +1216,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874577470176846507, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405902453307085412, guid: fa65dd33e3a2ea140bc24d61adfd6c86,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa65dd33e3a2ea140bc24d61adfd6c86, type: 3}
@@ -1595,18 +1605,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 834d565a9ee0bb2469b57f570d823da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shelfdoor: []
+  keyplant: []
+  door:
+  - {fileID: 4180709561159820521, guid: 0bb79602942a318498a5dd4944fb21e0, type: 3}
   shelf:
   - {fileID: 5378362565169271818, guid: b3273f426f1ec024db1e5ee01fd8b5e7, type: 3}
   - {fileID: 3519592210874820737, guid: 6ab58319630293e4bb370df65871c3ad, type: 3}
   - {fileID: 1688705918223400950, guid: 407dfc8437ddd474fab278af0c7ebcc7, type: 3}
-  door:
-  - {fileID: 4180709561159820521, guid: 0bb79602942a318498a5dd4944fb21e0, type: 3}
+  scena: 0
   key:
   - {fileID: 5384915725484470774, guid: a0630262247ad564981a41f49bd25b21, type: 3}
   plant:
   - {fileID: 5568520757074684713, guid: e6befe667191ff84bb4d3845f66fa905, type: 3}
   - {fileID: 2002400538508724037, guid: bbcdf558ec318074eb7f3a4571d33125, type: 3}
   - {fileID: 8008606244784657727, guid: d81e777255c2257458bb6d134c803c20, type: 3}
+  statue:
+  - {fileID: 8002402111072871404, guid: 3a61f6329aceff1428f55dca0fcf50cf, type: 3}
+  - {fileID: 7852311349564800168, guid: b10b1194be941594f9ceafac85116262, type: 3}
+  - {fileID: 2105990760488769274, guid: 987bd86a9be754149a3b75bdeecc0e7c, type: 3}
+  sign:
+  - {fileID: 9093145741380910354, guid: 1f166a3c377f0904ebe2ac1ee6ea5638, type: 3}
+  - {fileID: 1803164443694150231, guid: 72aa9966fd2dbe8418f4d2737d53d074, type: 3}
+  board:
+  - {fileID: 7495046875486919413, guid: d9e81b57d89e82f42be22264c27e5eb2, type: 3}
   rednumbers:
   - {fileID: 5302513809113447799, guid: 1869fc8635f17e549b7723129e407473, type: 3}
   - {fileID: 5938471750510076209, guid: 48efb4e02233a9e41b64dff8293f9042, type: 3}
@@ -1629,19 +1651,23 @@ MonoBehaviour:
   - {fileID: 1807359367934889677, guid: 60e1e4fa20c5d1a4297563feb88f4b31, type: 3}
   - {fileID: 1783138962972513084, guid: 1c7d6bf4b0f874d4ab83c8e483dcbf46, type: 3}
   - {fileID: 825413466943829803, guid: 1fbc92c1c8d7a424380526050846d0e7, type: 3}
-  sign:
-  - {fileID: 9093145741380910354, guid: 1f166a3c377f0904ebe2ac1ee6ea5638, type: 3}
-  - {fileID: 1803164443694150231, guid: 72aa9966fd2dbe8418f4d2737d53d074, type: 3}
-  board:
-  - {fileID: 7495046875486919413, guid: d9e81b57d89e82f42be22264c27e5eb2, type: 3}
-  statue:
-  - {fileID: 8002402111072871404, guid: 3a61f6329aceff1428f55dca0fcf50cf, type: 3}
-  - {fileID: 7852311349564800168, guid: b10b1194be941594f9ceafac85116262, type: 3}
-  - {fileID: 2105990760488769274, guid: 987bd86a9be754149a3b75bdeecc0e7c, type: 3}
-  shelfdoor: []
-  keyplant: []
+  Owhitenumber: {fileID: 0}
   whitenumber: 0
   rednumber: 0
+  pressure:
+  - {fileID: 8562858171396797867, guid: b3589c942ad14614d962f4199d2cc29c, type: 3}
+  cube:
+  - {fileID: 4378515200298950920, guid: b17c49765532e8b4998284aa0e6a9a9b, type: 3}
+  hospitaldecowall: []
+  hospitaldecoground:
+  - {fileID: 8876672958567026127, guid: 02e79fc6acb3d4f41b52535649d832f1, type: 3}
+  - {fileID: 7195770475596767770, guid: 8bb9770c883b70c4bb578bc6a5d163a1, type: 3}
+  - {fileID: 8158521809056388266, guid: dcb1df209bd68144289ff0123cd2f830, type: 3}
+  - {fileID: 5378264523445917716, guid: 5414d427728d2ea48bff8637da3c2491, type: 3}
+  - {fileID: 8657465164786934218, guid: d4bfff37fe3d5f04b9f379ff4a5a5ff8, type: 3}
+  - {fileID: 6754185977169597122, guid: 27ebeaf091f0bf64cafea7089bdb49fb, type: 3}
+  - {fileID: 6103495516141352836, guid: d41eb20e7bc877246bf4f8a0f4d9ea23, type: 3}
+  - {fileID: 2440785439207680024, guid: 2078d61c5bb7d5f49a87aa335bb5665e, type: 3}
 --- !u!1 &1816078387 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1639032862746540397, guid: 8d77adb3bcfb36544a7cb0095098c3a6,

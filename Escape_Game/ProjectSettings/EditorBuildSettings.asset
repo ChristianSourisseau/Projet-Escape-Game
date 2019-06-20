@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: 4302d2f94eb4ab947a54c15238e4d519
   - enabled: 0
@@ -14,16 +14,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/room002.unity
     guid: 60535df5a9244d540b89b10156ee7d33
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Prison.unity
     guid: 7cea5ac0b395927459adc043e6616e52
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Credits.unity
     guid: 3b4b2413c6b982d4eb4c948b8f88cd00
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/scenario.unity
     guid: 3c29ef5cb41cee146a558bd1373f67eb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/scenarioFin001.unity
     guid: 6b0a98ee4cd5aac4bb3f54b8bf7de3af
   - enabled: 1

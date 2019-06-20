@@ -26,7 +26,7 @@ public class Interactable : MonoBehaviour
         {
             Inventory.instance.remove(item);
         }
-       SceneManager.LoadScene("scenarioFin001");
+       SceneManager.LoadScene("Scenes/Salles");
     }
 
     public void ShowHint()

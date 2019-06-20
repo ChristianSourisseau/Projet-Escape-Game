@@ -37,7 +37,6 @@ public class PlayerInteract : MonoBehaviour {
     //If collision with Interactable object sets current Interactable Object 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-            Debug.Log(collision.name);
             curIntObj = collision.gameObject;
             curIntObjScript = curIntObj.GetComponent<Interactable>();
     }
