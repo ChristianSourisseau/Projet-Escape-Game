@@ -29,7 +29,7 @@ public class Inventory : MonoBehaviour
     public OnItemChanged onItemChangedCallback;
 
     [SerializeField]
-    private GameObject tooltip; 
+    private GameObject tooltip = null; 
 
     public List<Item> items = new List<Item>();
     public int space = 7;
@@ -65,15 +65,20 @@ public class Inventory : MonoBehaviour
     }
 
     public void ShowTooltip(Vector3 position, IDescribable description)
-    {
-        tooltip.SetActive(true);
-        tooltip.transform.position = position;
-        tooltip.GetComponentInChildren<Text>().text = description.GetDescription();
+    {	
+		if(tooltip != null){
+			tooltip.SetActive(true);
+			tooltip.transform.position = position;
+			tooltip.GetComponentInChildren<Text>().text = description.GetDescription();
+		}
+        
     }
 
     public void HideTooltip()
     {
-        tooltip.SetActive(false);
+		if(tooltip != null){
+			tooltip.SetActive(false);
+		}
     }
 
 }

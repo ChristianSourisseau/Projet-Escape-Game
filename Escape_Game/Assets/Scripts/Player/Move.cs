@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Move : MonoBehaviour
 {
 
@@ -10,11 +11,13 @@ public class Move : MonoBehaviour
     Vector3 startPos;
     Vector3 endPos;
     float t;
-
+    
     public Sprite northSprite;
     public Sprite eastSprite;
     public Sprite southSprite;
-    public Sprite westSprite;
+    public Sprite westSprite;    
+
+    public bool canMove;
 
     public float walkSpeed = 3f;
 
@@ -26,11 +29,11 @@ public class Move : MonoBehaviour
     {
         isAllowedToMove = true;
         anim = GetComponent<Animator>();
+        canMove = true;
     }
 
     void Update()
     {
-
         if (!isMoving && isAllowedToMove)
         {
             input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
@@ -45,9 +48,11 @@ public class Move : MonoBehaviour
                 if (input.x < 0)
                 {
                     currentDir = Direction.West;
-                    anim.SetBool("moveWest", true);
 
-                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(-0.5f, 0f);
+                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(-0.25f, 0f);
+                    gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.4f, 0.9f);
+
+                    anim.SetBool("moveWest", true);
 
                     anim.SetBool("moveNorth", false);
                     anim.SetBool("moveSouth", false);
@@ -56,9 +61,11 @@ public class Move : MonoBehaviour
                 if (input.x > 0)
                 {
                     currentDir = Direction.East;
-                    anim.SetBool("moveEast", true);
 
-                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0.5f, 0f);
+                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0.25f, 0f);
+                    gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.4f, 0.9f);
+
+                    anim.SetBool("moveEast", true);
 
                     anim.SetBool("moveNorth", false);
                     anim.SetBool("moveSouth", false);
@@ -67,9 +74,11 @@ public class Move : MonoBehaviour
                 if (input.y < 0)
                 {
                     currentDir = Direction.South;
-                    anim.SetBool("moveSouth", true);
 
-                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0f, -0.5f);
+                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0f, -0.25f);
+                    gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0.9f, 1.4f);
+
+                    anim.SetBool("moveSouth", true);
 
                     anim.SetBool("moveNorth", false);
                     anim.SetBool("moveWest", false);
@@ -78,14 +87,18 @@ public class Move : MonoBehaviour
                 if (input.y > 0)
                 {
                     currentDir = Direction.North;
-                    anim.SetBool("moveNorth", true);
 
-                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0f, 0.5f);
+                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0f, 0.25f);
+                    gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0.9f, 1.4f);
+
+                    anim.SetBool("moveNorth", true);
 
                     anim.SetBool("moveSouth", false);
                     anim.SetBool("moveWest", false);
                     anim.SetBool("moveEast", false);
                 }
+
+
 
                 switch (currentDir)
                 {
@@ -102,8 +115,14 @@ public class Move : MonoBehaviour
                         gameObject.GetComponent<SpriteRenderer>().sprite = westSprite;
                         break;
                 }
-                anim.SetBool("isMoving", true);
-                StartCoroutine(Moves(transform, ""));
+
+                if (Input.GetKeyDown(KeyCode.LeftControl)) { canMove = true; }
+                if (canMove)
+                {
+                    anim.SetBool("isMoving", true);
+                    StartCoroutine(Moves(transform, ""));
+                }
+
 
             }
             else
@@ -119,10 +138,20 @@ public class Move : MonoBehaviour
                 anim.SetBool("moveEast", false);
             }
 
-        }        
-
+        } 
     }
+     
 
+    // private void OnTriggerStay2D(Collider2D collision)
+    // {
+        // canMove = false;       
+    // }
+
+    // private void OnTriggerExit2D(Collider2D collision)
+    // {
+        // canMove = true;
+    // }
+    
     public IEnumerator Moves(Transform entity, string dir)
     {
         isMoving = true;
