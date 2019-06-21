@@ -12,6 +12,7 @@ TagManager:
   - Cube
   - sprite1
   - sprite2
+  - Wall
   layers:
   - Default
   - TransparentFX
