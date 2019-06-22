@@ -6,7 +6,6 @@ public class ActivateTextAtLine : MonoBehaviour
 {
     public string theText;
 
-    public GameObject goTB;
     private TextboxManager theTextBox;
 
     public bool requireButtonPress = true;
@@ -14,11 +13,12 @@ public class ActivateTextAtLine : MonoBehaviour
 
     public bool destroyWhenActivated = false;
 
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
-        theTextBox = goTB.GetComponent<TextboxManager>();
+       theTextBox =  TextboxManager.instance;
     }
+
 
     // Update is called once per frame
     void Update()

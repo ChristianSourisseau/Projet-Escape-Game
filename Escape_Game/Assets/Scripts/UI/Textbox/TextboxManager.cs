@@ -8,6 +8,8 @@ public class TextboxManager : MonoBehaviour
   
     public GameObject textBox;
     public Text theText;
+
+
     public string onStartText = null;
     public string[] textLines;
     public int currentLine;
@@ -16,11 +18,23 @@ public class TextboxManager : MonoBehaviour
 
     public static Move player;
 
+    public static TextboxManager instance;
+
+
     // Start is called before the first frame update
 
     private void Awake()
     {
-        ActivateTextAtLine[] tab = FindObjectsOfType<ActivateTextAtLine>();
+        if (instance != null)
+        {
+            Debug.LogWarning("More than one Instance of TextBoxManager found");
+            return;
+        }
+
+        instance = this;
+
+
+    ActivateTextAtLine[] tab = FindObjectsOfType<ActivateTextAtLine>();
         Interactable I = null;
         foreach (ActivateTextAtLine a in tab)
         {

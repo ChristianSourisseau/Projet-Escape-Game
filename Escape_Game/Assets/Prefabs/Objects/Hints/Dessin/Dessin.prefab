@@ -7,15 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6574754132831570864, guid: 6bdeb216492bad4478e3adbe9019bced,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 308d9d1de7a69454b82ab17e0bf4845f,
+        type: 3}
     - target: {fileID: 6574754133208494304, guid: 6bdeb216492bad4478e3adbe9019bced,
         type: 3}
       propertyPath: m_Name
       value: Dessin
-      objectReference: {fileID: 0}
-    - target: {fileID: 6574754133208494317, guid: 6bdeb216492bad4478e3adbe9019bced,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6574754133208494306, guid: 6bdeb216492bad4478e3adbe9019bced,
         type: 3}
@@ -83,11 +84,20 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6574754132831570864, guid: 6bdeb216492bad4478e3adbe9019bced,
+    - target: {fileID: 6574754133208494317, guid: 6bdeb216492bad4478e3adbe9019bced,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 308d9d1de7a69454b82ab17e0bf4845f,
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574754133208494317, guid: 6bdeb216492bad4478e3adbe9019bced,
         type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1530567705
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574754133208494317, guid: 6bdeb216492bad4478e3adbe9019bced,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bdeb216492bad4478e3adbe9019bced, type: 3}

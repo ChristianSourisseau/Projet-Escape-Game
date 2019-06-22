@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 370f74ab5ef211c40aa9ef49fea9c6b8, type: 3}
   m_Name: A 2
   m_EditorClassIdentifier: 
-  description: an object
+  description: Un bou de papier avec des symboles
   name: Object
   icon: {fileID: 21300000, guid: b160fc41c8c2b3e4d91b3e86028ea622, type: 3}
   Prem: 0

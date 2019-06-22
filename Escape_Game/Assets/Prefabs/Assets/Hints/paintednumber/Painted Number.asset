@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Painted Number
   m_EditorClassIdentifier: 
   description: Un nombre peint sur le mur
-  name: number
+  name: Un nombre
   icon: {fileID: 0}
   Prem: 0
   Deux: 0
