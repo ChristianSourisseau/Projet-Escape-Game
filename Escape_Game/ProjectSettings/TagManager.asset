@@ -13,6 +13,7 @@ TagManager:
   - sprite1
   - sprite2
   - Wall
+  - RoomCounter
   layers:
   - Default
   - TransparentFX

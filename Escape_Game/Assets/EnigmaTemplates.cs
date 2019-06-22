@@ -8,8 +8,12 @@ public class EnigmaTemplates : MonoBehaviour
 	//general
 	public List<GameObject> shelfdoor;
 	public List<GameObject> keyplant;
+	public List<GameObject> bigoffice;
+	
 	
 	public GameObject[] door;
+	
+	public GameObject[] office;
 
 	public GameObject[] shelf;
 	
@@ -20,6 +24,8 @@ public class EnigmaTemplates : MonoBehaviour
 	private int rand1;
 	private int rand2;
 	
+	public GameObject eclat;
+
 	
 	
 	
@@ -61,9 +67,8 @@ public class EnigmaTemplates : MonoBehaviour
 	void Start(){
 		
 		nrbsce = 3;
-		//scena = Random.Range(0, nrbsce);
-		scena = 2;
-		Debug.Log(scena);
+		scena = Random.Range(0, nrbsce);
+		//scena = 1;
 		
 		if( scena == 0){
 			
@@ -82,6 +87,23 @@ public class EnigmaTemplates : MonoBehaviour
 
 	}
 	void Scena1(){
+		
+		//SpawnOffice
+		
+		
+
+
+		for(int i = 0; i < bigoffice.Count; i++){
+			
+			
+			rand1 = Random.Range(0, office.Length);
+			
+			Instantiate(office[rand1],bigoffice[i].transform.position, Quaternion.identity);
+			
+
+		
+		}
+
 		//SpawnShelfDoor
 		randpos = Random.Range(0, shelfdoor.Count);
 		rand1 = Random.Range(0, door.Length);

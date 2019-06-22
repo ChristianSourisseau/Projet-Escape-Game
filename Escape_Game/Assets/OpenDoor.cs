@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class OpenDoor : MonoBehaviour
 {
@@ -9,6 +11,13 @@ public class OpenDoor : MonoBehaviour
 	private int scena;
 	
 	private GameObject EnigmaTemplates;
+	
+	
+	
+	
+	
+	public TextMeshProUGUI RoomText; //"Room X"
+
 
 
 	
@@ -28,6 +37,12 @@ public class OpenDoor : MonoBehaviour
 		scena = EnigmaTemplates.GetComponent<EnigmaTemplates>().scena;
 
 		open = false;
+		
+		
+		
+		RoomText = GameObject.FindGameObjectWithTag("RoomCounter").GetComponent<TextMeshProUGUI>();
+		RoomText.text = "Room " + (RoomText.GetComponent<RoomCounter>().count ).ToString();
+
 		
 		
 	}
@@ -64,7 +79,10 @@ public class OpenDoor : MonoBehaviour
 	
 		if (Input.GetKeyDown(KeyCode.E) && open)
 		{
+			RoomText.GetComponent<RoomCounter>().count = RoomText.GetComponent<RoomCounter>().count + 1;
+			RoomText.text = "Room " + (RoomText.GetComponent<RoomCounter>().count ).ToString();
 			SceneManager.LoadScene("Scenes/Salles");
+			
 		}
 	}
 	

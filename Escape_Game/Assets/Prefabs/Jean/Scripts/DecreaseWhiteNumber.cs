@@ -9,12 +9,18 @@ public class DecreaseWhiteNumber : MonoBehaviour
 	private GameObject EnigmaTemplates;
 	private GameObject number;
 
+	public GameObject eclat;
+
 	
 	private int Enigmawhitenumber;
 
 	
 	void Start(){
 		EnigmaTemplates = GameObject.FindGameObjectWithTag("Enigma");
+		
+		eclat = Instantiate(EnigmaTemplates.GetComponent<EnigmaTemplates>().eclat,transform.position, Quaternion.identity);
+
+		eclat.SetActive(false);
 
 	}
 
@@ -35,9 +41,22 @@ public class DecreaseWhiteNumber : MonoBehaviour
 			number = Instantiate(EnigmaTemplates.GetComponent<EnigmaTemplates>().whitenumbers[Enigmawhitenumber],whitenumber.transform.position, Quaternion.identity); //Spawn whitenumber
 			Destroy(whitenumber);
 			EnigmaTemplates.GetComponent<EnigmaTemplates>().Owhitenumber = number;
+			
+			
+			eclat.SetActive(true);
+
 			}
 			
 		}
 	}
+	
+	void OnTriggerExit2D (Collider2D player)
+		{
+			if (player.gameObject.tag == "Player" )
+			{
+				eclat.SetActive(false);
+
+			}
+		}
 }
 

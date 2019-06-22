@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 9
   spawned: 0
+  difficulty: 0
   waitTime: 4
 --- !u!1 &5232151287856932853
 GameObject:
@@ -91,6 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 6
   spawned: 0
+  difficulty: 0
   waitTime: 4
 --- !u!1 &5232151287859540373
 GameObject:
@@ -137,6 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 4
   spawned: 0
+  difficulty: 0
   waitTime: 4
 --- !u!1 &5232151287950305421
 GameObject:
@@ -222,6 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 3
   spawned: 0
+  difficulty: 0
   waitTime: 4
 --- !u!1 &5232151288050337652
 GameObject:
@@ -268,6 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 5
   spawned: 0
+  difficulty: 0
   waitTime: 4
 --- !u!1 &5232151288054623836
 GameObject:
@@ -314,6 +319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 2
   spawned: 0
+  difficulty: 0
   waitTime: 4
 --- !u!1 &5232151288100117169
 GameObject:
@@ -360,6 +366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 7
   spawned: 0
+  difficulty: 0
   waitTime: 4
 --- !u!1 &5232151288267517481
 GameObject:
@@ -406,6 +413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 1
   spawned: 0
+  difficulty: 0
   waitTime: 4
 --- !u!1 &5232151288448959245
 GameObject:
@@ -452,4 +460,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDirection: 8
   spawned: 0
+  difficulty: 0
   waitTime: 4
