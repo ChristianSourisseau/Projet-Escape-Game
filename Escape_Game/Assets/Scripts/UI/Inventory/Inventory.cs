@@ -33,12 +33,6 @@ public class Inventory : MonoBehaviour
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
 
-<<<<<<< HEAD
-    [SerializeField]
-    private GameObject tooltip = null; 
-
-=======
->>>>>>> 389bda4032fc9a510e21a741249aad26f879c27e
     public List<Item> items = new List<Item>();
     public int space = 7;
 
@@ -72,30 +66,14 @@ public class Inventory : MonoBehaviour
             onItemChangedCallback.Invoke();
     }
 
-    public void ShowTooltip(Vector3 position, IDescribable description)
-<<<<<<< HEAD
-    {	
-		if(tooltip != null){
-			tooltip.SetActive(true);
-			tooltip.transform.position = position;
-			tooltip.GetComponentInChildren<Text>().text = description.GetDescription();
-		}
-        
-=======
-    {
+    public void ShowTooltip(Vector3 position, IDescribable description) {
+
         tooltip.ShowTooltip(position, description);
->>>>>>> 389bda4032fc9a510e21a741249aad26f879c27e
     }
 
     public void HideTooltip()
     {
-<<<<<<< HEAD
-		if(tooltip != null){
-			tooltip.SetActive(false);
-		}
-=======
         tooltip.HideTooltip();
->>>>>>> 389bda4032fc9a510e21a741249aad26f879c27e
     }
 
 }

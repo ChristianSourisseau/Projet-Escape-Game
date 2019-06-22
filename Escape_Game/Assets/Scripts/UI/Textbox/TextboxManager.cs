@@ -34,7 +34,7 @@ public class TextboxManager : MonoBehaviour
         instance = this;
 
 
-    ActivateTextAtLine[] tab = FindObjectsOfType<ActivateTextAtLine>();
+        ActivateTextAtLine[] tab = FindObjectsOfType<ActivateTextAtLine>();
         Interactable I = null;
         foreach (ActivateTextAtLine a in tab)
         {
