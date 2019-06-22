@@ -10,6 +10,12 @@ public class EnigmaTemplates : MonoBehaviour
 	public List<GameObject> keyplant;
 	public List<GameObject> bigoffice;
 	
+	public List<GameObject> player;
+	
+	public GameObject GameObjectPlayer;
+
+
+	
 	
 	public GameObject[] door;
 	
@@ -70,6 +76,8 @@ public class EnigmaTemplates : MonoBehaviour
 		scena = Random.Range(0, nrbsce);
 		//scena = 1;
 		
+
+		
 		if( scena == 0){
 			
 			Invoke("Scena1", 0.3f);
@@ -82,6 +90,9 @@ public class EnigmaTemplates : MonoBehaviour
 			
 			Invoke("Scena3", 0.3f);
 		}
+		
+		
+
 
 		
 
