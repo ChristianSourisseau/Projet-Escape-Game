@@ -8,7 +8,7 @@ public class PaintedNumber : Hint
     [SerializeField]
     private int value;
 
-public virtual bool verifCode(int one, int two, int three, int four)
+public override bool verifCode(int one, int two, int three, int four)
     {
         return false;
     }

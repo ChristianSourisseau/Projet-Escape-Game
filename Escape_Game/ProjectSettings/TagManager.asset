@@ -8,12 +8,16 @@ TagManager:
   - RoomParts
   - Enigma
   - whitenumber
+<<<<<<< HEAD
   - Press
   - Cube
   - sprite1
   - sprite2
   - Wall
   - RoomCounter
+=======
+  - ToolTip
+>>>>>>> 389bda4032fc9a510e21a741249aad26f879c27e
   layers:
   - Default
   - TransparentFX
@@ -23,8 +27,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Background
+  - Playerspace
   - 
   - 
   - 
@@ -50,4 +54,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 146309825
+    locked: 0
+  - name: Playerspace
+    uniqueID: 1530567705
     locked: 0

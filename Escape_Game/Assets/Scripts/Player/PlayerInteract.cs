@@ -29,6 +29,7 @@ public class PlayerInteract : MonoBehaviour {
                     }
 					else if (curIntObjScript.obstacle != null)
                     {
+                        Debug.Log("I interacted with an obstacle");
                         curIntObjScript.interactObstacle();
                     }
             }
