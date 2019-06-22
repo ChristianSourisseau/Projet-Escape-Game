@@ -17,6 +17,7 @@ public class OpenDoor : MonoBehaviour
 	
 	
 	public TextMeshProUGUI RoomText; //"Room X"
+	public GameObject RoomCounter;
 
 
 
@@ -39,9 +40,11 @@ public class OpenDoor : MonoBehaviour
 		open = false;
 		
 		
-		
-		RoomText = GameObject.FindGameObjectWithTag("RoomCounter").GetComponent<TextMeshProUGUI>();
+		RoomCounter = GameObject.FindGameObjectWithTag("RoomCounter");
+		RoomText = RoomCounter.GetComponent<TextMeshProUGUI>();
 		RoomText.text = "Room " + (RoomText.GetComponent<RoomCounter>().count ).ToString();
+		
+		
 
 		
 		
@@ -81,6 +84,12 @@ public class OpenDoor : MonoBehaviour
 		{
 			RoomText.GetComponent<RoomCounter>().count = RoomText.GetComponent<RoomCounter>().count + 1;
 			RoomText.text = "Room " + (RoomText.GetComponent<RoomCounter>().count ).ToString();
+			
+			if(RoomText.GetComponent<RoomCounter>().count > 3){
+				RoomText.GetComponent<RoomCounter>().difficulty = 2;
+			}
+			
+			
 			SceneManager.LoadScene("Scenes/Salles");
 			
 		}

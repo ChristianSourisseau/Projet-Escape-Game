@@ -5,6 +5,8 @@ using UnityEngine;
 public class RoomSpawner : MonoBehaviour
 {
     public int openingDirection;
+	
+	//difficulty = 1
 	// 1 --> need bl
 	// 2 --> need bm
 	// 3 --> need br
@@ -14,6 +16,16 @@ public class RoomSpawner : MonoBehaviour
 	// 7 --> need tm
 	// 8 --> need tr
 	// 9 --> need ml
+	
+	//difficulty = 2
+	// 21 --> need bl
+	// 22 --> need b
+	// 23 --> need br
+	// 24-->  need l
+	// 25 --> need inter
+	// 26 --> need ltr
+	// 27 --> need r
+
 
 
 
@@ -25,11 +37,20 @@ public class RoomSpawner : MonoBehaviour
 	public float waitTime = 4f;
 	
 	private int rand;
+	
+	
+	private RoomTemplates2 templates2;
 
 	void Start(){
-		difficulty = 1;
+		
+		
+		difficulty = GameObject.FindGameObjectWithTag("RoomCounter").GetComponent<RoomCounter>().difficulty;
+		
+		//difficulty = 1;
 		Destroy(gameObject, waitTime);
 		templates = GameObject.FindGameObjectWithTag("RoomParts").GetComponent<RoomTemplates>();
+		templates2 = GameObject.FindGameObjectWithTag("RoomParts2").GetComponent<RoomTemplates2>();
+
 		Invoke("Spawn", 0.1f);
 	}
 
@@ -73,15 +94,27 @@ public class RoomSpawner : MonoBehaviour
 			
 			if(difficulty == 2){
 			
-				if(openingDirection == 6){
-					rand = Random.Range(0, templates.tl.Length);
-					Instantiate(templates.tl[rand], transform.position, Quaternion.identity);
-				}else if(openingDirection == 3){
-					rand = Random.Range(0, templates.br.Length);
-					Instantiate(templates.br[rand], transform.position, Quaternion.identity);
-				} else if(openingDirection == 4){
-					rand = Random.Range(0, templates.mr.Length);
-					Instantiate(templates.mr[rand], transform.position, Quaternion.identity);
+				if(openingDirection == 21){
+					rand = Random.Range(0, templates2.bl.Length);
+					Instantiate(templates2.bl[rand], transform.position, Quaternion.identity);
+				} else if(openingDirection == 22){
+					rand = Random.Range(0, templates2.b.Length);
+					Instantiate(templates2.b[rand], transform.position, Quaternion.identity);
+				} else if(openingDirection == 23){
+					rand = Random.Range(0, templates2.br.Length);
+					Instantiate(templates2.br[rand], transform.position, Quaternion.identity);
+				} else if(openingDirection == 24){
+					rand = Random.Range(0, templates2.l.Length);
+					Instantiate(templates2.l[rand], transform.position, Quaternion.identity);
+				} else if(openingDirection == 25){
+					rand = Random.Range(0, templates2.inter.Length);
+					Instantiate(templates2.inter[rand], transform.position, Quaternion.identity);
+				} else if(openingDirection == 26){
+					rand = Random.Range(0, templates2.ltr.Length);
+					Instantiate(templates2.ltr[rand], transform.position, Quaternion.identity);
+				} else if(openingDirection == 27){
+					rand = Random.Range(0, templates2.r.Length);
+					Instantiate(templates2.r[rand], transform.position, Quaternion.identity);
 				}
 				
 				spawned = true;
