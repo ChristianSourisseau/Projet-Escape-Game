@@ -18,9 +18,7 @@ public class RoomSpawner : MonoBehaviour
 	// 9 --> need ml
 	
 	//difficulty = 2
-	// 21 --> need bl
 	// 22 --> need b
-	// 23 --> need br
 	// 24-->  need l
 	// 25 --> need inter
 	// 26 --> need ltr
@@ -94,15 +92,10 @@ public class RoomSpawner : MonoBehaviour
 			
 			if(difficulty == 2){
 			
-				if(openingDirection == 21){
-					rand = Random.Range(0, templates2.bl.Length);
-					Instantiate(templates2.bl[rand], transform.position, Quaternion.identity);
-				} else if(openingDirection == 22){
+				
+				if(openingDirection == 22){
 					rand = Random.Range(0, templates2.b.Length);
 					Instantiate(templates2.b[rand], transform.position, Quaternion.identity);
-				} else if(openingDirection == 23){
-					rand = Random.Range(0, templates2.br.Length);
-					Instantiate(templates2.br[rand], transform.position, Quaternion.identity);
 				} else if(openingDirection == 24){
 					rand = Random.Range(0, templates2.l.Length);
 					Instantiate(templates2.l[rand], transform.position, Quaternion.identity);

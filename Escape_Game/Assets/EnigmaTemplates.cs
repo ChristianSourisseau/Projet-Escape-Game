@@ -10,6 +10,9 @@ public class EnigmaTemplates : MonoBehaviour
 	public List<GameObject> keyplant;
 	public List<GameObject> bigoffice;
 	
+	public List<GameObject> shelfdoor2;
+	public List<GameObject> keyplant2;
+	
 	public List<GameObject> player;
 	
 	public GameObject GameObjectPlayer;
@@ -31,6 +34,9 @@ public class EnigmaTemplates : MonoBehaviour
 	private int rand2;
 	
 	public GameObject eclat;
+	
+	public int difficulty;
+
 
 	
 	
@@ -60,6 +66,17 @@ public class EnigmaTemplates : MonoBehaviour
 	public GameObject[] hospitaldecowall;
 	public GameObject[] hospitaldecoground;
 
+	//scena4
+	public List<GameObject> listposlaser;
+	public GameObject laser;
+	
+	public GameObject dellaser;
+	
+	public bool laserbool;
+
+
+	
+
 
 
 
@@ -76,21 +93,30 @@ public class EnigmaTemplates : MonoBehaviour
 		scena = Random.Range(0, nrbsce);
 		//scena = 1;
 		
+		
+		difficulty = GameObject.FindGameObjectWithTag("RoomCounter").GetComponent<RoomCounter>().difficulty;
+		laserbool = false;
 
 		
-		if( scena == 0){
-			
-			Invoke("Scena1", 0.3f);
+
+		if(difficulty == 1){
+			if( scena == 0){
+				
+				Invoke("Scena1", 0.3f);
+			}
+			if( scena == 1){
+				
+				Invoke("Scena2", 0.3f);
+			}
+			if( scena == 2){
+				
+				Invoke("Scena3", 0.3f);
+			}
 		}
-		if( scena == 1){
-			
-			Invoke("Scena2", 0.3f);
+		else if( difficulty == 2){
+			scena = 4;
+			Invoke("Scena4", 0.3f);
 		}
-		if( scena == 2){
-			
-			Invoke("Scena3", 0.3f);
-		}
-		
 		
 
 
@@ -116,10 +142,14 @@ public class EnigmaTemplates : MonoBehaviour
 		}
 
 		//SpawnShelfDoor
-		randpos = Random.Range(0, shelfdoor.Count);
-		rand1 = Random.Range(0, door.Length);
 		
-		Instantiate(door[rand1],shelfdoor[randpos].transform.position, Quaternion.identity);
+		if(!laserbool){
+			randpos = Random.Range(0, shelfdoor.Count);
+			rand1 = Random.Range(0, door.Length);
+			
+			Instantiate(door[rand1],shelfdoor[randpos].transform.position, Quaternion.identity);
+			
+		}
 
 		for(int i = 0; i < shelfdoor.Count; i++){
 			if( i != randpos){
@@ -133,6 +163,7 @@ public class EnigmaTemplates : MonoBehaviour
 			}
 
 		}
+		
 		
 		//SpawnKeyPlant()
 		randpos = Random.Range(0, keyplant.Count);
@@ -156,18 +187,21 @@ public class EnigmaTemplates : MonoBehaviour
 	
 	void Scena2(){
 		
+		
 		//SpawnShelfDoor
+		if(!laserbool){
+			
+			randpos = Random.Range(0, shelfdoor.Count);
+			rand1 = Random.Range(0, door.Length);
+			Instantiate(door[rand1],shelfdoor[randpos].transform.position, Quaternion.identity); //Spawn door
+			shelfdoor.Remove(shelfdoor[randpos]);
+			
+		}
+			
 		randpos = Random.Range(0, shelfdoor.Count);
 		rednumber = Random.Range(0, rednumbers.Length);
 		Instantiate(rednumbers[rednumber],shelfdoor[randpos].transform.position, Quaternion.identity); //Spawn rednumber
 		shelfdoor.Remove(shelfdoor[randpos]);
-
-		
-		randpos = Random.Range(0, shelfdoor.Count);
-		rand1 = Random.Range(0, door.Length);
-		Instantiate(door[rand1],shelfdoor[randpos].transform.position, Quaternion.identity); //Spawn door
-		shelfdoor.Remove(shelfdoor[randpos]);
-
 
 
 		for(int i = 0; i < shelfdoor.Count; i++){
@@ -180,6 +214,7 @@ public class EnigmaTemplates : MonoBehaviour
 			
 
 		}
+		
 		
 		
 		//SpawnKeyPlant
@@ -219,11 +254,14 @@ public class EnigmaTemplates : MonoBehaviour
 	
 	void Scena3(){
 		
+		
 		//SpawnShelfDoor
-		randpos = Random.Range(0, shelfdoor.Count);
-		rand1 = Random.Range(0, door.Length);
-		Instantiate(door[rand1],shelfdoor[randpos].transform.position, Quaternion.identity); //Spawn door
-		shelfdoor.Remove(shelfdoor[randpos]);
+		if(!laserbool){
+			randpos = Random.Range(0, shelfdoor.Count);
+			rand1 = Random.Range(0, door.Length);
+			Instantiate(door[rand1],shelfdoor[randpos].transform.position, Quaternion.identity); //Spawn door
+			shelfdoor.Remove(shelfdoor[randpos]);
+		}
 		
 		
 		//SpawnKeyPlant
@@ -248,4 +286,31 @@ public class EnigmaTemplates : MonoBehaviour
 		}
 		
 	}
+	
+	
+	void Scena4(){
+		
+		//Spawnlaser
+		laserbool = true;
+		dellaser = Instantiate(laser,listposlaser[0].transform.position, Quaternion.identity); //Spawn laser
+		listposlaser.Remove(listposlaser[0]);
+		
+		rand1 = Random.Range(0, 2);
+		if(rand1 == 0){
+			Scena2();
+		}
+		if(rand1 == 1){
+			Scena3();
+		}
+		
+		
+		shelfdoor = shelfdoor2;
+		keyplant = keyplant2;
+		laserbool = false;
+		Scena1();
+		
+	}
+	
+	
+	
 }

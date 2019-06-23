@@ -986,53 +986,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &824234077
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 824234078}
-  - component: {fileID: 824234079}
-  m_Layer: 0
-  m_Name: SpawnPointBL
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &824234078
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824234077}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: 15, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1292249123}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &824234079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824234077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b097c4a78fa4626409e68d1875c1cea1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openingDirection: 21
-  spawned: 0
-  difficulty: 2
-  waitTime: 4
 --- !u!4 &828059754 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6495221998830759276, guid: 8797b9bdcfc9668438e78b63e35101c5,
@@ -1605,8 +1558,6 @@ Transform:
   - {fileID: 1046701234}
   - {fileID: 628774551}
   - {fileID: 1938288713}
-  - {fileID: 1872729106}
-  - {fileID: 824234078}
   m_Father: {fileID: 748277861}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2153,6 +2104,8 @@ MonoBehaviour:
   shelfdoor: []
   keyplant: []
   bigoffice: []
+  shelfdoor2: []
+  keyplant2: []
   player: []
   GameObjectPlayer: {fileID: 168785479755941963, guid: 58514da36d9e8474b83f50abe35e313c,
     type: 3}
@@ -2168,6 +2121,7 @@ MonoBehaviour:
   - {fileID: 1688705918223400950, guid: 407dfc8437ddd474fab278af0c7ebcc7, type: 3}
   scena: 0
   eclat: {fileID: 4089684161064938387, guid: 680c36581de508c41998baef46547a9a, type: 3}
+  difficulty: 0
   key:
   - {fileID: 5384915725484470774, guid: a0630262247ad564981a41f49bd25b21, type: 3}
   plant:
@@ -2222,6 +2176,10 @@ MonoBehaviour:
   - {fileID: 6754185977169597122, guid: 27ebeaf091f0bf64cafea7089bdb49fb, type: 3}
   - {fileID: 6103495516141352836, guid: d41eb20e7bc877246bf4f8a0f4d9ea23, type: 3}
   - {fileID: 2440785439207680024, guid: 2078d61c5bb7d5f49a87aa335bb5665e, type: 3}
+  listposlaser: []
+  laser: {fileID: 467627589720507344, guid: 034b63e52b9032c4484dc17ea0badc37, type: 3}
+  dellaser: {fileID: 0}
+  laserbool: 0
 --- !u!1 &1795152929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,53 +2325,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1503136033}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1872729105
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1872729106}
-  - component: {fileID: 1872729107}
-  m_Layer: 0
-  m_Name: SpawnPointBR
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1872729106
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872729105}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7, y: 15, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1292249123}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1872729107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872729105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b097c4a78fa4626409e68d1875c1cea1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openingDirection: 23
-  spawned: 0
-  difficulty: 2
-  waitTime: 4
 --- !u!1 &1938288712
 GameObject:
   m_ObjectHideFlags: 0

@@ -152,6 +152,12 @@ TextureImporter:
   - first:
       213: 3028157079856788810
     second: SF_Inside_B_49
+  - first:
+      213: -3541921636437936329
+    second: SF_Inside_B_50
+  - first:
+      213: -1295064105930975867
+    second: SF_Inside_B_51
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -1279,6 +1285,48 @@ TextureImporter:
       bones: []
       spriteID: ba5c81736acae0a46827d2d24d46820e
       internalID: 3028157079856788810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_B_50
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd14b58bc5316546aa69d3378b5aa6f
+      internalID: -3541921636437936329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_B_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c1e0f87ee0d7c4aa9cc63fabe6a078
+      internalID: -1295064105930975867
       vertices: []
       indices: 
       edges: []
