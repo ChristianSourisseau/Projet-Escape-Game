@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2efbc9563b96af34f8d800e8e2e8106d, type: 3}
   m_Name: locktest
   m_EditorClassIdentifier: 
-  description: Porte de Prison
-  name: Porte
+  description: An intrecate device of mechanical prowess. You COULD call it a lock...
+  name: Lock
   icon: {fileID: -7469721033324359140, guid: 65fa75c3965f98e4c9ffc11cca899243, type: 3}
-  obj: {fileID: 0}
+  under: []
+  inside: []
+  ontop: []

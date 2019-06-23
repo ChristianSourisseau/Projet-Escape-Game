@@ -5,12 +5,16 @@ using UnityEngine;
 public class TextImporter : MonoBehaviour
 {
 
+    public TextAsset textFile;
     public string[] textLines;
 
     // Start is called before the first frame update
     void Start()
     {
-           // textLines = (textFile.text.Split('\n'));
+        if(textFile != null)
+        {
+            textLines = (textFile.text.Split('\n'));
+        }
     }
 
 }

@@ -20,18 +20,16 @@ public class Inventory : MonoBehaviour
         }
 
         instance = this;
-
-        tooltip = ToolTip.instance;
     }
     #endregion
-
-    private ToolTip tooltip;
-
 
     //when Inventory is changed, call this method to do something
     //example : update UI
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
+
+    [SerializeField]
+    private GameObject tooltip = null; 
 
     public List<Item> items = new List<Item>();
     public int space = 7;
@@ -66,14 +64,21 @@ public class Inventory : MonoBehaviour
             onItemChangedCallback.Invoke();
     }
 
-    public void ShowTooltip(Vector3 position, IDescribable description) {
-
-        tooltip.ShowTooltip(position, description);
+    public void ShowTooltip(Vector3 position, IDescribable description)
+    {	
+		if(tooltip != null){
+			tooltip.SetActive(true);
+			tooltip.transform.position = position;
+			tooltip.GetComponentInChildren<Text>().text = description.GetDescription();
+		}
+        
     }
 
     public void HideTooltip()
     {
-        tooltip.HideTooltip();
+		if(tooltip != null){
+			tooltip.SetActive(false);
+		}
     }
 
 }

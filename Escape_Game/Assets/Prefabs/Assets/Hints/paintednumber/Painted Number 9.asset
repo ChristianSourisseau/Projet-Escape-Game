@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e94cf5dbe0a69643a07cb2f50226288, type: 3}
   m_Name: Painted Number 9
   m_EditorClassIdentifier: 
-  description: Un nombre peint sur le mur
-  name: Un nombre
+  description: an object
+  name: number
   icon: {fileID: 0}
   Prem: 0
   Deux: 0

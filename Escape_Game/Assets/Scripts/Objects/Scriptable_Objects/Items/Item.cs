@@ -4,6 +4,8 @@ public enum TypeOfItem { Key, Tool, Hint }
 
 public class Item : Objet, IDescribable
 {
+    [SerializeField]
+    private string title;
 
     [SerializeField]
     private TypeOfItem type;
@@ -13,7 +15,6 @@ public class Item : Objet, IDescribable
     {
         return false;
     }
-
     public virtual string GetDescription()
     {
         string color = string.Empty;
@@ -26,12 +27,12 @@ public class Item : Objet, IDescribable
             case TypeOfItem.Tool:
                 color = "#F0A00C";
                 break;
-           /* case TypeOfItem.Hint:
+            case TypeOfItem.Hint:
                 color = "#00ACFF";
                 break;
-                */
+
         }
 
-        return string.Format("<color={0}>{1}</color>", color, name) +"\n"+ description;
+        return string.Format("<color={0}>{1}</color>", color, title);
     }
 }

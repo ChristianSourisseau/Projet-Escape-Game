@@ -4,29 +4,33 @@ using UnityEngine;
 
 public class ActivateTextAtLine : MonoBehaviour
 {
-    public string theText;
+    public TextAsset theText;
 
-    private TextboxManager theTextBox;
+    public int startLine;
+    public int endLine;
 
-    public bool requireButtonPress = true;
+    public TextboxManager theTextBox;
+
+    public bool requireButtonPress;
     public bool waitForPress;
 
-    public bool destroyWhenActivated = false;
+    public bool destroyWhenActivated;
 
-
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-       theTextBox =  TextboxManager.instance;
+        theTextBox = FindObjectOfType<TextboxManager>();
     }
-
 
     // Update is called once per frame
     void Update()
     {
         if(waitForPress && Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log("I pressed F");
-            ShowDescription();
+            theTextBox.ReloadScript(theText);
+            theTextBox.currentLine = startLine;
+            theTextBox.endAtLine = endLine;
+            theTextBox.EnableTextbox();
 
             if (destroyWhenActivated)
             {
@@ -45,19 +49,17 @@ public class ActivateTextAtLine : MonoBehaviour
                 return;
             }
 
-            if (!waitForPress)
-            {
-                ShowDescription();
-            }
-           
+            theTextBox.ReloadScript(theText);
+            theTextBox.currentLine = startLine;
+            theTextBox.endAtLine = endLine;
+            theTextBox.EnableTextbox();
+
             if (destroyWhenActivated)
             {
                 Destroy(gameObject);
             }
         }  
     }
-
-   
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -66,31 +68,4 @@ public class ActivateTextAtLine : MonoBehaviour
             waitForPress = false;
         }
     }
-
-    private void ShowDescription()
-    {
-        ReloadDescription();
-        theTextBox.ReloadScript(theText);
-        Debug.Log("calling Enable Box");
-        theTextBox.EnableTextbox();
-    }
-
-    private void ReloadDescription()
-    {
-        Interactable i = gameObject.GetComponent<Interactable>();
-        if (i.hint != null)
-        {
-            theText = i.hint.description;
-        }
-        else if (i.obstacle != null)
-        {
-            theText = i.obstacle.description;
-
-        }
-        else if (i.item != null)
-        {
-            theText = i.item.name + "\n" + i.item.description;
-        }
-    }
-
 }
