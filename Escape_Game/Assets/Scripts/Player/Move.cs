@@ -24,7 +24,7 @@ public class Move : MonoBehaviour
     public bool isAllowedToMove = true;
 
     private Animator anim;
-
+ 
     void Start()
     {
         isAllowedToMove = true;
@@ -123,7 +123,6 @@ public class Move : MonoBehaviour
                     StartCoroutine(Moves(transform, ""));
                 }
 
-
             }
             else
             {
@@ -140,9 +139,10 @@ public class Move : MonoBehaviour
 
         } 
     }
-     
+   
+        
 
-     private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
      {
         if(collision.tag == "Wall")
         {
