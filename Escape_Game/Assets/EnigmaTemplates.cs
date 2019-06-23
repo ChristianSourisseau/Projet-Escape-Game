@@ -245,6 +245,7 @@ public class EnigmaTemplates : MonoBehaviour
 				Instantiate(statue[rand1],keyplant[i].transform.position, Quaternion.identity); //Spawn statue
 			}
 			
+			
 
 		}
 		
@@ -283,6 +284,7 @@ public class EnigmaTemplates : MonoBehaviour
 			}
 			
 
+			
 		}
 		
 	}
@@ -295,11 +297,11 @@ public class EnigmaTemplates : MonoBehaviour
 		dellaser = Instantiate(laser,listposlaser[0].transform.position, Quaternion.identity); //Spawn laser
 		listposlaser.Remove(listposlaser[0]);
 		
-		rand1 = Random.Range(0, 2);
-		if(rand1 == 0){
+		scena = Random.Range(1, 3);
+		if(scena == 1){
 			Scena2();
 		}
-		if(rand1 == 1){
+		else if(scena == 2){
 			Scena3();
 		}
 		
