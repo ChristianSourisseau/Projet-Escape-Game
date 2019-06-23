@@ -4,7 +4,7 @@ public class Devinette extends Indice {
 	public Devinette(int chiffre) {
 		
 	identifiant = "DXXXX";
-	description = "Je suis l'astre perdu, la lumière égarée. Si vous voulez sortir, il vous faut me trouver. Moi";
+	description = "Il y a un texte au dos de la feuille : Je suis l'astre perdu, la lumière égarée. Si vous voulez sortir, il vous faut me trouver. Moi";
 	switch (chiffre) {
 	case 0 : description += " qui fait les dizaines, centaines et milliers.";
 	case 1 : description += " qui ne suis pas bien grand mais qui fait toute armée.";
