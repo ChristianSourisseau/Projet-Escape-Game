@@ -14,17 +14,19 @@ public class Riddle : Hint
 
     private EnigmaElementA partA;
     private EnigmaElementB partB;
-    
 
-    public Hint[] getHintElements()
+
+    public Hint getSubA()
     {
-        Hint[] h = new Hint[2];
-        h[0] = partA;
-        h[1] = partB;
-        return h;
+        return partA;
     }
 
-   
+    public Hint getSubB()
+    {
+
+        return partB;
+    }
+
     public override void initialise()
     {
         name = "DXXXX";

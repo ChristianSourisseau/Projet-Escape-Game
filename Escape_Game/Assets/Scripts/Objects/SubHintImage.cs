@@ -6,9 +6,33 @@ public class SubHintImage : HintImage
 {
     HintImage hi;
 
-    protected override void Start()
+    void Start()
     {
         hi = HintImage.instance;
-        hi.onHintChangedCallback += base.Start;
+        hi.onHintChangedCallback += init;
     }
+
+
+    private void init()
+    {
+        Hint h = gameObject.GetComponent<Interactable>().hint;
+
+        if (h != null)
+        {
+            h.initialise();
+        }
+
+        //update sprite
+        im.sprite = h.GetSprite();
+
+        playercontrol = GameObject.FindObjectOfType<Move>();
+        if (playercontrol == null)
+        {
+            Debug.LogWarning("Can't find instance of move script");
+        }
+
+        HideHint();
+    }
+
+
 }
