@@ -190,11 +190,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\tA peine sorti du donjon, face a moi une foule m'acclamait, d'un c\xF4t\xE9s
-    ce qui ressemblait \xE0 des m\xE9decins courraient vers moi, de l'autre c\xF4t\xE9s
-    un vieux roi s\u2019avance vers moi me tendent sa couronne en me disant \xAB\_F\xE9licitation
-    tu es le premiers de mes fils \xE0 sortir d'un de ces donjons, par cons\xE9quent
-    je te c\xE8des mon tr\xF4ne\_\xBB."
+  m_Text: "\tA peine sorti du donjon, face \xE0 moi une foule m'acclamait. Il y avait
+    d'un c\xF4t\xE9 ceux qui ressemblaient \xE0 des m\xE9decins qui courraient vers
+    moi et de l'autre c\xF4t\xE9 un vieux roi qui s\u2019avan\xE7ait en me tendant
+    sa couronne. Il me dit : \xAB\_F\xE9licitations tu es le premier de mes fils \xE0
+    sortir de l'un de ces donjons. Par cons\xE9quent je te remets ma courronne ainsi
+    que le Royaume\_\xBB."
 --- !u!222 &105383061
 CanvasRenderer:
   m_ObjectHideFlags: 0
