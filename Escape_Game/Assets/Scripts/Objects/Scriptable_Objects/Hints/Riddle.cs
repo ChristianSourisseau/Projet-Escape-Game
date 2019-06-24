@@ -14,19 +14,18 @@ public class Riddle : Hint
 
     private EnigmaElementA partA;
     private EnigmaElementB partB;
-    
 
-    public Hint[] getHintElements()
+
+    public Hint getSubA()
     {
-        Hint[] h = new Hint[2];
-        h[0] = partA;
-        h[1] = partB;
-        Debug.Log("tab[0]" + h[0].GetSprite().name);
-        Debug.Log("tab[1]" + h[1].GetSprite().name);
-        return h;
+        return partA;
     }
 
-   
+    public Hint getSubB()
+    {
+        return partB;
+    }
+
     public override void initialise()
     {
         name = "DXXXX";

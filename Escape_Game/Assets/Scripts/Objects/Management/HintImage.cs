@@ -7,14 +7,23 @@ using UnityEngine;
 public class HintImage : MonoBehaviour
 {
     [SerializeField]
-    private Image im;
+    protected Image im;
     [SerializeField]
-    private GameObject exit;
+    protected GameObject exit;
     [SerializeField]
-    protected Riddle r;
+    private Riddle r;
 
-    private Move playercontrol = null;
+    [SerializeField]
+    private GameObject SubA;
+
+    [SerializeField]
+    private GameObject SubB;
+
+
+    protected Move playercontrol;
     private Sprite s = null;
+
+
     public delegate void OnHintChanged();
     public OnHintChanged onHintChangedCallback;
 
@@ -25,12 +34,18 @@ public class HintImage : MonoBehaviour
         instance = this;
     }
 
-    protected virtual void Start()
+    void Start()
     {
         Hint h = gameObject.GetComponent<Interactable>().hint;
         
-        h.initialise();
-
+        if (h != null )
+        {
+            h.initialise();
+        }
+        else
+        {
+            Debug.Log("getcomponent not working in HintImage");
+        }
         if (r != null)
         {
             initRiddle();
@@ -38,13 +53,17 @@ public class HintImage : MonoBehaviour
         //update sprite
         im.sprite = h.GetSprite();
 
-       playercontrol = GameObject.FindGameObjectWithTag("Player").GetComponent<Move>();
+        playercontrol = GameObject.FindObjectOfType<Move>();
+        if (playercontrol == null)
+        {
+            Debug.LogWarning("Can't find instance of move script");
+        }
 
         HideHint();
     }
 
 
-   
+
 
     public void ShowHint()
     {
@@ -78,11 +97,16 @@ public class HintImage : MonoBehaviour
 
     private void initRiddle()
     {
-            Interactable[] fillhint = gameObject.GetComponentsInChildren<Interactable>();
-            Hint[] hintelements = r.getHintElements();
-            fillhint[1].hint = hintelements[0];
-            fillhint[2].hint = hintelements[1];
-            if (onHintChangedCallback != null)
-                onHintChangedCallback.Invoke();
+        
+        Interactable IntA = SubA.GetComponent<Interactable>();
+        Interactable IntB = SubB.GetComponent<Interactable>();
+
+        IntA.hint = r.getSubA();
+        IntB.hint = r.getSubB();
+
+        if (onHintChangedCallback != null)
+            onHintChangedCallback.Invoke();
+        else
+            Debug.Log("we got a problem with delegate onHintChangedCallBack not assigned");
     }
 }
