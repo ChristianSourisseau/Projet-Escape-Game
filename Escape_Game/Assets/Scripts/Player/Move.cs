@@ -6,7 +6,7 @@ public class Move : MonoBehaviour
 {
 
     Direction currentDir;
-    Vector2 input;
+    Vector3 input;
     bool isMoving = false;
     Vector3 startPos;
     Vector3 endPos;
@@ -15,7 +15,9 @@ public class Move : MonoBehaviour
     public Sprite northSprite;
     public Sprite eastSprite;
     public Sprite southSprite;
-    public Sprite westSprite;    
+    public Sprite westSprite;
+
+    private Rigidbody2D myRigidBody;
 
     public bool canMove;
 
@@ -30,6 +32,7 @@ public class Move : MonoBehaviour
         isAllowedToMove = true;
         anim = GetComponent<Animator>();
         canMove = true;
+        myRigidBody = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -42,15 +45,15 @@ public class Move : MonoBehaviour
             else
                 input.x = 0;
 
-            if (input != Vector2.zero)
+            if (input != Vector3.zero)
             {
 
                 if (input.x < 0)
                 {
                     currentDir = Direction.West;
 
-                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(-0.25f, 0f);
-                    gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.4f, 0.9f);
+                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(-0.01f, 0f);
+                    gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1f, 0.7f);
 
                     anim.SetBool("moveWest", true);
 
@@ -62,8 +65,8 @@ public class Move : MonoBehaviour
                 {
                     currentDir = Direction.East;
 
-                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0.25f, 0f);
-                    gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.4f, 0.9f);
+                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0.01f, 0f);
+                    gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1f, 0.7f);
 
                     anim.SetBool("moveEast", true);
 
@@ -75,8 +78,8 @@ public class Move : MonoBehaviour
                 {
                     currentDir = Direction.South;
 
-                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0f, -0.25f);
-                    gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0.9f, 1.4f);
+                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0f, -0.01f);
+                    gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0.7f, 1f);
 
                     anim.SetBool("moveSouth", true);
 
@@ -88,8 +91,8 @@ public class Move : MonoBehaviour
                 {
                     currentDir = Direction.North;
 
-                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0f, 0.25f);
-                    gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0.9f, 1.4f);
+                    gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(-0.01f, 0.01f);
+                    gameObject.GetComponent<BoxCollider2D>().size = new Vector2(0.7f, 1f);
 
                     anim.SetBool("moveNorth", true);
 
@@ -120,7 +123,8 @@ public class Move : MonoBehaviour
                 if (canMove)
                 {
                     anim.SetBool("isMoving", true);
-                    StartCoroutine(Moves(transform, ""));
+                    //StartCoroutine(Moves(transform, ""));
+                    Moves();
                 }
 
             }
@@ -141,7 +145,7 @@ public class Move : MonoBehaviour
     }
    
         
-
+    /*
     private void OnTriggerStay2D(Collider2D collision)
      {
         if(collision.tag == "Wall")
@@ -157,14 +161,14 @@ public class Move : MonoBehaviour
         {
             canMove = true;
         }
-    }
+    }*/
     
-    public IEnumerator Moves(Transform entity, string dir)
+    public /*IEnumerator*/void Moves(/*Transform entity, string dir*/)
     {
         isMoving = true;
-        startPos = entity.position;
-        t = 0;
-
+        //startPos = entity.position;
+       // t = 0;
+        /*
         switch (dir)
         {
             case "Up":
@@ -182,18 +186,20 @@ public class Move : MonoBehaviour
             default: 
                 endPos = new Vector3(startPos.x + System.Math.Sign(input.x), startPos.y + System.Math.Sign(input.y), startPos.z);
                 break;
-        }
+        }*/
 
 
-        while (t < 1f)
-        {
-            t += Time.deltaTime * walkSpeed;
-            entity.position = Vector3.Lerp(startPos, endPos, t);
-            yield return null;
-        }
+        //while (t < 1f)
+       // {
+            /* t += Time.deltaTime * walkSpeed;
+             entity.position = Vector3.Lerp(startPos, endPos, t);
+             yield return null;*/
+            myRigidBody.MovePosition(
+            transform.position + input * walkSpeed * Time.deltaTime);
+       // }
 
         isMoving = false;
-        yield return 0;
+       // yield return 0;
     
     }    
 }
