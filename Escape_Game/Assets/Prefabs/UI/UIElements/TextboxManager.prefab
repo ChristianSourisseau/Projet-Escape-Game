@@ -45,9 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 5405902453307085414, guid: fa65dd33e3a2ea140bc24d61adfd6c86, type: 3}
   theText: {fileID: 2904243979404239882, guid: 92a944d899cdc7848b86d69c427295b1, type: 3}
-  description: 
+  onStartText: BONJOUR
   textLines: []
   currentLine: 0
   endAtLine: 0
   isActive: 1
-  player: {fileID: 0}

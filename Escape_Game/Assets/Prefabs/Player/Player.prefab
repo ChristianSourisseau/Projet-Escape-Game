@@ -155,7 +155,8 @@ MonoBehaviour:
     type: 3}
   westSprite: {fileID: -1796082761614054225, guid: 1d0f5ab313cb11d4594f56da4ab99621,
     type: 3}
-  walkSpeed: 5
+  canMove: 0
+  walkSpeed: 17
   isAllowedToMove: 1
 --- !u!95 &6427557950774397695
 Animator:
@@ -188,7 +189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac92cffb768a1084e932cfd28b614e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltip: {fileID: 6433735564631261346, guid: 7857295c86d110c44841252cdef3a85f, type: 3}
   items: []
   space: 7
 --- !u!114 &1854102164706821220
@@ -257,7 +257,7 @@ MonoBehaviour:
     type: 3}
   m_UseNormalMap: 1
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 1
+  m_AlphaBlendOnOverlap: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 1

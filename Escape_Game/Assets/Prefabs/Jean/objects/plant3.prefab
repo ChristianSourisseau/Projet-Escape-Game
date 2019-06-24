@@ -90,7 +90,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5986657177441155655}
-  - component: {fileID: 6427329020345847826}
+  - component: {fileID: 3801157461600778894}
   m_Layer: 0
   m_Name: collider
   m_TagString: Wall
@@ -112,8 +112,8 @@ Transform:
   m_Father: {fileID: 8876573475130033346}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &6427329020345847826
-BoxCollider2D:
+--- !u!58 &3801157461600778894
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -126,18 +126,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.47
 --- !u!1 &8008606244784657727
 GameObject:
   m_ObjectHideFlags: 0

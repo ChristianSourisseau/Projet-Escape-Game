@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theText: 
-  requireButtonPress: 0
+  requireButtonPress: 1
   waitForPress: 0
   destroyWhenActivated: 0
 --- !u!114 &5384915725484470772
