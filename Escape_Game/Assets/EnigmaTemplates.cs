@@ -126,18 +126,13 @@ public class EnigmaTemplates : MonoBehaviour
 	void Scena1(){
 		
 		//SpawnOffice
-		
-		
-
 
 		for(int i = 0; i < bigoffice.Count; i++){
-			
 			
 			rand1 = Random.Range(0, office.Length);
 			
 			Instantiate(office[rand1],bigoffice[i].transform.position, Quaternion.identity);
 			
-
 		
 		}
 
@@ -186,6 +181,9 @@ public class EnigmaTemplates : MonoBehaviour
 	}
 	
 	void Scena2(){
+		
+		
+	
 		
 		
 		//SpawnShelfDoor
