@@ -48,7 +48,7 @@ public class Cadena : MonoBehaviour
     [SerializeField]
     protected Sprite sprite;
 
-    bool isopen;
+    public bool isopen;
 
     [SerializeField]
     private GameObject canvas;

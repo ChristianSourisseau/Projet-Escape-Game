@@ -15,6 +15,9 @@ public class ToolTip : MonoBehaviour
             return;
         }
         instance = this;
+		if (instance == null){
+			Debug.Log("check");
+		}
         gameObject.SetActive(false);
     }
     #endregion

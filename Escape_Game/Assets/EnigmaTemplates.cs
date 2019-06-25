@@ -84,6 +84,18 @@ public class EnigmaTemplates : MonoBehaviour
 	public List<GameObject> walllist;
 	public GameObject[] walls;
 	
+	//scena6
+	
+	public List<GameObject> listhint;
+	public GameObject[] hint;
+
+	public List<GameObject> listcadenas;
+	public GameObject[] cadenas;
+
+
+	
+
+	
 	
 
 
@@ -343,11 +355,37 @@ public class EnigmaTemplates : MonoBehaviour
 			
 			Instantiate(walls[0],walllist[i].transform.position, Quaternion.identity);
 			
+		}
 		
+		//SpawnHint
+		if(listhint.Count > 0){
+			randpos = Random.Range(0, listhint.Count);
+			Instantiate(hint[0],listhint[randpos].transform.position, Quaternion.identity); //Spawn hint
+			listhint.Remove(listhint[randpos]);
+		}
+		
+		for(int i = 0; i < listhint.Count; i++){
+			
+			
+			Instantiate(hint[0],listhint[i].transform.position, Quaternion.identity);
+			
+		}
+		
+		//SpawnCadenas
+		if(listcadenas.Count > 0){
+			randpos = Random.Range(0, listcadenas.Count);
+			Instantiate(cadenas[0],listcadenas[randpos].transform.position, Quaternion.identity); //Spawn cadenas
+			listcadenas.Remove(listcadenas[randpos]);
+		}
+		
+		for(int i = 0; i < listcadenas.Count; i++){
+			
+			
+			Instantiate(cadenas[0],listcadenas[i].transform.position, Quaternion.identity);
+			
 		}
 		
 		
-	
 	
 	}
 	

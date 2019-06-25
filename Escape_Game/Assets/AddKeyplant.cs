@@ -10,5 +10,5 @@ public class AddKeyplant : MonoBehaviour
 		
 		templates = GameObject.FindGameObjectWithTag("Enigma").GetComponent<EnigmaTemplates>();
 		templates.keyplant.Add(this.gameObject);
-}
+	}
 }

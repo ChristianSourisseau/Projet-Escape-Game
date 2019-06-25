@@ -12,7 +12,12 @@ public class CombinationLock : Obstacle
             Cadena cadena = obj.gameObject.GetComponent<Cadena>();
             if (cadena != null)
             {
-                cadena.Open();
+				if(!cadena.isopen){
+					cadena.Open();
+				}
+				else{
+					obj.SetActive(false);
+				}
             }
             else
             {
