@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce81bf092c0d19b4baeef167fae92b7d, type: 3}
+  m_Name: Codag 7
+  m_EditorClassIdentifier: 
+  description: an object
+  name: Object
+  icon: {fileID: 21300000, guid: b160fc41c8c2b3e4d91b3e86028ea622, type: 3}
+  Prem: 6
+  Deux: 7
+  Trois: 2
+  Quatr: 3
+  sprite: {fileID: 21300000, guid: 1174d2c67bca1a0448b299127497dd60, type: 3}

@@ -320,9 +320,9 @@ GameObject:
   - component: {fileID: 2530037871092754025}
   - component: {fileID: 2530037871092754023}
   - component: {fileID: 2530037871092754022}
-  - component: {fileID: 3420291822701772801}
+  - component: {fileID: -4585032465115393427}
   m_Layer: 0
-  m_Name: Sudoku1337
+  m_Name: Codag 2
   m_TagString: Hint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,7 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   obstacle: {fileID: 0}
-  hint: {fileID: 11400000, guid: 5611cd8394dceb444b5e869699cffc02, type: 2}
+  hint: {fileID: 11400000, guid: 178c2c84a32ea6048bcce5aa44bd4a89, type: 2}
   RoomText: {fileID: 0}
   RoomCounter: {fileID: 0}
 --- !u!114 &2530037871092754025
@@ -452,7 +452,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 11.152062, y: 10.133358}
   m_EdgeRadius: 0
---- !u!114 &3420291822701772801
+--- !u!114 &-4585032465115393427
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

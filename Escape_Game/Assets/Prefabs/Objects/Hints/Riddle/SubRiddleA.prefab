@@ -18,22 +18,6 @@ MonoBehaviour:
   SubA: {fileID: 0}
   SubB: {fileID: 0}
   hi: {fileID: 0}
---- !u!114 &3800523762235425680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4012939535417722670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52bdd507254c63945be450858772b152, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theText: 
-  requireButtonPress: 1
-  waitForPress: 0
-  destroyWhenActivated: 0
 --- !u!1001 &7822448204026066894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41,6 +25,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6574754132831570864, guid: 6bdeb216492bad4478e3adbe9019bced,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6574754133208494304, guid: 6bdeb216492bad4478e3adbe9019bced,
         type: 3}
       propertyPath: m_Name
@@ -135,11 +124,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6574754132831570864, guid: 6bdeb216492bad4478e3adbe9019bced,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6574754133889646558, guid: 6bdeb216492bad4478e3adbe9019bced,
         type: 3}
