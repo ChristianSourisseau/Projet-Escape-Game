@@ -8,7 +8,6 @@ public class Key : Item
 
     public override bool correctInteraction(Obstacle l)
     {
-        Debug.Log("CorrectInterraction of KEY was called");
         return l.GetInstanceID() == door.GetInstanceID();
     }
 

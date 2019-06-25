@@ -12,6 +12,8 @@ public class RoomTemplates2 : MonoBehaviour
 	public GameObject[] inter;
 	public GameObject[] ltr;
 	public GameObject[] r;
+	
+	public GameObject[] bhard;
 
 
 }

@@ -8,7 +8,7 @@ public class scenario001 : MonoBehaviour
 {
     public void SCENE001()
     {
-        SceneManager.LoadScene("Prison");
+		SceneManager.LoadScene("Scenes/Salles");
     }
 
     public void GoMenu()

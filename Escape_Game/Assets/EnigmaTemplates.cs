@@ -13,6 +13,8 @@ public class EnigmaTemplates : MonoBehaviour
 	public List<GameObject> shelfdoor2;
 	public List<GameObject> keyplant2;
 	
+
+	
 	public List<GameObject> player;
 	
 	public GameObject GameObjectPlayer;
@@ -73,6 +75,17 @@ public class EnigmaTemplates : MonoBehaviour
 	public GameObject dellaser;
 	
 	public bool laserbool;
+	
+	//scena5
+	
+	public List<GameObject> tubinglist;
+	public GameObject[] tubing;
+	
+	public List<GameObject> walllist;
+	public GameObject[] walls;
+	
+	
+
 
 
 	
@@ -89,6 +102,7 @@ public class EnigmaTemplates : MonoBehaviour
 	
 	void Start(){
 		
+		
 		nrbsce = 3;
 		scena = Random.Range(0, nrbsce);
 		//scena = 1;
@@ -102,20 +116,20 @@ public class EnigmaTemplates : MonoBehaviour
 		if(difficulty == 1){
 			if( scena == 0){
 				
-				Invoke("Scena1", 0.3f);
+				Invoke("Scena1", 0.5f);
 			}
 			if( scena == 1){
 				
-				Invoke("Scena2", 0.3f);
+				Invoke("Scena2", 0.5f);
 			}
 			if( scena == 2){
 				
-				Invoke("Scena3", 0.3f);
+				Invoke("Scena3", 0.5f);
 			}
 		}
-		else if( difficulty == 2){
+		else if( difficulty >= 2){
 			scena = 4;
-			Invoke("Scena4", 0.3f);
+			Invoke("Scena4", 0.5f);
 		}
 		
 
@@ -292,8 +306,10 @@ public class EnigmaTemplates : MonoBehaviour
 		
 		//Spawnlaser
 		laserbool = true;
-		dellaser = Instantiate(laser,listposlaser[0].transform.position, Quaternion.identity); //Spawn laser
-		listposlaser.Remove(listposlaser[0]);
+		if(listposlaser.Count > 0){
+			dellaser = Instantiate(laser,listposlaser[0].transform.position, Quaternion.identity); //Spawn laser
+			listposlaser.Remove(listposlaser[0]);
+		}
 		
 		scena = Random.Range(41, 43);
 		if(scena == 41){
@@ -309,6 +325,30 @@ public class EnigmaTemplates : MonoBehaviour
 		laserbool = false;
 		Scena1();
 		
+		Scena5();
+		
+	}
+	
+	void Scena5(){
+		
+		//Spawnwalls
+		if(walllist.Count > 0){
+			randpos = Random.Range(0, walllist.Count);
+			Instantiate(walls[0],walllist[randpos].transform.position, Quaternion.identity); //Spawn walllaser
+			walllist.Remove(walllist[randpos]);
+		}
+		
+		for(int i = 0; i < walllist.Count; i++){
+			
+			
+			Instantiate(walls[0],walllist[i].transform.position, Quaternion.identity);
+			
+		
+		}
+		
+		
+	
+	
 	}
 	
 	

@@ -48,7 +48,14 @@ public class Interactable : MonoBehaviour
 			RoomText.text = "Room " + (RoomText.GetComponent<RoomCounter>().count ).ToString();
 			
 			if(RoomText.GetComponent<RoomCounter>().count > 3){
+				
+				if(RoomText.GetComponent<RoomCounter>().count <= 6){
 				RoomText.GetComponent<RoomCounter>().difficulty = 2;
+				}
+				
+				else if(RoomText.GetComponent<RoomCounter>().count > 6){
+				RoomText.GetComponent<RoomCounter>().difficulty = 3;
+				}
 			}
 			SceneManager.LoadScene("Scenes/Salles");
 			//
@@ -57,7 +64,6 @@ public class Interactable : MonoBehaviour
 			
 			
         }
-        Debug.Log("DO SOMETHING WITH THE OBSTACLE THAT THE ITEM WAS USED ON");
 		
 		
 

@@ -113,6 +113,31 @@ public class RoomSpawner : MonoBehaviour
 				spawned = true;
 			
 			}
+			
+			
+			if(difficulty == 3){
+			
+				
+				if(openingDirection == 22){
+					rand = Random.Range(0, templates2.bhard.Length);
+					Instantiate(templates2.bhard[rand], transform.position, Quaternion.identity);
+				} else if(openingDirection == 24){
+					rand = Random.Range(0, templates2.l.Length);
+					Instantiate(templates2.l[rand], transform.position, Quaternion.identity);
+				} else if(openingDirection == 25){
+					rand = Random.Range(0, templates2.inter.Length);
+					Instantiate(templates2.inter[rand], transform.position, Quaternion.identity);
+				} else if(openingDirection == 26){
+					rand = Random.Range(0, templates2.ltr.Length);
+					Instantiate(templates2.ltr[rand], transform.position, Quaternion.identity);
+				} else if(openingDirection == 27){
+					rand = Random.Range(0, templates2.r.Length);
+					Instantiate(templates2.r[rand], transform.position, Quaternion.identity);
+				}
+				
+				spawned = true;
+			
+			}
 		}
 	}
 

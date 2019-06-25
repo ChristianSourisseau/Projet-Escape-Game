@@ -1447,6 +1447,9 @@ MonoBehaviour:
   - {fileID: 5633704855055939979, guid: 5338c5e2a13e19c4fa68338cf3d26a7e, type: 3}
   r:
   - {fileID: 384797322515144768, guid: 8e514038ddcb1c842b6473f286aad39b, type: 3}
+  bhard:
+  - {fileID: 6549054882633131444, guid: d5d425c34567d9343bad72f981e0c6d6, type: 3}
+  - {fileID: 1049207093742745552, guid: 2c7235ab082a8ba4e86f401f7577c916, type: 3}
 --- !u!1001 &1128442943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1573,6 +1576,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3953485527072040130, guid: eba4d66d483275f4c80ee0c833d8c111,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -434.69434
+      objectReference: {fileID: 0}
+    - target: {fileID: 3953485527072040130, guid: eba4d66d483275f4c80ee0c833d8c111,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 12.448975
       objectReference: {fileID: 0}
     - target: {fileID: 3953485526557081035, guid: eba4d66d483275f4c80ee0c833d8c111,
         type: 3}
@@ -1986,6 +1999,23 @@ MonoBehaviour:
   laser: {fileID: 467627589720507344, guid: 034b63e52b9032c4484dc17ea0badc37, type: 3}
   dellaser: {fileID: 0}
   laserbool: 0
+  tubinglist: []
+  tubing:
+  - {fileID: 105885871520211360, guid: 852895d353b53ae48869181e6be6a08f, type: 3}
+  - {fileID: 1013336208175376249, guid: 3198e7a162203e5488a83602899df2a0, type: 3}
+  - {fileID: 8835310263435065316, guid: 46b19abb0998e7c4ab53a1d5c883e171, type: 3}
+  - {fileID: 5003773983374649442, guid: f8ad8a4795f2a1f478c10e1ae0cb52fe, type: 3}
+  - {fileID: 1288701201468963918, guid: c1150deeef30f9b40a4abdf0177ef97b, type: 3}
+  - {fileID: 1089585479970879052, guid: 280f538fb31149e48b61c37cea15cf7a, type: 3}
+  - {fileID: 4404935362991277555, guid: 676f6923d73ca3b4283bd096b6e3904f, type: 3}
+  - {fileID: 3319467092786021134, guid: 7a42b6bbc83b9a9409cff676d472d7d2, type: 3}
+  - {fileID: 2086343336281009225, guid: 208c999753dc7f5419675fe14c2978e0, type: 3}
+  - {fileID: 3853170647032283745, guid: 62b8a4b92f51c6d48b046a233368530f, type: 3}
+  - {fileID: 9143019628803490319, guid: ccacd9af6eacad648b199396eb906083, type: 3}
+  - {fileID: 641053294087973872, guid: 4f4e5ff170258414e80cea4e273dbdbf, type: 3}
+  walllist: []
+  walls:
+  - {fileID: 6962787637342049074, guid: cc80f762a8c611b498a9f15e76933690, type: 3}
 --- !u!1 &1795152929
 GameObject:
   m_ObjectHideFlags: 0
