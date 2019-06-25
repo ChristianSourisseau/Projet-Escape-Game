@@ -21,12 +21,20 @@ public class Inventory : MonoBehaviour
 
         instance = this;
 
-        tooltip = ToolTip.instance;
     }
     #endregion
 
+
     private ToolTip tooltip;
 
+    void Start()
+    {
+        tooltip = ToolTip.instance;
+        if (tooltip == null)
+        {
+            Debug.LogWarning("Tooltip instance failed");
+        }
+    }
 
     //when Inventory is changed, call this method to do something
     //example : update UI

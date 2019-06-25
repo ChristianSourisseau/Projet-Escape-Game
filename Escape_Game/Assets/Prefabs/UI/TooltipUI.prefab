@@ -191,12 +191,12 @@ PrefabInstance:
     - target: {fileID: 6433735564631261347, guid: 7857295c86d110c44841252cdef3a85f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -434.69427
+      value: -434.69434
       objectReference: {fileID: 0}
     - target: {fileID: 6433735564631261347, guid: 7857295c86d110c44841252cdef3a85f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 12.448914
+      value: 12.448975
       objectReference: {fileID: 0}
     - target: {fileID: 6433735564631261347, guid: 7857295c86d110c44841252cdef3a85f,
         type: 3}
@@ -241,32 +241,12 @@ PrefabInstance:
     - target: {fileID: 6433735564631261347, guid: 7857295c86d110c44841252cdef3a85f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6433735564631261347, guid: 7857295c86d110c44841252cdef3a85f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6433735564631261374, guid: 7857295c86d110c44841252cdef3a85f,
-        type: 3}
-      propertyPath: m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6433735564631261374, guid: 7857295c86d110c44841252cdef3a85f,
-        type: 3}
-      propertyPath: m_PreserveAspect
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6433735564631261374, guid: 7857295c86d110c44841252cdef3a85f,
-        type: 3}
-      propertyPath: m_UseSpriteMesh
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6433735564631261374, guid: 7857295c86d110c44841252cdef3a85f,
-        type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 100
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6433735565198694826, guid: 7857295c86d110c44841252cdef3a85f,
         type: 3}
@@ -307,6 +287,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6433735564631261374, guid: 7857295c86d110c44841252cdef3a85f,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6433735564631261374, guid: 7857295c86d110c44841252cdef3a85f,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6433735564631261374, guid: 7857295c86d110c44841252cdef3a85f,
+        type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6433735564631261374, guid: 7857295c86d110c44841252cdef3a85f,
+        type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6433735565198694827, guid: 7857295c86d110c44841252cdef3a85f,
         type: 3}
