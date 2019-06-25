@@ -32,7 +32,7 @@ public class EnigmaTemplates : MonoBehaviour
 	private int randpos;
 	private int rand1;
 	private int rand2;
-	
+
 	public GameObject eclat;
 	
 	public int difficulty;
@@ -126,18 +126,13 @@ public class EnigmaTemplates : MonoBehaviour
 	void Scena1(){
 		
 		//SpawnOffice
-		
-		
-
 
 		for(int i = 0; i < bigoffice.Count; i++){
-			
 			
 			rand1 = Random.Range(0, office.Length);
 			
 			Instantiate(office[rand1],bigoffice[i].transform.position, Quaternion.identity);
 			
-
 		
 		}
 
@@ -186,6 +181,9 @@ public class EnigmaTemplates : MonoBehaviour
 	}
 	
 	void Scena2(){
+		
+		
+	
 		
 		
 		//SpawnShelfDoor
@@ -297,11 +295,11 @@ public class EnigmaTemplates : MonoBehaviour
 		dellaser = Instantiate(laser,listposlaser[0].transform.position, Quaternion.identity); //Spawn laser
 		listposlaser.Remove(listposlaser[0]);
 		
-		scena = Random.Range(1, 3);
-		if(scena == 1){
+		scena = Random.Range(41, 43);
+		if(scena == 41){
 			Scena2();
 		}
-		else if(scena == 2){
+		else if(scena == 42){
 			Scena3();
 		}
 		
