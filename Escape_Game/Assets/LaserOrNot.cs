@@ -30,7 +30,7 @@ public class LaserOrNot : MonoBehaviour
 		dellaser = EnigmaTemplates.GetComponent<EnigmaTemplates>().dellaser;
 
 		
-        if ( scena == 1)
+        if ( scena == 41)
 		{
 			whitenumber = EnigmaTemplates.GetComponent<EnigmaTemplates>().whitenumber;
 			rednumber = EnigmaTemplates.GetComponent<EnigmaTemplates>().rednumber;
@@ -40,9 +40,13 @@ public class LaserOrNot : MonoBehaviour
 			{
 				open = true;
 			}
+			else{
+				open = false;
+
+			}
 		}
 		
-		if ( scena == 2)
+		if ( scena == 42)
 		{
 			open = GameObject.FindGameObjectWithTag("Press").GetComponent<OnPressure>().press;			
 		}

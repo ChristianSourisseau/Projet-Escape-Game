@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4419046997514043220}
   - component: {fileID: 2423310391557917783}
-  - component: {fileID: 2089174426778161094}
+  - component: {fileID: 8060682006369005918}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -103,7 +103,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!483693784 &2089174426778161094
+--- !u!483693784 &8060682006369005918
 TilemapRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,7 +120,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -140,7 +140,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.5, z: 0}
   m_MaxChunkCount: 16
@@ -193,6 +193,83 @@ Grid:
   m_CellGap: {x: -0.5, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!1 &6180512098236527346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5228963915126948939}
+  - component: {fileID: 8754618183763081445}
+  m_Layer: 0
+  m_Name: Freeform Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5228963915126948939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6180512098236527346}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.13765039, y: 0.42139187, z: -1.7285701}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 360543109103981545}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8754618183763081445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6180512098236527346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 1
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.21
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.35
+  m_ShapeLightFalloffOffset: {x: 1, y: 1}
+  m_ShapePath:
+  - {x: -0.17434306, y: -0.85176826, z: 0}
+  - {x: -0.09809853, y: -0.9109126, z: 0.00000011920929}
+  - {x: 0.1454191, y: -0.9267373, z: 0.00000011920929}
+  - {x: 0.35195404, y: -0.9169955, z: 0.00000011920929}
+  - {x: 0.43386424, y: -0.7634845, z: 0}
+  - {x: 0.4347719, y: 0.7483071, z: 0}
+  - {x: 0.30888048, y: 0.9333937, z: 0.00000011920929}
+  - {x: -0.0046551228, y: 0.9438374, z: 0.00000011920929}
+  - {x: -0.10594809, y: 0.88790977, z: 0.00000011920929}
+  - {x: -0.18074788, y: 0.77934563, z: 0}
+  - {x: -0.17758335, y: 0.3558229, z: 0.00000011920929}
 --- !u!1 &8158521809056388266
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,6 +300,7 @@ Transform:
   m_Children:
   - {fileID: 2854209833844439533}
   - {fileID: 4655661373081070185}
+  - {fileID: 5228963915126948939}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -284,7 +362,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2854209833844439533}
-  - component: {fileID: 7127852008949263965}
+  - component: {fileID: 4809107137126465570}
   m_Layer: 0
   m_Name: collider
   m_TagString: Wall
@@ -306,8 +384,8 @@ Transform:
   m_Father: {fileID: 360543109103981545}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &7127852008949263965
-BoxCollider2D:
+--- !u!58 &4809107137126465570
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -319,16 +397,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: -0.15}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.5
