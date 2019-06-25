@@ -1,2 +1,0 @@
-C:\Users\Joel\Desktop\Work\projet-escape-game\Escape_Game\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-C:\Users\Joel\Desktop\Work\projet-escape-game\Escape_Game\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
