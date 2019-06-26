@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a7e34e236522054f86a8af9ff2c5ee0, type: 3}
-  m_Name: Cadena
+  m_Name: Cadena 3
   m_EditorClassIdentifier: 
   description: "Un cadena \xE0 combinaison"
   name: Cadena
   icon: {fileID: 0}
-  cadena: {fileID: 8005558976119920109, guid: 4577a9add80a9be428b6f16b064344b6, type: 3}
+  obj: {fileID: 0}

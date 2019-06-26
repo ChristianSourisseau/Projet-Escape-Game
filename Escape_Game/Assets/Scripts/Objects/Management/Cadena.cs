@@ -62,7 +62,6 @@ public class Cadena : MonoBehaviour
         Interactable I = gameObject.GetComponent<Interactable>();
         if (I != null)
         {
-            //TODO
             I.obstacle.Init(gameObject);
         }
         Close();
