@@ -35,7 +35,7 @@ public class Cadena : MonoBehaviour
     Sprite num9;
 
     [SerializeField]
-    private Hint h;
+    public Hint h;
 
     [SerializeField]
     int Prem = 0;

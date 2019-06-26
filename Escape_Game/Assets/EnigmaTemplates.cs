@@ -87,10 +87,15 @@ public class EnigmaTemplates : MonoBehaviour
 	//scena6
 	
 	public List<GameObject> listhint;
-	public GameObject[] hint;
+	public GameObject[] hints;
 
 	public List<GameObject> listcadenas;
 	public GameObject[] cadenas;
+
+
+	private GameObject hint;
+	private GameObject cadena; 
+
 
 
 	
@@ -360,21 +365,22 @@ public class EnigmaTemplates : MonoBehaviour
 		//SpawnHint
 		if(listhint.Count > 0){
 			randpos = Random.Range(0, listhint.Count);
-			Instantiate(hint[0],listhint[randpos].transform.position, Quaternion.identity); //Spawn hint
+			hint = Instantiate(hints[0],listhint[randpos].transform.position, Quaternion.identity); //Spawn hint
 			listhint.Remove(listhint[randpos]);
 		}
 		
 		for(int i = 0; i < listhint.Count; i++){
 			
 			
-			Instantiate(hint[0],listhint[i].transform.position, Quaternion.identity);
+			Instantiate(hints[0],listhint[i].transform.position, Quaternion.identity);
 			
 		}
 		
 		//SpawnCadenas
 		if(listcadenas.Count > 0){
 			randpos = Random.Range(0, listcadenas.Count);
-			Instantiate(cadenas[0],listcadenas[randpos].transform.position, Quaternion.identity); //Spawn cadenas
+			cadena = Instantiate(cadenas[0],listcadenas[randpos].transform.position, Quaternion.identity); //Spawn cadenas*
+			cadena.GetComponent<Cadena>().h = hint.GetComponent<Interactable>().hint;
 			listcadenas.Remove(listcadenas[randpos]);
 		}
 		

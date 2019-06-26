@@ -35,6 +35,8 @@ public class RoomSpawner : MonoBehaviour
 	public float waitTime = 4f;
 	
 	private int rand;
+
+
 	
 	
 	private RoomTemplates2 templates2;
@@ -48,6 +50,8 @@ public class RoomSpawner : MonoBehaviour
 		Destroy(gameObject, waitTime);
 		templates = GameObject.FindGameObjectWithTag("RoomParts").GetComponent<RoomTemplates>();
 		templates2 = GameObject.FindGameObjectWithTag("RoomParts2").GetComponent<RoomTemplates2>();
+		
+
 
 		Invoke("Spawn", 0.1f);
 	}

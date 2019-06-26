@@ -1450,6 +1450,8 @@ MonoBehaviour:
   bhard:
   - {fileID: 6549054882633131444, guid: d5d425c34567d9343bad72f981e0c6d6, type: 3}
   - {fileID: 7596244571020995413, guid: 7655d9b3e47f76f43bc248846e355372, type: 3}
+  - {fileID: 3262175797151220348, guid: cb57073c24336b64e906ca500e874d95, type: 3}
+  - {fileID: 1049207093742745552, guid: 2c7235ab082a8ba4e86f401f7577c916, type: 3}
 --- !u!1001 &1128442943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2017,8 +2019,10 @@ MonoBehaviour:
   walls:
   - {fileID: 6962787637342049074, guid: cc80f762a8c611b498a9f15e76933690, type: 3}
   listhint: []
-  hint:
+  hints:
   - {fileID: 4012939535417722670, guid: 3d06500a6e3ccc04fae57be326390136, type: 3}
+  - {fileID: 6233729481709880567, guid: 8ffc92ef8b919ba4a856fb28ccb66639, type: 3}
+  - {fileID: 6574754133208494304, guid: 6bdeb216492bad4478e3adbe9019bced, type: 3}
   listcadenas: []
   cadenas:
   - {fileID: 8005558976119920109, guid: 4577a9add80a9be428b6f16b064344b6, type: 3}
