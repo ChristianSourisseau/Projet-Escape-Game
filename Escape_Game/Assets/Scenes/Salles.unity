@@ -1526,6 +1526,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6658697592024102431, guid: 24e4357ce716a4d44991ef37335acf68,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 155.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658697592024102431, guid: 24e4357ce716a4d44991ef37335acf68,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658697592024102431, guid: 24e4357ce716a4d44991ef37335acf68,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 33.35
+      objectReference: {fileID: 0}
     - target: {fileID: 6658697592622320740, guid: 24e4357ce716a4d44991ef37335acf68,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1565,6 +1580,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658697591692370836, guid: 24e4357ce716a4d44991ef37335acf68,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658697592111347676, guid: 24e4357ce716a4d44991ef37335acf68,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658697591211138663, guid: 24e4357ce716a4d44991ef37335acf68,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24e4357ce716a4d44991ef37335acf68, type: 3}
@@ -1747,10 +1777,6 @@ MonoBehaviour:
   bhard:
   - {fileID: 3262175797151220348, guid: cb57073c24336b64e906ca500e874d95, type: 3}
   - {fileID: 6549054882633131444, guid: d5d425c34567d9343bad72f981e0c6d6, type: 3}
-  - {fileID: 765653658823857740, guid: f76f49a54efdef440b205b532f60f41f, type: 3}
-  - {fileID: 3731196897201606515, guid: 33914be5e156d9141b00ecc1480235fa, type: 3}
-  - {fileID: 7596244571020995413, guid: 7655d9b3e47f76f43bc248846e355372, type: 3}
-  - {fileID: 1049207093742745552, guid: 2c7235ab082a8ba4e86f401f7577c916, type: 3}
 --- !u!1001 &1128442943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2317,6 +2343,7 @@ MonoBehaviour:
   walllist: []
   walls:
   - {fileID: 6962787637342049074, guid: cc80f762a8c611b498a9f15e76933690, type: 3}
+  - {fileID: 6962787637342049074, guid: 9ece3411432845442a50df768d102f76, type: 3}
   listhint: []
   hints:
   - {fileID: 4012939535417722670, guid: 3d06500a6e3ccc04fae57be326390136, type: 3}
@@ -2325,6 +2352,10 @@ MonoBehaviour:
   listcadenas: []
   cadenas:
   - {fileID: 8005558976119920109, guid: 4577a9add80a9be428b6f16b064344b6, type: 3}
+  digicode: {fileID: 6449454139666721673, guid: 6e4ba6b0feea87b4a803fd8678fd0750,
+    type: 3}
+  laserdigicode: {fileID: 7651220657282280662, guid: d1e446ea04f1b2d4da303ab0de70645a,
+    type: 3}
   listboxes: []
   boxes:
   - {fileID: 4295998662483455271, guid: 58b4ab71504000b419226aba06c905a0, type: 3}

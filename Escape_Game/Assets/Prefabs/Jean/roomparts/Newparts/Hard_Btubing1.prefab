@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23278509007665441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.5, y: -3.5, z: 0}
+  m_LocalPosition: {x: 2.5, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 226249369892486828}
@@ -3496,7 +3496,7 @@ GameObject:
   - component: {fileID: 7749917405834023371}
   - component: {fileID: 1198080118453417760}
   m_Layer: 0
-  m_Name: Btubing1
+  m_Name: Hard_Btubing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
