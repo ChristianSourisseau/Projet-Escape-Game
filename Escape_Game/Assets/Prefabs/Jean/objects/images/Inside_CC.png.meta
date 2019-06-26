@@ -40,7 +40,7 @@ TextureImporter:
     second: Inside_CC_11
   - first:
       213: 5127706994713482217
-    second: Inside_CC_12
+    second: Box0
   - first:
       213: -1888198838107013018
     second: Inside_CC_13
@@ -98,6 +98,15 @@ TextureImporter:
   - first:
       213: -471524240725210332
     second: Inside_CC_31
+  - first:
+      213: 2094468367021650603
+    second: Box1
+  - first:
+      213: 8409355513711890585
+    second: Box2
+  - first:
+      213: -2729876020919578400
+    second: Box3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -828,6 +837,90 @@ TextureImporter:
       bones: []
       spriteID: f16f3d12968b1364999c43631cc0dd55
       internalID: -471524240725210332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8d94d2ac0f99d45ada22849243e830
+      internalID: 5127706994713482217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09305ef5104c4b4438d2d6e4d181ef68
+      internalID: 2094468367021650603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7226b86a0b8976b418662ca133f03c53
+      internalID: 8409355513711890585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473899123cbce0f4bb9aca156e08ffd1
+      internalID: -2729876020919578400
       vertices: []
       indices: 
       edges: []

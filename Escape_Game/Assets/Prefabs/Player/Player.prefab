@@ -156,7 +156,7 @@ MonoBehaviour:
   westSprite: {fileID: -1796082761614054225, guid: 1d0f5ab313cb11d4594f56da4ab99621,
     type: 3}
   canMove: 0
-  walkSpeed: 10
+  walkSpeed: 17
   isAllowedToMove: 1
 --- !u!95 &6427557950774397695
 Animator:

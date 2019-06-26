@@ -1687,10 +1687,8 @@ MonoBehaviour:
   r:
   - {fileID: 384797322515144768, guid: 8e514038ddcb1c842b6473f286aad39b, type: 3}
   bhard:
-  - {fileID: 6549054882633131444, guid: d5d425c34567d9343bad72f981e0c6d6, type: 3}
-  - {fileID: 7596244571020995413, guid: 7655d9b3e47f76f43bc248846e355372, type: 3}
   - {fileID: 3262175797151220348, guid: cb57073c24336b64e906ca500e874d95, type: 3}
-  - {fileID: 1049207093742745552, guid: 2c7235ab082a8ba4e86f401f7577c916, type: 3}
+  - {fileID: 3731196897201606515, guid: 33914be5e156d9141b00ecc1480235fa, type: 3}
 --- !u!1001 &1128442943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2265,6 +2263,11 @@ MonoBehaviour:
   listcadenas: []
   cadenas:
   - {fileID: 8005558976119920109, guid: 4577a9add80a9be428b6f16b064344b6, type: 3}
+  listboxes: []
+  boxes:
+  - {fileID: 4295998662483455271, guid: 58b4ab71504000b419226aba06c905a0, type: 3}
+  - {fileID: 5351165835862338392, guid: 4b695c4f991ba634189763f01ad6e0e6, type: 3}
+  - {fileID: 7607392992060219624, guid: 8e2d509d04c868c429c5ce4a40b25e68, type: 3}
 --- !u!1 &1795152929
 GameObject:
   m_ObjectHideFlags: 0

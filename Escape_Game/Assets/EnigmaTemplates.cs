@@ -96,8 +96,10 @@ public class EnigmaTemplates : MonoBehaviour
 	private GameObject hint;
 	private GameObject cadena; 
 
-
-
+	//scena7
+	
+	public List<GameObject> listboxes;
+	public GameObject[] boxes;
 	
 
 	
@@ -122,7 +124,7 @@ public class EnigmaTemplates : MonoBehaviour
 		
 		nrbsce = 3;
 		scena = Random.Range(0, nrbsce);
-		//scena = 1;
+		//scena = 1 ;
 		
 		
 		difficulty = GameObject.FindGameObjectWithTag("RoomCounter").GetComponent<RoomCounter>().difficulty;
@@ -133,20 +135,20 @@ public class EnigmaTemplates : MonoBehaviour
 		if(difficulty == 1){
 			if( scena == 0){
 				
-				Invoke("Scena1", 0.5f);
+				Invoke("Scena1", 1f);
 			}
 			if( scena == 1){
 				
-				Invoke("Scena2", 0.5f);
+				Invoke("Scena2", 1f);
 			}
 			if( scena == 2){
 				
-				Invoke("Scena3", 0.5f);
+				Invoke("Scena3", 1f);
 			}
 		}
 		else if( difficulty >= 2){
 			scena = 4;
-			Invoke("Scena4", 0.5f);
+			Invoke("Scena4", 1f);
 		}
 		
 
@@ -343,6 +345,8 @@ public class EnigmaTemplates : MonoBehaviour
 		Scena1();
 		
 		Scena5();
+		Scena7();
+
 		
 	}
 	
@@ -393,6 +397,40 @@ public class EnigmaTemplates : MonoBehaviour
 		
 		
 	
+	}
+	
+	void Scena7(){
+		//Spawnwalls
+		if(walllist.Count > 0){
+			randpos = Random.Range(0, walllist.Count);
+			Instantiate(walls[0],walllist[randpos].transform.position, Quaternion.identity); //Spawn walllaser
+			walllist.Remove(walllist[randpos]);
+		}
+		
+		for(int i = 0; i < walllist.Count; i++){
+			
+			
+			Instantiate(walls[0],walllist[i].transform.position, Quaternion.identity);
+			
+		}
+		
+		//Spawnboxes
+		
+		
+		for(int i = 0; i < listboxes.Count; i++){
+			
+			
+			rand1 = Random.Range(0, shelf.Length);
+			
+			if(Random.Range(0, 3) != 0){
+				Instantiate(boxes[rand1],listboxes[i].transform.position, Quaternion.identity);
+			}
+		
+			
+		}
+		
+		
+		
 	}
 	
 	

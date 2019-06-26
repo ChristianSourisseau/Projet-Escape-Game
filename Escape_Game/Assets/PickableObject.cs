@@ -43,6 +43,7 @@ public class PickableObject : MonoBehaviour
         if (hasPlayer && Input.GetKey(KeyCode.E))
         {
             transform.parent = playerCam;
+			this.GetComponent<BoxCollider2D>().enabled = false; 
             beingCarried = true;
         }
 
@@ -50,6 +51,7 @@ public class PickableObject : MonoBehaviour
         if (beingCarried && Input.GetKey(KeyCode.A))
         {
 			transform.parent = null;
+			this.GetComponent<BoxCollider2D>().enabled = true; 
 			beingCarried = false;
 		}
     }
