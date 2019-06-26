@@ -101,6 +101,10 @@ public class EnigmaTemplates : MonoBehaviour
 	public List<GameObject> listboxes;
 	public GameObject[] boxes;
 	
+	//scena8 (floor decoration)
+
+	public List<GameObject> listfloor;
+	public GameObject[] floor;
 
 	
 	
@@ -342,10 +346,11 @@ public class EnigmaTemplates : MonoBehaviour
 		shelfdoor = shelfdoor2;
 		keyplant = keyplant2;
 		laserbool = false;
-		Scena1();
 		
+		Scena1();
 		Scena5();
 		Scena7();
+		Scena8();
 
 		
 	}
@@ -431,6 +436,23 @@ public class EnigmaTemplates : MonoBehaviour
 		
 		
 		
+	}
+	
+	void Scena8(){
+		
+		//Spawn floor decoration
+		for(int i = 0; i < listfloor.Count; i++){
+			
+			
+			rand1 = Random.Range(0, floor.Length);
+			
+			if(Random.Range(0, 2) != 0){
+				Instantiate(floor[rand1],listfloor[i].transform.position, Quaternion.identity); 
+			}
+		
+			
+		}
+	
 	}
 	
 	
