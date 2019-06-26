@@ -23,7 +23,7 @@ public class Menu : MonoBehaviour
 
     public void LOAD_OPTION()
     {
-        // SceneManager.LoadScene("salle103");  remplacer salle103 par la scene des options
+       SceneManager.LoadScene("Settings"); 
     }
 
     //for come back to the menu

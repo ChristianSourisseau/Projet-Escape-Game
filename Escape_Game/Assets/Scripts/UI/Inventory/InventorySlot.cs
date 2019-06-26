@@ -34,7 +34,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void onUsedItem()
     {
-        Debug.Log("Button has been pressed");
+
         Inventory.instance.itemUsed(item);
     }
 
@@ -43,7 +43,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if(item != null)
         {
             Inventory.instance.ShowTooltip(transform.position,item);
-            Debug.Log("Show Tooltip");
+
         }
         
     }
@@ -51,6 +51,5 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public void OnPointerExit(PointerEventData eventData)
     {
         Inventory.instance.HideTooltip();
-        Debug.Log("Exit");
     }
 }

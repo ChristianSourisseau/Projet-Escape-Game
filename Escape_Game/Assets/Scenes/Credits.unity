@@ -190,11 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Charrier Tristant
-
-
-
-    Malnoe Baptiste
+  m_Text: 'Malnoe Baptiste
 
     Derieux Jean
 
@@ -205,6 +201,10 @@ MonoBehaviour:
     Benchbaba Mokthar
 
     Chevalot Maxime
+
+
+
+    Charrier Tristan
 
 '
 --- !u!222 &593021926
@@ -506,11 +506,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Project Manager :
+  m_Text: 'Programmers :
 
 
 
-    Programmers :
+
+
+
+
+
+    Project Manager :
 
 
 

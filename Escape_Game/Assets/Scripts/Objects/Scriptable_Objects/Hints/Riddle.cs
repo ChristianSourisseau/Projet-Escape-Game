@@ -14,21 +14,22 @@ public class Riddle : Hint
 
     private EnigmaElementA partA;
     private EnigmaElementB partB;
-    
 
-    public Hint[] getHintElements()
+
+    public Hint getSubA()
     {
-        Hint[] h = new Hint[2];
-        h[0] = partA;
-        h[1] = partB;
-        return h;
+        return partA;
     }
 
-   
+    public Hint getSubB()
+    {
+        return partB;
+    }
+
     public override void initialise()
     {
         name = "DXXXX";
-        description = "Je suis l'astre perdu, la lumière égarée. Si vous voulez sortir, il vous faut me trouver. Moi";
+        description = "Je suis l'astre perdu, la lumière égarée.\n Si vous voulez sortir, il vous faut me trouver.\n Moi";
         System.Random ran = new System.Random();
 
         partA = hintsA[ran.Next(hintsA.Length)];

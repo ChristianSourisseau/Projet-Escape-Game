@@ -20,16 +20,26 @@ public class Inventory : MonoBehaviour
         }
 
         instance = this;
+
     }
     #endregion
+
+
+    private ToolTip tooltip;
+
+    void Start()
+    {
+        tooltip = ToolTip.instance;
+        if (tooltip == null)
+        {
+            Debug.LogWarning("Tooltip instance failed");
+        }
+    }
 
     //when Inventory is changed, call this method to do something
     //example : update UI
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
-
-    [SerializeField]
-    private GameObject tooltip; 
 
     public List<Item> items = new List<Item>();
     public int space = 7;
@@ -66,14 +76,12 @@ public class Inventory : MonoBehaviour
 
     public void ShowTooltip(Vector3 position, IDescribable description)
     {
-        tooltip.SetActive(true);
-        tooltip.transform.position = position;
-        tooltip.GetComponentInChildren<Text>().text = description.GetDescription();
+        tooltip.ShowTooltip(position, description);
     }
 
     public void HideTooltip()
     {
-        tooltip.SetActive(false);
+        tooltip.HideTooltip();
     }
 
 }

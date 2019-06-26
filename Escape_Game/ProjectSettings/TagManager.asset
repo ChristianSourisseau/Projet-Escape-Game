@@ -8,6 +8,13 @@ TagManager:
   - RoomParts
   - Enigma
   - whitenumber
+  - Press
+  - Cube
+  - sprite1
+  - sprite2
+  - Wall
+  - RoomCounter
+  - RoomParts2
   layers:
   - Default
   - TransparentFX
