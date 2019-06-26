@@ -16,7 +16,7 @@ public class CombinationLock : Obstacle
 					cadena.Open();
 				}
 				else{
-					obj.SetActive(false);
+                    cadena.gotoopen.SetActive(false);
 				}
             }
             else
