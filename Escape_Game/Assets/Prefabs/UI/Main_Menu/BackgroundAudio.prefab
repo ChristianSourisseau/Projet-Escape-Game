@@ -140,3 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73b3725cb70f3b34caf5f1bb1add2948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goost: {fileID: 2432462033548345629}
+  ost:
+  - {fileID: 8300000, guid: 96aedb994f2236246b1a09cd59089bfe, type: 3}
+  - {fileID: 8300000, guid: 522f340b1a5612b4489a5e934cd4c0eb, type: 3}
