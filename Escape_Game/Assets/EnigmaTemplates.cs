@@ -90,7 +90,7 @@ public class EnigmaTemplates : MonoBehaviour
 	public GameObject[] hints;
 
 	public List<GameObject> listcadenas;
-	public GameObject[] cadenas;
+	public List<GameObject> cadenas;
 
 
 	private GameObject hint;
@@ -98,6 +98,10 @@ public class EnigmaTemplates : MonoBehaviour
 	
 	public GameObject digicode;
 	public GameObject laserdigicode;
+	
+	public GameObject laserdigicodetemp;
+	
+	public Cadena ca;
 
 
 
@@ -393,24 +397,26 @@ public class EnigmaTemplates : MonoBehaviour
 		}
 		
 		//SpawnCadenas
-		if(listcadenas.Count > 0){
-			randpos = Random.Range(0, listcadenas.Count);
-			
-			Instantiate(digicode,listcadenas[randpos].transform.position, Quaternion.identity); //Spawn sprite digicode
-
-
-			cadena = Instantiate(cadenas[0],listcadenas[randpos].transform.position, Quaternion.identity); //Spawn cadenas*
-			cadena.GetComponent<Cadena>().gotoopen = Instantiate(laserdigicode,listcadenas[randpos].transform.position, Quaternion.identity); //Spawn gameobject laserdigicode
-
-			cadena.GetComponent<Cadena>().h = hint.GetComponent<Interactable>().hint;
-			listcadenas.Remove(listcadenas[randpos]);
-		}
+		
 		
 		for(int i = 0; i < listcadenas.Count; i++){
 			
-			Instantiate(digicode,listcadenas[randpos].transform.position, Quaternion.identity); //Spawn sprite digicode
+			randpos = Random.Range(0, listcadenas.Count);
+			rand1 = Random.Range(0, cadenas.Count);
 
-			Instantiate(cadenas[0],listcadenas[i].transform.position, Quaternion.identity);
+			Instantiate(digicode,listcadenas[randpos].transform.position, Quaternion.identity); //Spawn sprite digicode
+			cadena = Instantiate(cadenas[rand1],listcadenas[randpos].transform.position, Quaternion.identity); //Spawn cadenas
+			
+			
+			
+			laserdigicodetemp = Instantiate(laserdigicode,cadena.transform.position, Quaternion.identity) as GameObject; //Spawn gameobject laserdigicode
+			ca = cadena.GetComponent<Cadena>();
+			ca.gotoopen = laserdigicodetemp.gameObject;
+
+			cadena.GetComponent<Cadena>().h = hint.GetComponent<Interactable>().hint;
+			
+			cadenas.Remove(cadenas[rand1]);
+			listcadenas.Remove(listcadenas[randpos]);
 			
 		}
 		
@@ -422,15 +428,21 @@ public class EnigmaTemplates : MonoBehaviour
 		//Spawnwalls
 		if(walllist.Count > 0){
 			randpos = Random.Range(0, walllist.Count);
-			Instantiate(walls[0],walllist[randpos].transform.position, Quaternion.identity); //Spawn walllaser
+			Instantiate(walls[1],walllist[randpos].transform.position, Quaternion.identity); //Spawn walllaser
 			walllist.Remove(walllist[randpos]);
 		}
 		
 		for(int i = 0; i < walllist.Count; i++){
 			
 			
-			Instantiate(walls[0],walllist[i].transform.position, Quaternion.identity);
 			
+			Instantiate(walls[0],walllist[i].transform.position, Quaternion.identity);
+			// if(Random.Range(0, 2) != 0){
+				// Instantiate(walls[0],walllist[i].transform.position, Quaternion.identity);
+			// }
+			// else{
+				// Instantiate(walls[1],walllist[i].transform.position, Quaternion.identity);
+			// }
 		}
 		
 		//Spawnboxes

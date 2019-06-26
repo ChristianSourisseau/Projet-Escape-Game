@@ -1272,7 +1272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9ea6785ba9ab84dadd693bb819c115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 1
+  count: 51
   difficulty: 1
 --- !u!1001 &978470403
 PrefabInstance:
@@ -2352,10 +2352,18 @@ MonoBehaviour:
   listcadenas: []
   cadenas:
   - {fileID: 8005558976119920109, guid: 4577a9add80a9be428b6f16b064344b6, type: 3}
+  - {fileID: 8005558976119920109, guid: d070f78d54be63b43a09ff88f6caad3d, type: 3}
+  - {fileID: 8005558976119920109, guid: 54a959dc491278a4a8d5975427cbdb75, type: 3}
+  - {fileID: 8005558976119920109, guid: f54392c49307ca8459157e722580ecff, type: 3}
+  - {fileID: 8005558976119920109, guid: 80507dc287608e040af1b41acf250802, type: 3}
+  - {fileID: 8005558976119920109, guid: 6f0128a5fe4ee7f4796eba355738e0be, type: 3}
+  - {fileID: 8005558976119920109, guid: c8044bc85185f99458f8059103ae4e33, type: 3}
   digicode: {fileID: 6449454139666721673, guid: 6e4ba6b0feea87b4a803fd8678fd0750,
     type: 3}
   laserdigicode: {fileID: 7651220657282280662, guid: d1e446ea04f1b2d4da303ab0de70645a,
     type: 3}
+  laserdigicodetemp: {fileID: 0}
+  ca: {fileID: 0}
   listboxes: []
   boxes:
   - {fileID: 4295998662483455271, guid: 58b4ab71504000b419226aba06c905a0, type: 3}

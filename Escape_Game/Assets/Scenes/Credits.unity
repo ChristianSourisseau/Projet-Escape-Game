@@ -179,7 +179,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 300
+    m_FontSize: 260
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -190,11 +190,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Graphisme :\t\t\t\t\t\t\t\tMalnoe Baptiste\n\t\t\t\t\t\t\t\t\t\t\t\tDerieux
-    Jean\n\nTexte et Interface :   \t\t\t\tAuclair Johnny\t\t\n\nIntegration des \xE9nigmes
-    :\t\tSourisseau Christian\n\nCr\xE9ations d'enigmes :\t\t \t\tBenchbaba Mokthar\n\nScene
-    annexes :\t\t\t\t\t\tChevalot Maxime\n\n\n\n\n\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\tCharrier
-    Tristan\n"
+  m_Text: "\nPersonnage :\t\t\t\t\t\t\tMalnoe Baptiste\t\t\n\nTexte et Interface :
+    \  \t\t\t\tAuclair Johnny\t\t\n\nInt\xE9gration des \xE9nigmes :\t\tDerieux Jean\n\t\t\t\t\t\t\t\t\t\t\t\tSourisseau
+    Christian\n\nEnigmes :\t\t \t\t\t\t\t\t\tBenchbaba Mokthar\n\t\t\t\t\t\t\t\t\t\t\t\tDerieux
+    Jean\n\nSc\xE8nes annexes :\t\t\t\t\tChevalot Maxime\n\nG\xE9n\xE9ration des salles
+    :\t\t\tDerieux Jean\n\n\n\n\n\n\t\t\n\n\t\t\t\t \tCharrier Tristan\n"
 --- !u!222 &593021926
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -494,8 +494,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Programmers \n\n\n\n\n\n\n\n\n\n\n\nProject Manager \n\n\n\n\n\n\n\nAssets
-    Graphic \n\n\n\n\n"
+  m_Text: "Programmers \n\n\n\n\n\n\n\n\n\n\n\n\n\tProject Manager \n \n\n\n\n\n"
 --- !u!222 &1538752923
 CanvasRenderer:
   m_ObjectHideFlags: 0
