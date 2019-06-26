@@ -95,6 +95,11 @@ public class EnigmaTemplates : MonoBehaviour
 
 	private GameObject hint;
 	private GameObject cadena; 
+	
+	public GameObject digicode;
+	public GameObject laserdigicode;
+
+
 
 	//scena7
 	
@@ -348,8 +353,10 @@ public class EnigmaTemplates : MonoBehaviour
 		laserbool = false;
 		
 		Scena1();
-		Scena5();
+		
 		Scena7();
+		Scena5();
+		
 		Scena8();
 
 		
@@ -388,14 +395,21 @@ public class EnigmaTemplates : MonoBehaviour
 		//SpawnCadenas
 		if(listcadenas.Count > 0){
 			randpos = Random.Range(0, listcadenas.Count);
+			
+			Instantiate(digicode,listcadenas[randpos].transform.position, Quaternion.identity); //Spawn sprite digicode
+
+
 			cadena = Instantiate(cadenas[0],listcadenas[randpos].transform.position, Quaternion.identity); //Spawn cadenas*
+			cadena.GetComponent<Cadena>().gotoopen = Instantiate(laserdigicode,listcadenas[randpos].transform.position, Quaternion.identity); //Spawn gameobject laserdigicode
+
 			cadena.GetComponent<Cadena>().h = hint.GetComponent<Interactable>().hint;
 			listcadenas.Remove(listcadenas[randpos]);
 		}
 		
 		for(int i = 0; i < listcadenas.Count; i++){
 			
-			
+			Instantiate(digicode,listcadenas[randpos].transform.position, Quaternion.identity); //Spawn sprite digicode
+
 			Instantiate(cadenas[0],listcadenas[i].transform.position, Quaternion.identity);
 			
 		}
