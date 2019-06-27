@@ -192,11 +192,11 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "\nPersonnage :\t\t\t\t\t\t\tMalnoe Baptiste\t\t\n\nTexte et Interface :
     \  \t\t\t\tAuclair Johnny\t\t\n\nInt\xE9gration des \xE9nigmes :\t\tDerieux Jean\n\t\t\t\t\t\t\t\t\t\t\t\tSourisseau
-    Christian\n\nEnigmes :\t\t \t\t\t\t\t\t\tBenchbaba Mokthar\n\t\t\t\t\t\t\t\t\t\t\t\tDerieux
+    Christian\n\nEnigmes :\t\t \t\t\t\t\t\tBenchbaba Mokthar\n\t\t\t\t\t\t\t\t\t\t\t\tDerieux
     Jean\n\nSc\xE8nes annexes :\t\t\t\t\tChevalot Maxime\n\nG\xE9n\xE9ration des salles
-    :\t\t\tDerieux Jean\n\n\n\n\n\n\t\t\n\n\t\t\t\t \tCharrier Tristan\n\n\n\n\n\n\nmusic
-    : \t\t\t\tMyuu - Growing Shadows\n\t\t\t\t\t\t\tMyuu - The Order's Theme\n\nArt
-    : \t\t\t\t\t\tDark Room by Ikiz\n\t\t\t\t\t\t\tDark Evening by Nico Br\xFCggeboes\n\nGame
+    :\t\t\tDerieux Jean\n\n\n\n\n\n\t\t\n\nCharrier Tristan\n\n\n\n\n\n\n\nMusiques
+    :\t\t\tMyuu - Growing Shadows\n\t\t\t\t\t\t\tMyuu - The Order's Theme\n\nImages
+    : \t\t\t\tDark Room by Ikiz\n\t\t\t\t\t\t\tDark Evening by Nico Br\xFCggeboes\n\nGame
     Assets : \tRPG Maker\n\t\t\t\t\t\t\tRPG Tutorial Assets by Sebastian Lague\n\t\t\t\t\t\t\tCookies
     by BlackThornProd\n\t\t\t\t\t\t\tUI Elements by tavoarts\n\t\t"
 --- !u!222 &593021926
@@ -462,7 +462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -234, y: -1506}
+  m_AnchoredPosition: {x: 8.5, y: -1506}
   m_SizeDelta: {x: 3804.9, y: 9843}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1538752922
@@ -492,14 +492,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 300
-    m_Alignment: 2
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Programmers \n\n\n\n\n\n\n\n\n\n\n\n\n\tProject Manager \n \n\n\n\n\tAssets
-    Graphiques\n\n\n"
+  m_Text: "Programmeurs \n\n\n\n\n\n\n\n\n\n\n\n\nEnseignant R\xE9f\xE9rent \n \n\n\n\n\nRessources\n\n\n\n"
 --- !u!222 &1538752923
 CanvasRenderer:
   m_ObjectHideFlags: 0
