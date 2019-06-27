@@ -26,7 +26,6 @@ public class DontDestroyOnLoad : MonoBehaviour
     private void Start()
     {
         instance = this;
-        //Destroys gameObject when the Scene Menu is active
     }
 
     
@@ -38,7 +37,6 @@ public class DontDestroyOnLoad : MonoBehaviour
         //Verifies that this script is called in the right context
         if (!CorrectScene(scene))
         {
-            Debug.Log("good boy");
             GameObject.Destroy(gameObject);
         }
     }
