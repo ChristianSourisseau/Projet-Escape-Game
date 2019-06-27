@@ -899,6 +899,11 @@ PrefabInstance:
       propertyPath: m_ShapePath.Array.data[3].y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4225013026200728294, guid: aacab5e81dae1ad4ebd26afc1e44aa9c,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 3.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aacab5e81dae1ad4ebd26afc1e44aa9c, type: 3}
 --- !u!1001 &549643620
@@ -1838,6 +1843,7 @@ MonoBehaviour:
   - {fileID: 765653658823857740, guid: f76f49a54efdef440b205b532f60f41f, type: 3}
   - {fileID: 3731196897201606515, guid: 33914be5e156d9141b00ecc1480235fa, type: 3}
   btest:
+  - {fileID: 4502391340821304021, guid: 32bf739f76616bf4f9e267d59cd1208a, type: 3}
   - {fileID: 6549054882633131444, guid: d5d425c34567d9343bad72f981e0c6d6, type: 3}
   rrbonus:
   - {fileID: 1337509987909450177, guid: c0cbabe82c70a9443b5d828e6517c573, type: 3}
@@ -2088,7 +2094,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 32767
+  m_SortingOrder: 49
   m_TargetDisplay: 0
 --- !u!224 &1215826919
 RectTransform:
@@ -2543,6 +2549,23 @@ MonoBehaviour:
   - {fileID: 8113167730212653685, guid: ca7211f9f9e0ec04895bbdb99938fad7, type: 3}
   - {fileID: 5761250593760688593, guid: 54341fa316669654ea0f845cfb774060, type: 3}
   - {fileID: 3074555270432428771, guid: 2651d24ffbd165b4aabbe18d7577cd26, type: 3}
+  listhintcodag: []
+  hintscodag:
+  - {fileID: 2530037871092754026, guid: 0dc3ee52051d9604b88417c34d6a551a, type: 3}
+  - {fileID: 2530037871092754026, guid: 089b587dad1dd4a47a1283757bf29ff8, type: 3}
+  - {fileID: 2530037871092754026, guid: 96882c91a5ddfa84790f7b8420fd47c3, type: 3}
+  - {fileID: 2530037871092754026, guid: 3b9fe893925872b4da09294668ee11e6, type: 3}
+  - {fileID: 2530037871092754026, guid: 6b0a4bd139b074c44a825d4389e145d3, type: 3}
+  - {fileID: 2530037871092754026, guid: ecf8aab2d3320b84ba029a38a5b499c9, type: 3}
+  - {fileID: 2530037871092754026, guid: 97c380ba31fbf0747a1f7abf4d0a4e8f, type: 3}
+  - {fileID: 2530037871092754026, guid: 76c2ea3ba26eed84fa57bcefde01d5de, type: 3}
+  - {fileID: 2530037871092754026, guid: 9d1cd2ddae92d654692010ea82f222eb, type: 3}
+  - {fileID: 2530037871092754026, guid: 85b14b546fc944a4592fbf5b36ea835d, type: 3}
+  listcadenas2: []
+  cadena2: {fileID: 0}
+  laserdigicode2: {fileID: 7651220657282280662, guid: 99957a3361d068d46958c7d306032286,
+    type: 3}
+  laserdigicodetemp2: {fileID: 0}
 --- !u!1 &1938288712
 GameObject:
   m_ObjectHideFlags: 0

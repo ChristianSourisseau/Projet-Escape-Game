@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class laserdigioff : MonoBehaviour
+public class laserdigioffcodag : MonoBehaviour
 {
+    
 	private bool open;
 	
-	
-
-	private GameObject EnigmaTemplates;
+		private GameObject EnigmaTemplates;
 	
     void Start()
     {
@@ -19,10 +18,13 @@ public class laserdigioff : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        open = EnigmaTemplates.GetComponent<EnigmaTemplates>().cadena.GetComponent<Cadena>().isopen;
+        open = EnigmaTemplates.GetComponent<EnigmaTemplates>().cadena2.GetComponent<Cadena>().isopen;
+		
 		if (open){
-			EnigmaTemplates.GetComponent<EnigmaTemplates>().laserdigicodetemp.SetActive(false);
+			EnigmaTemplates.GetComponent<EnigmaTemplates>().laserdigicodetemp2.SetActive(false);
 		}
 		
     }
+
+
 }
