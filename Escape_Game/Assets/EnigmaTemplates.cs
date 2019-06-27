@@ -132,6 +132,22 @@ public class EnigmaTemplates : MonoBehaviour
 	
 	public GameObject laserdigicodetemp2;
 	
+	// scena 10 (riddle)
+	
+	public List<GameObject> listhintriddle;
+	public GameObject[] hintsriddle;
+	
+	public List<GameObject> listcadenas3;
+
+
+	private GameObject hintriddle;
+	public GameObject cadena3; 
+
+	public GameObject laserdigicode3;
+
+	
+	public GameObject laserdigicodetemp3;
+	
 
 	
 
@@ -376,6 +392,8 @@ public class EnigmaTemplates : MonoBehaviour
 		
 		Scena8();
 		Scena9();
+		Scena10();
+
 
 		
 	}
@@ -515,5 +533,35 @@ public class EnigmaTemplates : MonoBehaviour
 		
 	}
 	
+	void  Scena10(){ //riddle
 	
+	if(listhintriddle.Count > 0){
+			
+			randpos = Random.Range(0, listhintriddle.Count);
+			rand1 = Random.Range(0, hintsriddle.Length);
+
+			hintriddle = Instantiate(hintsriddle[rand1],listhintriddle[randpos].transform.position, Quaternion.identity); //Spawn hint
+			listhintriddle.Remove(listhintriddle[randpos]);
+			
+		
+			
+			randpos = Random.Range(0, listcadenas.Count);
+			rand1 = Random.Range(0, cadenas.Count);
+
+			Instantiate(digicode,listcadenas[randpos].transform.position, Quaternion.identity); //Spawn sprite digicode
+			cadena3 = Instantiate(cadenas[rand1],listcadenas[randpos].transform.position, Quaternion.identity); //Spawn cadenas
+			
+			
+			
+			laserdigicodetemp3 = Instantiate(laserdigicode3,cadena3.transform.position, Quaternion.identity) as GameObject; //Spawn gameobject laserdigicode 
+			
+
+			cadena3.GetComponent<Cadena>().h = hintriddle.GetComponent<Interactable>().hint;
+			
+			cadenas.Remove(cadenas[rand1]);
+			listcadenas.Remove(listcadenas[randpos]);
+			
+		}
+	
+	}
 }
