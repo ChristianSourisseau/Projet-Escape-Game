@@ -7,6 +7,7 @@ public class MusicManager : MonoBehaviour
 {
     public static MusicManager instance;
     private string currentscenename;
+    private string previousscenename;
 
     [SerializeField]
     private AudioSource goost;
@@ -44,9 +45,9 @@ public class MusicManager : MonoBehaviour
     private void Update()
     {
         string activescene = SceneManager.GetActiveScene().name;
-        Debug.Log("active scene : " + activescene);
         if (!currentscenename.Equals(activescene))
         {
+            previousscenename = currentscenename;
             currentscenename = activescene;
             if (SceneChanged != null)
                 SceneChanged.Invoke();
@@ -55,12 +56,14 @@ public class MusicManager : MonoBehaviour
 
     private void ChangeMusic()
     {
-        Debug.Log("scene was changed ; " + currentscenename);
         switch (currentscenename)
         {
             case "Menu":
-                goost.Stop();
-                goost.PlayOneShot(ost[0]);
+                if (!previousscenename.Equals("Settings") && !previousscenename.Equals("Credits"))
+                {
+                    goost.Stop();
+                    goost.PlayOneShot(ost[0]);
+                }
                 break;
             case "Salles":
                 goost.Stop();

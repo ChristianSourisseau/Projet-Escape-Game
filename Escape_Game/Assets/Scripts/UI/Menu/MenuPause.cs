@@ -8,11 +8,13 @@ using UnityEngine.SceneManagement;
 public class MenuPause : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-    public GameObject pauseMenuUI;   
+    public GameObject pauseMenuUI;
+    private AudioSource music;
 
     void Start()
     {
         Resume();
+        music = FindObjectOfType<AudioSource>();
     }
     // Update is called once per frame
     void Update()
@@ -22,10 +24,18 @@ public class MenuPause : MonoBehaviour
             if (GameIsPaused)
             {
                 Resume();
+                if (music != null)
+                {
+                    music.UnPause();
+                }
             }
             else
             {
                 Pause();
+                if (music != null)
+                {
+                    music.Pause();
+                }
             }
         }
     }
