@@ -76,12 +76,19 @@ public class Inventory : MonoBehaviour
 
     public void ShowTooltip(Vector3 position, IDescribable description)
     {
-        tooltip.ShowTooltip(position, description);
+        //Verifies that the script is not called when destroyed during a scene transition
+        //mostly due to item use on a door
+        if (tooltip != null) {
+            tooltip.ShowTooltip(position, description);
+        }
     }
 
     public void HideTooltip()
     {
-        tooltip.HideTooltip();
+        if (tooltip != null)
+        {
+            tooltip.HideTooltip();
+        }
     }
 
 }
