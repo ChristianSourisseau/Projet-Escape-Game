@@ -537,12 +537,21 @@ public class EnigmaTemplates : MonoBehaviour
 	
 	if(listhintriddle.Count > 0){
 			
-			randpos = Random.Range(0, listhintriddle.Count);
 			rand1 = Random.Range(0, hintsriddle.Length);
-
+			
+			randpos = Random.Range(0, listhintriddle.Count);
 			hintriddle = Instantiate(hintsriddle[rand1],listhintriddle[randpos].transform.position, Quaternion.identity); //Spawn hint
 			listhintriddle.Remove(listhintriddle[randpos]);
 			
+			randpos = Random.Range(0, listhintriddle.Count);
+			hintriddle.GetComponent<HintImage>().GetGOA().transform.position = listhintriddle[randpos].transform.position;
+			listhintriddle.Remove(listhintriddle[randpos]);
+
+			randpos = Random.Range(0, listhintriddle.Count);
+			hintriddle.GetComponent<HintImage>().GetGOB().transform.position = listhintriddle[randpos].transform.position;
+			listhintriddle.Remove(listhintriddle[randpos]);
+
+
 		
 			
 			randpos = Random.Range(0, listcadenas.Count);
