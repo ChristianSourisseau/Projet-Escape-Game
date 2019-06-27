@@ -25,7 +25,31 @@ public class Timer : MonoBehaviour
         text.text = Mathf.Floor(timeLeft / 60).ToString("00") + ":" + Mathf.FloorToInt(timeLeft % 60).ToString("00");
         if(text.text == "00:00")
         {
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("GameOver");
+            
+        }
+    }
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // here you can use scene.buildIndex or scene.name to check which scene was loaded
+        if (scene.name == "Menu")
+        {
+            // Destroy the gameobject this script is attached to
+            Destroy(transform.gameObject);
+        }
+        else if (scene.name == "GameOver")
+        {
+            Destroy(transform.gameObject);
         }
     }
 

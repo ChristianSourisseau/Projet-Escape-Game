@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DontDestroyTimer : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class DontDestroyTimer : MonoBehaviour
     {
         GameObject[] objs = GameObject.FindGameObjectsWithTag("timer");
 
-        if (objs.Length > 1)
+        if (objs.Length > 1 )
         {
             Destroy(transform.gameObject);
         }

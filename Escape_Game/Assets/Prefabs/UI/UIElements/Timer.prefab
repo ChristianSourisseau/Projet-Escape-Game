@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1639032862746540398}
-  timeLeft: 600
+  timeLeft: 604
 --- !u!114 &7257487584659838056
 MonoBehaviour:
   m_ObjectHideFlags: 0
