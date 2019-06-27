@@ -7,7 +7,7 @@ public class SubHintImage : HintImage
     [SerializeField]
     HintImage hi;
 
-    void Start()
+    private void OnEnable()
     {
         hi = HintImage.instance;
         hi.onHintChangedCallback += init;
@@ -34,6 +34,5 @@ public class SubHintImage : HintImage
 
         HideHint();
     }
-
-
+    
 }

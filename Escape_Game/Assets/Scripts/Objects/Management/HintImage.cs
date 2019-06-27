@@ -40,13 +40,17 @@ public class HintImage : MonoBehaviour
         return SubB;
     }
 
+    //doesn"t work when instantiate gameObject 
+    /*
     void Awake()
     {
         instance = this;
-    }
+    }*/
+
 
     void Start()
     {
+        instance = this;
         Hint h = gameObject.GetComponent<Interactable>().hint;
         
         if (h != null )
@@ -114,6 +118,8 @@ public class HintImage : MonoBehaviour
 
         IntA.hint = r.getSubA();
         IntB.hint = r.getSubB();
+        SubA.SetActive(true);
+        SubB.SetActive(true);
 
         if (onHintChangedCallback != null)
             onHintChangedCallback.Invoke();

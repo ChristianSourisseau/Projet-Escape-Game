@@ -309,6 +309,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SubRiddleB
       objectReference: {fileID: 0}
+    - target: {fileID: 4012939535417722670, guid: 217555fbbcf2a9049b6e1a4aacd48f4e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4012939535417722668, guid: 217555fbbcf2a9049b6e1a4aacd48f4e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -445,6 +450,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SubRiddleA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012939535417722670, guid: 45c8cb460f11cef4fac66437a983136f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4012939535417722668, guid: 45c8cb460f11cef4fac66437a983136f,
         type: 3}
