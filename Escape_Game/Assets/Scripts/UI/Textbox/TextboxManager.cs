@@ -58,15 +58,10 @@ public class TextboxManager : MonoBehaviour
         isActive = false;
         player = FindObjectOfType<Move>();
         currentLine = 0;
-        int roomnumber = 0;
-        roomnumber = GameObject.FindObjectOfType<RoomCounter>().count;
 
-        LoadScenarioText(roomnumber);
-        if (onStartText != null)
-        {
-            ReloadScript(onStartText);
-            EnableTextbox();
-        }
+        //Waiting for room number to be updated
+        Invoke("ScenarioHandler", 1f);
+        
     }
 
 
@@ -156,7 +151,7 @@ public class TextboxManager : MonoBehaviour
                     "Je ne peux qu'espérer.";
                 break;
             case 6:
-                onStartText = "Je sais que je devrais prioriser ma fuite, mais.../n" +
+                onStartText = "Je sais que je devrais prioriser ma fuite, mais...\n" +
                     "Ces chandeliers d'or.\n" + 
                     "Ces plantes exotiques.\n" + 
                     "Cette fragrance familière.\n" +
@@ -189,6 +184,21 @@ public class TextboxManager : MonoBehaviour
             default:
                 onStartText = null;
                 break;
+        }
+    }
+
+
+    private void ScenarioHandler()
+    {
+        int roomnumber = 0;
+        roomnumber = GameObject.FindObjectOfType<RoomCounter>().count;
+        Debug.Log("roomnumber : " + roomnumber);
+
+        LoadScenarioText(roomnumber);
+        if (onStartText != null)
+        {
+            ReloadScript(onStartText);
+            EnableTextbox();
         }
     }
     
