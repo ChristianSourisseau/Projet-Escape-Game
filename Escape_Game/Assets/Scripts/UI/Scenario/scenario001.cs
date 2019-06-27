@@ -16,4 +16,9 @@ public class scenario001 : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+    void Update()
+    {
+        Time.timeScale = 0f;
+    }
+
 }
