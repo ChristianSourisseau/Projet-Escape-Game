@@ -1777,6 +1777,10 @@ MonoBehaviour:
   bhard:
   - {fileID: 3262175797151220348, guid: cb57073c24336b64e906ca500e874d95, type: 3}
   - {fileID: 6549054882633131444, guid: d5d425c34567d9343bad72f981e0c6d6, type: 3}
+  - {fileID: 7596244571020995413, guid: 7655d9b3e47f76f43bc248846e355372, type: 3}
+  - {fileID: 1049207093742745552, guid: 2c7235ab082a8ba4e86f401f7577c916, type: 3}
+  - {fileID: 765653658823857740, guid: f76f49a54efdef440b205b532f60f41f, type: 3}
+  - {fileID: 3731196897201606515, guid: 33914be5e156d9141b00ecc1480235fa, type: 3}
 --- !u!1001 &1128442943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2358,6 +2362,7 @@ MonoBehaviour:
   - {fileID: 8005558976119920109, guid: 80507dc287608e040af1b41acf250802, type: 3}
   - {fileID: 8005558976119920109, guid: 6f0128a5fe4ee7f4796eba355738e0be, type: 3}
   - {fileID: 8005558976119920109, guid: c8044bc85185f99458f8059103ae4e33, type: 3}
+  cadena: {fileID: 0}
   digicode: {fileID: 6449454139666721673, guid: 6e4ba6b0feea87b4a803fd8678fd0750,
     type: 3}
   laserdigicode: {fileID: 7651220657282280662, guid: d1e446ea04f1b2d4da303ab0de70645a,

@@ -94,7 +94,7 @@ public class EnigmaTemplates : MonoBehaviour
 
 
 	private GameObject hint;
-	private GameObject cadena; 
+	public GameObject cadena; 
 	
 	public GameObject digicode;
 	public GameObject laserdigicode;

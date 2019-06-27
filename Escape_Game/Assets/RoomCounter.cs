@@ -12,7 +12,7 @@ public class RoomCounter : MonoBehaviour
 	
     void Awake()
     {
-		count = 51;
+		count = 1;
         
     }
 	void Start(){

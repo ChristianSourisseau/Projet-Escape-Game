@@ -107,6 +107,9 @@ TextureImporter:
   - first:
       213: -2729876020919578400
     second: Box3
+  - first:
+      213: -3986824565903436124
+    second: dessin
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -921,6 +924,27 @@ TextureImporter:
       bones: []
       spriteID: 473899123cbce0f4bb9aca156e08ffd1
       internalID: -2729876020919578400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dessin
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 285
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f88baf837e82847bea9d6b67238fba
+      internalID: -3986824565903436124
       vertices: []
       indices: 
       edges: []
