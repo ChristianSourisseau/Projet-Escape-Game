@@ -383,16 +383,13 @@ public class EnigmaTemplates : MonoBehaviour
 		}
 		
 		//SpawnHint
+		
+		
 		if(listhint.Count > 0){
+			
 			randpos = Random.Range(0, listhint.Count);
 			hint = Instantiate(hints[0],listhint[randpos].transform.position, Quaternion.identity); //Spawn hint
 			listhint.Remove(listhint[randpos]);
-		}
-		
-		for(int i = 0; i < listhint.Count; i++){
-			
-			
-			Instantiate(hints[0],listhint[i].transform.position, Quaternion.identity);
 			
 		}
 		

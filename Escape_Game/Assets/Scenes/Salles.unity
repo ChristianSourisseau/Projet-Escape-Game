@@ -794,6 +794,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlobalLight2D
       objectReference: {fileID: 0}
+    - target: {fileID: 4225013026200728295, guid: aacab5e81dae1ad4ebd26afc1e44aa9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4225013026200728289, guid: aacab5e81dae1ad4ebd26afc1e44aa9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -893,11 +898,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ShapePath.Array.data[3].y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4225013026200728294, guid: aacab5e81dae1ad4ebd26afc1e44aa9c,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aacab5e81dae1ad4ebd26afc1e44aa9c, type: 3}
@@ -1837,6 +1837,11 @@ MonoBehaviour:
   - {fileID: 1049207093742745552, guid: 2c7235ab082a8ba4e86f401f7577c916, type: 3}
   - {fileID: 765653658823857740, guid: f76f49a54efdef440b205b532f60f41f, type: 3}
   - {fileID: 3731196897201606515, guid: 33914be5e156d9141b00ecc1480235fa, type: 3}
+  btest:
+  - {fileID: 6549054882633131444, guid: d5d425c34567d9343bad72f981e0c6d6, type: 3}
+  rrbonus:
+  - {fileID: 1337509987909450177, guid: c0cbabe82c70a9443b5d828e6517c573, type: 3}
+  - {fileID: 2731020888206793240, guid: 4a700f8608597c148a889d2a36101fdb, type: 3}
 --- !u!1001 &1128442943
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -190,12 +190,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\tA peine sorti de cette tour, face \xE0 moi une foule m'acclamait. Il
-    y avait d'un c\xF4t\xE9 ceux qui ressemblaient \xE0 des m\xE9decins qui courraient
-    vers moi et de l'autre c\xF4t\xE9 un vieux roi qui s\u2019avan\xE7ait en me tendant
-    sa couronne. Il me dit : \xAB\_F\xE9licitations tu es le premier de mes fils \xE0
-    sortir de l'un de ces donjons. Par cons\xE9quent je te remets ma courronne ainsi
-    que le Royaume\_\xBB."
+  m_Text: "L'ultime porte pass\xE9e, ma m\xE9moire me revient enfin. Je me retourne
+    pour voir ma propre demeure se dresser face \xE0 moi. Tout cela n'\xE9tait qu'un
+    jeu de ma propre cr\xE9ation. Le bracelet, une de mes inventions, s'est d\xE9sactiv\xE9.
+    Je sais que j'ai bel et bien risqu\xE9 ma vie. Tout \xE7a pour quoi ? Une petite
+    pouss\xE9e d'adr\xE9naline.\r\nIl me tarde de recommencer."
 --- !u!222 &105383061
 CanvasRenderer:
   m_ObjectHideFlags: 0

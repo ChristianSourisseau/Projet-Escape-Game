@@ -57,7 +57,12 @@ public class Interactable : MonoBehaviour
 				RoomText.GetComponent<RoomCounter>().difficulty = 3;
 				}
 			}
-			SceneManager.LoadScene("Scenes/Salles");
+			if (RoomText.GetComponent<RoomCounter>().count <= 10){
+				SceneManager.LoadScene("Scenes/Salles");
+			}
+			else{
+				SceneManager.LoadScene("Scenes/scenarioFin001");
+			}
 			//
 			
 			

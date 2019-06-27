@@ -15,5 +15,10 @@ public class RoomTemplates2 : MonoBehaviour
 	
 	public GameObject[] bhard;
 
+	public GameObject[] btest;
+	
+	public GameObject[] rrbonus;
+
+
 
 }
