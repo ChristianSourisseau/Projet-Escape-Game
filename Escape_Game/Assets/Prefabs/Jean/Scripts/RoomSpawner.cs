@@ -121,12 +121,12 @@ public class RoomSpawner : MonoBehaviour
 			
 			if(difficulty == 3){
 			
-				if(openingDirection == 22){
-					rand = Random.Range(0, templates2.btest.Length);
-					Instantiate(templates2.btest[rand], transform.position, Quaternion.identity);
 				// if(openingDirection == 22){
-					// rand = Random.Range(0, templates2.bhard.Length);
-					// Instantiate(templates2.bhard[rand], transform.position, Quaternion.identity);
+					// rand = Random.Range(0, templates2.btest.Length);
+					// Instantiate(templates2.btest[rand], transform.position, Quaternion.identity);
+				if(openingDirection == 22){
+					rand = Random.Range(0, templates2.bhard.Length);
+					Instantiate(templates2.bhard[rand], transform.position, Quaternion.identity);
 				}else if(openingDirection == 23){
 					rand = Random.Range(0, templates2.b.Length);
 					Instantiate(templates2.b[rand], transform.position, Quaternion.identity);

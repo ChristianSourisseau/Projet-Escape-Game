@@ -1023,6 +1023,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4770868464973918579, guid: 82f8322e62bcb604eb7318676999a052,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -33.100098
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82f8322e62bcb604eb7318676999a052, type: 3}
 --- !u!1 &628774550
@@ -1842,9 +1847,9 @@ MonoBehaviour:
   - {fileID: 1049207093742745552, guid: 2c7235ab082a8ba4e86f401f7577c916, type: 3}
   - {fileID: 765653658823857740, guid: f76f49a54efdef440b205b532f60f41f, type: 3}
   - {fileID: 3731196897201606515, guid: 33914be5e156d9141b00ecc1480235fa, type: 3}
-  btest:
   - {fileID: 4502391340821304021, guid: 32bf739f76616bf4f9e267d59cd1208a, type: 3}
-  - {fileID: 6549054882633131444, guid: d5d425c34567d9343bad72f981e0c6d6, type: 3}
+  btest:
+  - {fileID: 391505166264550271, guid: e0b35cbfed1f23d4baf257ec2c9860eb, type: 3}
   rrbonus:
   - {fileID: 1337509987909450177, guid: c0cbabe82c70a9443b5d828e6517c573, type: 3}
   - {fileID: 2731020888206793240, guid: 4a700f8608597c148a889d2a36101fdb, type: 3}
@@ -2545,8 +2550,6 @@ MonoBehaviour:
   - {fileID: 5568520757074684713, guid: e6befe667191ff84bb4d3845f66fa905, type: 3}
   - {fileID: 2002400538508724037, guid: bbcdf558ec318074eb7f3a4571d33125, type: 3}
   - {fileID: 8008606244784657727, guid: d81e777255c2257458bb6d134c803c20, type: 3}
-  - {fileID: 2088484070413516511, guid: 10f61468b1dba03499f3b6b3673270e9, type: 3}
-  - {fileID: 8113167730212653685, guid: ca7211f9f9e0ec04895bbdb99938fad7, type: 3}
   - {fileID: 5761250593760688593, guid: 54341fa316669654ea0f845cfb774060, type: 3}
   - {fileID: 3074555270432428771, guid: 2651d24ffbd165b4aabbe18d7577cd26, type: 3}
   listhintcodag: []
@@ -2566,6 +2569,14 @@ MonoBehaviour:
   laserdigicode2: {fileID: 7651220657282280662, guid: 99957a3361d068d46958c7d306032286,
     type: 3}
   laserdigicodetemp2: {fileID: 0}
+  listhintriddle: []
+  hintsriddle:
+  - {fileID: 4012939535417722670, guid: f70faf3602bb34e4e8e2cee8528f78fc, type: 3}
+  listcadenas3: []
+  cadena3: {fileID: 0}
+  laserdigicode3: {fileID: 7651220657282280662, guid: 65183ea1c6d20f34da8d222d9a31fd56,
+    type: 3}
+  laserdigicodetemp3: {fileID: 0}
 --- !u!1 &1938288712
 GameObject:
   m_ObjectHideFlags: 0
