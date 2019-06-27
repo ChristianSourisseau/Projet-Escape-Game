@@ -8,7 +8,10 @@ public class Codag : Hint
     public override void initialise()
     {
         name = "Un Codag";
-        description = "Un jeu de logique peu commun.\nCertains emplacements contiennent des traces de peinture...";
+        description = "Un jeu de logique peu commun.\n" +
+            "Les petits nombres doivent correspondre\n" +
+            "à la somme des quatre chiffres qui leur sont adjacents.\n" +
+            "Certains emplacements contiennent des traces de peinture...";
     }
 
     public override bool verifCode(int R, int V, int B, int J)

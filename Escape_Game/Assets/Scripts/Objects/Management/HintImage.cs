@@ -29,6 +29,17 @@ public class HintImage : MonoBehaviour
 
     public static HintImage instance;
 
+
+    public GameObject GetGOA()
+    {
+        return SubA;
+    }
+
+    public GameObject GetGOB()
+    {
+        return SubB;
+    }
+
     void Awake()
     {
         instance = this;
