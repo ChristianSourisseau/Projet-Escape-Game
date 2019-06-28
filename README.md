@@ -26,7 +26,7 @@ Il s’agit d’un jeu d’escape game qui se base sur la génération aléatoir
 
 ## Lien vers une démonstration du projet :
 
-//TODO_LIEN_DE_DEMO_YT_NON_REFERENCE
+https://www.youtube.com/watch?v=hLmX2ElFuj4
 
 ## Fonctionnalités supportées :
 
