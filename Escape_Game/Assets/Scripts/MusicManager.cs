@@ -63,11 +63,13 @@ public class MusicManager : MonoBehaviour
                 {
                     goost.Stop();
                     goost.PlayOneShot(ost[0]);
+                    goost.loop = true;
                 }
                 break;
             case "Salles":
                 goost.Stop();
                 goost.PlayOneShot(ost[1]);
+                goost.loop = true;
                 break;
             default: break;
         }
