@@ -899,11 +899,6 @@ PrefabInstance:
       propertyPath: m_ShapePath.Array.data[3].y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4225013026200728294, guid: aacab5e81dae1ad4ebd26afc1e44aa9c,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 3.15
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aacab5e81dae1ad4ebd26afc1e44aa9c, type: 3}
 --- !u!1001 &549643620
@@ -1841,14 +1836,11 @@ MonoBehaviour:
   - {fileID: 384797322515144768, guid: 8e514038ddcb1c842b6473f286aad39b, type: 3}
   - {fileID: 5770958830564616872, guid: ebcb037bf5574a348a16d81382197f38, type: 3}
   bhard:
-  - {fileID: 3262175797151220348, guid: cb57073c24336b64e906ca500e874d95, type: 3}
   - {fileID: 6549054882633131444, guid: d5d425c34567d9343bad72f981e0c6d6, type: 3}
-  - {fileID: 7596244571020995413, guid: 7655d9b3e47f76f43bc248846e355372, type: 3}
-  - {fileID: 1049207093742745552, guid: 2c7235ab082a8ba4e86f401f7577c916, type: 3}
-  - {fileID: 765653658823857740, guid: f76f49a54efdef440b205b532f60f41f, type: 3}
   - {fileID: 3731196897201606515, guid: 33914be5e156d9141b00ecc1480235fa, type: 3}
   - {fileID: 4502391340821304021, guid: 32bf739f76616bf4f9e267d59cd1208a, type: 3}
   - {fileID: 391505166264550271, guid: e0b35cbfed1f23d4baf257ec2c9860eb, type: 3}
+  - {fileID: 5664362407423313438, guid: b43071710fe079c45bcf8bc3941655da, type: 3}
   btest: []
   rrbonus:
   - {fileID: 1337509987909450177, guid: c0cbabe82c70a9443b5d828e6517c573, type: 3}
@@ -2577,6 +2569,22 @@ MonoBehaviour:
   laserdigicode3: {fileID: 7651220657282280662, guid: 65183ea1c6d20f34da8d222d9a31fd56,
     type: 3}
   laserdigicodetemp3: {fileID: 0}
+  listhintsudo: []
+  hintssudo:
+  - {fileID: 2530037871092754026, guid: 85c9a2344295d5f488d95f23a95011e7, type: 3}
+  - {fileID: 3998389524254809040, guid: 80e8a0b341b23514c880bcb2bd3c80d0, type: 3}
+  - {fileID: 4341147251513332704, guid: 12ac6dcf765870b499d2ed037b804c95, type: 3}
+  - {fileID: 2260829833842500830, guid: e2232404d5b640e429a019c5a32fa4a9, type: 3}
+  - {fileID: 8785171153538109200, guid: d4f2cc35f7de8c447a07944f5249e3d5, type: 3}
+  - {fileID: 780439419108131831, guid: 8d843ac65520dc64eb532eb092336c2c, type: 3}
+  - {fileID: 6574754133208494304, guid: 6bdeb216492bad4478e3adbe9019bced, type: 3}
+  - {fileID: 6233729481709880567, guid: 8ffc92ef8b919ba4a856fb28ccb66639, type: 3}
+  listcadenas4: []
+  cadena4: {fileID: 0}
+  laserdigicode4: {fileID: 7651220657282280662, guid: 0f0964d85cdbe3d4c8e302e10e67c6d8,
+    type: 3}
+  laserdigicodetemp4: {fileID: 0}
+  listshelf: []
 --- !u!1 &1938288712
 GameObject:
   m_ObjectHideFlags: 0
